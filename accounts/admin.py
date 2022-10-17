@@ -3,6 +3,6 @@ from .models import Account
 
 # Register your models here.
 class UserAdmin(admin.ModelAdmin):
-    exclude =('password',)
+    exclude =('password','Groups')
 
 admin.site.register(Account,UserAdmin)

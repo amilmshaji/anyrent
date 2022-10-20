@@ -29,11 +29,14 @@ def login(request):
         email=request.POST['email']
         password=request.POST['password']
         user=authenticate(email=email, password=password)
-        if user is not None:
+        if user and user.is_active:
             auth.login(request, user)
             messages.success(request, 'you are logged in')
             request.session['email']=email
-            return redirect('home')
+            if user.is_admin:
+                return redirect('admin/')
+            else:
+                return redirect('home')
         else:
             messages.error(request, 'invalid login credentials')
             return redirect('login')
@@ -47,7 +50,7 @@ def register(request):
         lname=request.POST['lname']
         phone_number=request.POST['tel']
         if Account.objects.filter(email=email).exists():
-            messages.error(request, 'email already exists')
+            messages.success(request, 'email already exists')
             return redirect('register')
         else:
             user=Account.objects.create_user(email=email, password=password, fname=fname, lname=lname,  phone_number=phone_number)

@@ -17,10 +17,10 @@
                                 <ul class="breadcrumb__list">
                                     <li class="has-separator">
 
-                                        <a href="index.html">Home</a></li>
+                                        <a href="#">Home</a></li>
                                     <li class="is-marked">
 
-                                        <a href="dash-edit-profile.html">Other</a></li>
+                                        <a href="#">Other</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -32,13 +32,21 @@
                  function validate()
                 {
 					var a=document.getElementById("type").value;
+					var s=/^[a-zA-Z]+$/;
+
 					   if(a=="")
                 {
                     document.getElementById('te').style.display = "block";
 
-                    document.getElementById('te').innerHTML="**Please enter  furniture type";
+                    document.getElementById('te').innerHTML="**Please enter product type";
                     return false;
                 }
+                if(a!="" && s.test(a)==false){
+
+						document.getElementById('te').style.display = "block";
+						document.getElementById('te').innerHTML = "**Invalid product type";
+						return false;
+					}
                 else{
 						document.getElementById('te').style.display = "none";
 
@@ -51,7 +59,7 @@
                 {
                     document.getElementById('rt').style.display = "block";
 
-                    document.getElementById('rt').innerHTML="**Please Enter Rent";
+                    document.getElementById('rt').innerHTML="**Please Enter rent/month";
                     return false;
                 }
 					else if(e!="" && expr.test(e)==false){
@@ -61,6 +69,20 @@
 								}
 								else{
 						document.getElementById('rt').style.display = "none";
+
+					}
+
+									var g = document.getElementById("images").value;
+
+				if(g=="")
+                {
+                    document.getElementById('img').style.display = "block";
+
+                    document.getElementById('img').innerHTML="**Please upload image";
+                    return false;
+                }
+				else{
+						document.getElementById('img').style.display = "none";
 
 					}
 										var i = document.getElementById("ad_title").value;
@@ -81,7 +103,7 @@
                 {
                     document.getElementById('ai').style.display = "block";
 
-                    document.getElementById('ai').innerHTML="**Please Enter Advertisment Information";
+                    document.getElementById('ai').innerHTML="**Please Enter Additional Information";
                     return false;
                 }
                 else{
@@ -127,55 +149,9 @@
 
                                                                 <label class="gl-label" for="images">Image *</label>
 
-                                                                <input class="input-text input-text--primary-style" type="file" name="images" id="images" placeholder="Image" onblur="fileExtValidate1(images)" onsubmit="fileExtValidate1(images)"  accept="application/jpg">
+                                                                <input class="input-text input-text--primary-style" type="file" name="images" id="images" placeholder="Image" onblur="return validate()" onKeyUp="return validate()" accept="image/png, image/gif, image/jpeg">
                                                              <span id="ermsg1" name="ermsg1" style="color:red"> </span>
 
-                                                                <script>
-
-
-                                                                var validExt = ".jpg,.jpeg,.png";
-                                                                function fileExtValidate1(fdata) {
-                                                                 var filePath = fdata.value;
-                                                                 var getFileExt = filePath.substring(filePath.lastIndexOf('.') + 1).toLowerCase();
-                                                                 var pos = validExt.indexOf(getFileExt);
-                                                                 if(pos < 0) {
-                                                                    //alert("This file is not allowed, please upload valid file.");
-                                                                                         document.getElementById("ermsg1").innerHTML='*only .jpg,.jpeg,.png images are allowed.' ;
-                                                                                          document.getElementById("image").value="";
-                                                                    return false;
-                                                                  } else {
-                                                                         document.getElementById("ermsg1").innerHTML="";
-                                                                    return true;
-                                                                  }
-                                                                }
-
-
-                                                                var maxSize = '1024';
-                                                                function fileSizeValidate1(fdata) {
-                                                                     if (fdata.files && fdata.files[0]) {
-                                                                                var fsize = fdata.files[0].size/1024;
-                                                                                if(fsize > maxSize) {
-                                                                                     //alert('Maximum file size exceed, This file size is: ' + fsize + "KB");
-                                                                                     document.getElementById("ermsg1").innerHTML='Maximum file size(1 MB) exceed, This file size is: '+ fsize + "KB" ;
-                                                                                     document.getElementById("image").value="";
-                                                                                     return false;
-                                                                                } else {
-                                                                                     document.getElementById("ermsg1").innerHTML="";
-                                                                                    return true;
-                                                                                }
-                                                                     }
-                                                                 }
-
-                                                                $("#image").change(function () {
-                                                                        if(fileExtValidate1(this)) {
-                                                                             if(fileSizeValidate1(this)) {
-                                                                                showImg(this);
-                                                                             }
-                                                                        }
-                                                                    });
-
-
-                                                                </script>
                                                             </div>
                                                             <div class="u-s-m-b-30">
 
@@ -205,7 +181,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <button class="btn btn--e-brand-b-2" type="submit">SAVE</button>
+                                                        <button class="btn btn--e-brand-b-2" type="submit">RENT IT</button>
                                                     </form>
                                                 </div>
                                             </div>

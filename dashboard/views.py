@@ -68,7 +68,7 @@ def changePassword(request):
                 messages.success(request, 'Password change Successfully')
                 return redirect('changePassword')
             else:
-                messages.error(request, 'Please enter valid current password')
+                messages.success(request, 'Please enter valid current password')
                 return redirect('changePassword')
         else:
             messages.error(request, 'Password does not match')
@@ -81,8 +81,8 @@ def changePassword(request):
 def myproducts(request, category_slug=None):
 
     # if request.user.is_authenticated:
-    h_products = House_Product.objects.all().filter(is_available=True,id=request.user.id).order_by('id')
-    c_products = Car_Product.objects.all().filter(is_available=True,id=request.user.id).order_by('id')
+    c_products = Car_Product.objects.all().filter(is_available=True,user=request.user.id)
+    h_products = House_Product.objects.all().filter(is_available=True,user=request.user.id)
 
 
 

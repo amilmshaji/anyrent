@@ -93,3 +93,7 @@ def myproducts(request, category_slug=None):
 
     }
     return render(request, 'dashboard/myproducts.html', context)
+
+def managemypd(request):
+    return render(request, 'dashboard/dash-edit-myproducts.html')
+

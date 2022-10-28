@@ -4,7 +4,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 
 from accounts.models import Account
-from products.models import House_Product, Car_Product
+from products.models import House_Product, Car_Product, Bike_Product, Furn_Product,Other_Product
 
 
 
@@ -83,12 +83,19 @@ def myproducts(request, category_slug=None):
     # if request.user.is_authenticated:
     c_products = Car_Product.objects.all().filter(is_available=True,user=request.user.id)
     h_products = House_Product.objects.all().filter(is_available=True,user=request.user.id)
+    b_products = Bike_Product.objects.all().filter(is_available=True, user=request.user.id)
+    f_products = Furn_Product.objects.all().filter(is_available=True, user=request.user.id)
+    o_products = Other_Product.objects.all().filter(is_available=True, user=request.user.id)
+
 
 
 
     context = {
         'h_products' : h_products,
         'c_products': c_products,
+        'b_products' : b_products,
+        'f_products' : f_products,
+        'o_products' : o_products,
 
 
     }

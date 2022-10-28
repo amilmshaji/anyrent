@@ -4,8 +4,10 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from .models import House_Product, All_Products
+from .models import House_Product
 from .models import Car_Product
+
+
 
 
 
@@ -65,6 +67,7 @@ from .models import  Bike_Product
 @login_required(login_url='login')
 
 def add_bike(request):
+    current_user = request.user
     if request.method=="POST":
         brand=request.POST.get('brand')
         # year=request.POST.get('year')
@@ -74,7 +77,7 @@ def add_bike(request):
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')
         images=request.FILES['images']
-        bike=Bike_Product(brand=brand,driven=driven,own=own,
+        bike=Bike_Product(user=current_user,brand=brand,driven=driven,own=own,
                             rent=rent,ad_title=ad_title,add_info=add_info,images=images)
         bike.save()
         return redirect('/')
@@ -86,6 +89,7 @@ from .models import Furn_Product
 @login_required(login_url='login')
 
 def add_furn(request):
+    current_user = request.user
     if request.method=="POST":
         type = request.POST.get('type')
 
@@ -93,8 +97,8 @@ def add_furn(request):
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')
         images=request.FILES['images']
-        car=Furn_Product(type=type,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
-        car.save()
+        furniture=Furn_Product(user=current_user,type=type,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
+        furniture.save()
         return redirect('/')
     return render(request, 'add_furn.html')
 
@@ -105,6 +109,7 @@ from .models import Other_Product
 @login_required(login_url='login')
 
 def add_other(request):
+    current_user = request.user
     if request.method=="POST":
         type = request.POST.get('type')
 
@@ -112,8 +117,8 @@ def add_other(request):
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')
         images=request.FILES['images']
-        car=Other_Product(type=type,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
-        car.save()
+        other=Other_Product(user=current_user,type=type,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
+        other.save()
         return redirect('/')
     return render(request, 'add_other.html')
 

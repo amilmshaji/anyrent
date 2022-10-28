@@ -1,6 +1,7 @@
 
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages, auth
+from django.http import JsonResponse,HttpResponse
 from django.shortcuts import render, redirect
 from .models import Account
 from django.contrib.auth import authenticate
@@ -165,4 +166,16 @@ def resetPassword(request):
             return redirect('resetPassword')
     else:
         return render(request, 'accounts/resetPassword.html')
+
+
+
+
+    #filter Data
+
+# def filter_data(request):
+#     categories=request.GET.getlist('color[]')
+#     brands = request.GET.getlist('color[]')
+#     allProducts = Product.objects.all().order_by('-id')
+#     t=render_to_string('ajax/product-list',{'data':allProducts})
+#     return JsonResponse({'data':t})
 

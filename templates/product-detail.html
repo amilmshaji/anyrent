@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+        <!--====== App Content ======-->
+        <div class="app-content">
+
+            <!--====== Section 1 ======-->
+            <div class="u-s-p-t-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+
+                            <!--====== Product Breadcrumb ======-->
+                            <div class="pd-breadcrumb u-s-m-b-30">
+                                <ul class="pd-breadcrumb__list">
+                                    <li class="has-separator">
+
+                                        <a href="index.hml">Home</a></li>
+                                    <li class="has-separator">
+
+                                        <a href="shop-side-version-2.html">{{single_product.category}}</a></li>
+                                    <li class="has-separator">
+
+<!--                                        <a href="shop-side-version-2.html">DSLR Cameras</a></li>-->
+                                    <li class="is-marked">
+
+                                        <a href="shop-side-version-2.html">{{single_product.product_name}}</a></li>
+                                </ul>
+                            </div>
+                            <!--====== End - Product Breadcrumb ======-->
+
+
+                            <!--====== Product Detail Zoom ======-->
+                            <div class="pd u-s-m-b-30">
+                                <div class="slider-fouc pd-wrap">
+                                    <div id="pd-o-initiate">
+                                        <div class="pd-o-img-wrap" data-src="images/product/product-d-1.jpg">
+
+                                            <img class="u-img-fluid aspect__img" src="{{ single_product.images.url }}" style="width:600 height:600;" data-zoom-image="images/product/product-d-1.jpg" alt=""></div>
+                                        <div class="pd-o-img-wrap" data-src="images/product/product-d-2.jpg">
+
+                                            <img class="u-img-fluid" src="images/product/product-d-2.jpg" data-zoom-image="images/product/product-d-2.jpg" alt=""></div>
+                                        <div class="pd-o-img-wrap" data-src="images/product/product-d-3.jpg">
+
+                                            <img class="u-img-fluid" src="images/product/product-d-3.jpg" data-zoom-image="images/product/product-d-3.jpg" alt=""></div>
+                                        <div class="pd-o-img-wrap" data-src="images/product/product-d-4.jpg">
+
+                                            <img class="u-img-fluid" src="images/product/product-d-4.jpg" data-zoom-image="images/product/product-d-4.jpg" alt=""></div>
+                                        <div class="pd-o-img-wrap" data-src="images/product/product-d-5.jpg">
+
+                                            <img class="u-img-fluid" src="images/product/product-d-5.jpg" data-zoom-image="images/product/product-d-5.jpg" alt=""></div>
+                                    </div>
+
+                                    <span class="pd-text">Click for larger zoom</span>
+                                </div>
+                                <div class="u-s-m-t-15">
+                                    <div class="slider-fouc">
+                                        <div id="pd-o-thumbnail">
+                                            <div>
+
+                                                <img class="u-img-fluid" src="images/product/product-d-1.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="images/product/product-d-2.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="images/product/product-d-3.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="images/product/product-d-4.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="images/product/product-d-5.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--====== End - Product Detail Zoom ======-->
+                        </div>
+                        <div class="col-lg-7">
+
+                            <!--====== Product Right Side Details ======-->
+                            <div class="pd-detail">
+                                <div>
+
+                                    <span class="pd-detail__name">{{ single_product.product_name }}</span></div>
+                                <div>
+                                    <div class="pd-detail__inline">
+
+                                        <span class="pd-detail__price">₹{{single_product.price}}</span>
+
+                                        <span class="pd-detail__discount">(76% OFF)</span><del class="pd-detail__del">₹28.97</del></div>
+                                </div>
+                                <div class="u-s-m-b-15">
+                                    <div class="pd-detail__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                        <span class="pd-detail__review u-s-m-l-4">
+
+                                            <a data-click-scroll="#view-review">23 Reviews</a></span></div>
+                                </div>
+                                <div class="u-s-m-b-15">
+                                    <div class="pd-detail__inline">
+
+                                        <span class="pd-detail__stock">200 in stock</span>
+
+                                        <span class="pd-detail__left">Only 2 left</span></div>
+                                </div>
+                                <div class="u-s-m-b-15">
+
+                                    <span class="pd-detail__preview-desc">{{ single_product.description }}</span></div>
+                                <div class="u-s-m-b-15">
+                                    <div class="pd-detail__inline">
+
+                                        <span class="pd-detail__click-wrap"><i class="far fa-heart u-s-m-r-6"></i>
+
+                                            <a href="{% url 'add_wishlist' single_product.id %}">Add to Wishlist</a>
+
+                                            <span class="pd-detail__click-count">(222)</span></span></div>
+                                </div>
+                                <div class="u-s-m-b-15">
+                                    <div class="pd-detail__inline">
+
+                                        <span class="pd-detail__click-wrap"><i class="far fa-envelope u-s-m-r-6"></i>
+
+                                            <a href="signin.html">Email me When the price drops</a>
+
+                                            <span class="pd-detail__click-count">(20)</span></span></div>
+                                </div>
+                                <div class="u-s-m-b-15">
+                                    <ul class="pd-social-list">
+                                        <li>
+
+                                            <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li>
+
+                                            <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li>
+
+                                            <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li>
+
+                                            <a class="s-wa--color-hover" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                        <li>
+
+                                            <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="u-s-m-b-15">
+                                    <form class="pd-detail__form"  action="{% url 'add_cart' single_product.id %}" method="POST">
+                                        {% csrf_token %}
+
+                                        <div class="pd-detail-inline-2">
+                                            <div class="u-s-m-b-15">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>

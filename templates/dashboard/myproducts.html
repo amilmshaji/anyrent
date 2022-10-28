@@ -150,6 +150,140 @@
                                                 {% endfor %}
 
 
+                                                {% for b_product in b_products %}
+
+                                                <div class="m-order__get">
+
+                                                    <div class="manage-o__header u-s-m-b-30">
+                                                        <div class="dash-l-r">
+                                                            <div>
+<!--                                                                <div class="manage-o__text-2 u-c-secondary">Order #305423126</div>-->
+<!--                                                                <div class="manage-o__text u-c-silver">Placed on 26 Oct 2016 09:08:37</div>-->
+                                                            </div>
+                                                            <div>
+                                                                <div class="dash__link dash__link--brand">
+
+                                                                    <a href="{% url 'managemypd' %}">MANAGE</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="manage-o__description">
+                                                        <div class="description__container">
+                                                            <div class="description__img-wrap">
+
+                                                                <img class="u-img-fluid"  src="{{b_product.images.url}}" style="width:600 height:600;" alt=""></div>
+                                                            <div class="description-title">{{b_product.ad_title}}</div>
+                                                        </div>
+                                                        <div class="description__info-wrap">
+                                                            <div>
+
+                                                                <span class="manage-o__badge badge--processing">{{b_product.rent}}/month</span></div>
+                                                            <div>
+
+                                                                <span class="manage-o__text-2 u-c-silver">Brand:
+
+                                                                    <span class="manage-o__text-2 u-c-secondary">{{b_product.brand}}</span></span></div>
+                                                            <div>
+
+                                                                <span class="manage-o__text-2 u-c-silver">Fuel:
+
+                                                                    <span class="manage-o__text-2 u-c-secondary">{{b_product.fuel}}</span></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {% endfor %}
+
+
+                                                 {% for f_product in f_products %}
+
+                                                <div class="m-order__get">
+
+                                                    <div class="manage-o__header u-s-m-b-30">
+                                                        <div class="dash-l-r">
+                                                            <div>
+<!--                                                                <div class="manage-o__text-2 u-c-secondary">Order #305423126</div>-->
+<!--                                                                <div class="manage-o__text u-c-silver">Placed on 26 Oct 2016 09:08:37</div>-->
+                                                            </div>
+                                                            <div>
+                                                                <div class="dash__link dash__link--brand">
+
+                                                                    <a href="{% url 'managemypd' %}">MANAGE</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="manage-o__description">
+                                                        <div class="description__container">
+                                                            <div class="description__img-wrap">
+
+                                                                <img class="u-img-fluid"  src="{{f_product.images.url}}" style="width:600 height:600;" alt=""></div>
+                                                            <div class="description-title">{{f_product.ad_title}}</div>
+                                                        </div>
+                                                        <div class="description__info-wrap">
+                                                            <div>
+
+                                                                <span class="manage-o__badge badge--processing">{{f_product.rent}}/month</span></div>
+                                                            <div>
+
+                                                                <span class="manage-o__text-2 u-c-silver">Images:
+
+                                                                    <span class="manage-o__text-2 u-c-secondary">{{f_product.images}}</span></span></div>
+                                                            <div>
+
+<!--                                                                <span class="manage-o__text-2 u-c-silver">Bathrooms:-->
+
+<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{h_product.bathroom}}</span></span></div>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {% endfor %}
+
+
+                                                     {% for o_product in o_products %}
+
+                                                <div class="m-order__get">
+
+                                                    <div class="manage-o__header u-s-m-b-30">
+                                                        <div class="dash-l-r">
+                                                            <div>
+<!--                                                                <div class="manage-o__text-2 u-c-secondary">Order #305423126</div>-->
+<!--                                                                <div class="manage-o__text u-c-silver">Placed on 26 Oct 2016 09:08:37</div>-->
+                                                            </div>
+                                                            <div>
+                                                                <div class="dash__link dash__link--brand">
+
+                                                                    <a href="{% url 'managemypd' %}">MANAGE</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="manage-o__description">
+                                                        <div class="description__container">
+                                                            <div class="description__img-wrap">
+
+                                                                <img class="u-img-fluid"  src="{{o_product.images.url}}" style="width:600 height:600;" alt=""></div>
+                                                            <div class="description-title">{{o_product.ad_title}}</div>
+                                                        </div>
+                                                        <div class="description__info-wrap">
+                                                            <div>
+
+                                                                <span class="manage-o__badge badge--processing">{{o_product.rent}}/month</span></div>
+                                                            <div>
+
+<!--                                                                <span class="manage-o__text-2 u-c-silver">Bedrooms:-->
+
+<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{h_product.bedroom}}</span></span></div>-->
+<!--                                                            <div>-->
+
+<!--                                                                <span class="manage-o__text-2 u-c-silver">Bathrooms:-->
+
+<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{h_product.bathroom}}</span></span></div>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {% endfor %}
+
+
+
+
 
                                             </div>
                                         </div>

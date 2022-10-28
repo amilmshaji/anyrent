@@ -1,3 +1,4 @@
+
 from django.db import models
 from django.urls.base import reverse
 from django.db.models.signals import pre_save
@@ -95,6 +96,7 @@ pre_save.connect(slug_generator,sender=Car_Product)
 
 
 class Bike_Product(models.Model):
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
     ad_title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True,editable=False)
     add_info = models.TextField(max_length=500, blank=True)
@@ -124,7 +126,8 @@ def slug_generator(sender,instance,*args,**kwargs):
 pre_save.connect(slug_generator,sender=Bike_Product)
 
 
-class Furn_Product(models.Model):                #Furniture table product adding table
+class Furn_Product(models.Model):      #Furniture table product adding table
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
     ad_title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True,editable=False)
     add_info = models.TextField(max_length=500, blank=True)
@@ -153,6 +156,7 @@ pre_save.connect(slug_generator,sender=Furn_Product)
 
 
 class Other_Product(models.Model):                #Other table product adding table
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
     ad_title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True,editable=False)
     add_info = models.TextField(max_length=500, blank=True)
@@ -184,16 +188,24 @@ class All_Products(models.Model):
     house = models.ForeignKey(House_Product, on_delete=models.CASCADE)
     # variations = models.ManyToManyField(Variation, blank=True)
     car = models.ForeignKey(Car_Product, on_delete=models.CASCADE, null=True)
+    # product = models.ForeignKey(product, on_delete=models.CASCADE)
+    # color = models.ForeignKey(Color,on_delete=models.CASCADE)
+    price = models.PositiveIntegerField(default=0)
+    image = models.ImageField(upload_to="product_imgs/",null=True)
+
     quantity = models.IntegerField()
     proudct_id = models.CharField(max_length=250, blank=True)
     date_added = models.DateField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
-
+#
     # def sub_total(self):
     #     return self.product.price*self.quantity
     #
     # def __unicode__(self):
     #     return self.product
+
+
+
 
 
 

@@ -1,25 +1,28 @@
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404, redirect, render
 
-from products.models import Car_Product, House_Product, Bike_Product, Furn_Product, Other_Product
+from products.models import Car_Product, House_Product, Bike_Product, Furn_Product, Other_Product, Category
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator, InvalidPage
 from django.db.models import Q
 # Create your views here.
 
+
+def Home(request):
+
+    return render(request,"index.html")
 
 def shop(request, category_slug=None):
     categories = None
     products = None
 
     if category_slug != None:
-        h_products = House_Product.objects.filter( is_available=True)
-        c_products = Car_Product.objects.filter( is_available=True)
-        b_products = Bike_Product.objects.filter( is_available=True)
-        f_products = Furn_Product.objects.filter( is_available=True)
-        o_products = Other_Product.objects.filter( is_available=True)
 
-
-
+        categories = get_object_or_404(Category, slug=category_slug)
+        h_products = House_Product.objects.filter(category=categories, is_available=True)
+        c_products = Car_Product.objects.filter(category=categories, is_available=True)
+        b_products = Bike_Product.objects.filter(category=categories, is_available=True)
+        f_products = Furn_Product.objects.filter(category=categories, is_available=True)
+        o_products = Other_Product.objects.filter(category=categories, is_available=True)
 
 
         paginator = Paginator(products, 1)
@@ -56,8 +59,15 @@ def shop(request, category_slug=None):
 def product_detail(request,  category_slug, product_slug):
     if category_slug == "House-and-Appartments":
         single_product = House_Product.objects.get(category__slug=category_slug, slug=product_slug)
+        print(single_product.category)
+
     else:
         single_product = Car_Product.objects.get(category__slug=category_slug, slug=product_slug)
+        print(single_product.category)
+
+
+
+
 
 
     context = {

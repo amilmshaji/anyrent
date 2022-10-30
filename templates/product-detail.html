@@ -38,7 +38,7 @@
                                     <div id="pd-o-initiate">
                                         <div class="pd-o-img-wrap" data-src="{{ single_product.images.url }}">
 
-                                            <img class="u-img-fluid" src="{{ single_product.images.url }}" data-zoom-image="{{ single_product.images.url }}" alt=""></div>
+                                            <img class="u-img-fluid" src="{{ single_product.images.url }}" style="width:450px;height:450px;" data-zoom-image="{{ single_product.images.url }}" alt=""></div>
                                     </div>
 
                                     <span class="pd-text">Click for larger zoom</span>
@@ -202,8 +202,8 @@
                                                 <div class="pd-table gl-scroll">
                                                     <table>
                                                         <tbody>
-                                                        {% if single_product.category == "House and Appartments" %}
-                                                        <tr>
+                                                        {% if single_product.category.slug == "House-and-Appartments" %}
+                                                            <tr>
                                                                 <td>Type</td>
                                                                 <td>{{ single_product.type }}</td>
                                                             </tr>
@@ -215,7 +215,6 @@
                                                                 <td>Bedrooms</td>
                                                                 <td>{{ single_product.bedroom }}</td>
                                                             </tr>
-                                                        {% else %}
                                                             <tr>
                                                                 <td>Bathrooms</td>
                                                                 <td>{{ single_product.bathroom }}</td>
@@ -227,6 +226,26 @@
                                                             <tr>
                                                                 <td>Capacity</td>
                                                                 <td>{{ single_product.capacity }}</td>
+                                                            </tr>
+                                                        {% else %}
+
+
+                                                             <tr>
+                                                                <td>Brand</td>
+                                                                <td>{{ single_product.brand }}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Km Driven</td>
+                                                                <td>{{ single_product.driven }}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>No of Owner</td>
+                                                                <td>{{ single_product.own }}</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>Fuel type</td>
+                                                                <td>{{ single_product.fuel }}</td>
                                                             </tr>
                                                         {% endif %}
 

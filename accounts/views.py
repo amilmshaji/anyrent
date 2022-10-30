@@ -20,8 +20,7 @@ from django.core.mail import send_mail
 # Create your views here.
 
 
-def Home(request):
-    return render(request,"index.html")
+
 
 
 

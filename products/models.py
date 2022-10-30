@@ -2,6 +2,8 @@
 from django.db import models
 from django.urls.base import reverse
 from django.db.models.signals import pre_save
+from django.utils.html import mark_safe
+
 
 from accounts.models import Account
 from anyrent_pjct.utils import unique_slug_generator
@@ -50,11 +52,17 @@ class House_Product(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
 
-    def get_url(self):
+    def get_url(self):    #function for product detail page
         return reverse('product_detail', args=[self.category.slug, self.slug])
 
     def __str__(self):
         return self.ad_title
+
+    @property
+    def thumbnail_preview(self):    #funtion to show image preview in admin panel side
+        if self.images:
+            return mark_safe('<img src="{}" width="100" height="100" />'.format(self.images.url))
+        return ""
 
 def slug_generator(sender,instance,*args,**kwargs):
     if not instance.slug:

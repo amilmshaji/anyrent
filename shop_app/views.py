@@ -71,32 +71,37 @@ def shop(request, category_slug=None):
 #         products=paginator.page(paginator.num_pages)
 #     return render(request,"shop.html",{'category':c_page,'products':products})
 
-#
-# def my_products(request, total=0, quantity=0, cart_item=None, cart_items=None):
-#     try:
-#         tax = 0
-#         grand_total = 0
-#         if request.user.is_authenticated:
-#             cart_items = CartItem.objects.filter(
-#                 user=request.user, is_active=True)
-#         else:
-#             cart = Cart.objects.get(cart_id=_cart_id(request))
-#             cart_items = CartItem.objects.filter(cart=cart, is_active=True)
-#
-#         for cart_item in cart_items:
-#             total += (cart_item.product.price*cart_item.quantity)
-#             quantity += cart_item.quantity
-#         tax = (2*total)/100
-#         grand_total = total+tax
-#     except ObjectDoesNotExist:
-#         pass
-#
-#     context = {
-#         'total': total,
-#         'quantity': quantity,
-#         'cart_items': cart_items,
-#         'tax': tax,
-#         'grand_total': grand_total
-#     }
-#
-#     return render(request, 'cart.html', context)
+
+def product_detail(request,  category_slug, product_slug):
+    try:
+        single_product = House_Product.objects.get(
+            category__slug=category_slug, slug=product_slug)
+        # in_cart = CartItem.objects.filter(cart__cart_id=_cart_id(
+        #     request), product=single_product).exists()
+        # return HttpResponse(in_cart)
+        # exit()
+    except Exception as e:
+        raise e
+    # if request.user.is_authenticated:
+    #
+    #     try:
+    #         orderproduct = OrderProduct.objects.filter(
+    #             user=request.user, product_id=single_product.id).exists()
+    #     except OrderProduct.DoesNotExist:
+    #         orderproduct = None
+    # else:
+    #     orderproduct = None
+
+    # reviews = ReviewRating.objects.filter(
+    #     product_id=single_product.id, status=True)
+    #
+    # product_gallery=Productgallery.objects.filter(product_id=single_product.id)
+
+    context = {
+        'single_product': single_product,
+        # 'in_cart': in_cart,
+        # 'orderproduct': orderproduct,
+        # 'reviews': reviews,
+        # 'product_gallery':product_gallery,
+    }
+    return render(request, 'product-detail.html', context)

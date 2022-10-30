@@ -102,5 +102,11 @@ def myproducts(request, category_slug=None):
     return render(request, 'dashboard/myproducts.html', context)
 
 def managemypd(request):
-    return render(request, 'dashboard/dash-edit-myproducts.html')
+    h_products = House_Product.objects.all().filter(user=request.user.id,)
+
+    context = {
+        'h_products': h_products,
+
+    }
+    return render(request, 'dashboard/dash-edit-myproducts.html', context)
 

@@ -9,8 +9,6 @@ from .models import Car_Product
 
 
 
-
-
 def Category(request):
 
     return render(request, 'category.html')
@@ -107,12 +105,10 @@ from .models import Other_Product
 
 
 @login_required(login_url='login')
-
 def add_other(request):
     current_user = request.user
     if request.method=="POST":
         type = request.POST.get('type')
-
         rent = request.POST.get('rent')
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')

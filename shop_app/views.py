@@ -23,12 +23,6 @@ def shop(request, category_slug=None):
         b_products = Bike_Product.objects.filter(category=categories, is_available=True)
         f_products = Furn_Product.objects.filter(category=categories, is_available=True)
         o_products = Other_Product.objects.filter(category=categories, is_available=True)
-
-
-        paginator = Paginator(products, 1)
-        page = request.GET.get('page')
-        paged_products = paginator.get_page(page)
-        product_count = products.count()
     else:
 
         h_products = House_Product.objects.all().filter(is_available=True).order_by('id')
@@ -37,20 +31,15 @@ def shop(request, category_slug=None):
         f_products = Furn_Product.objects.all().filter(is_available=True).order_by('id')
         o_products = Other_Product.objects.all().filter(is_available=True).order_by('id')
 
-
-        paginator = Paginator(h_products, 9)
-        page = request.GET.get('page')
-        paged_products = paginator.get_page(page)
-        product_count = h_products.count()
-
     context = {
         'h_products' : h_products,
         'c_products': c_products,
         'b_products': b_products,
         'f_products': f_products,
         'o_products': o_products,
+
+        'categories':categories,
         # 'h_products': paged_products,
-        'product_count': product_count,
     }
     return render(request, 'shop.html', context)
 

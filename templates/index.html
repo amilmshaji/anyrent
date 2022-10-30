@@ -128,46 +128,22 @@
                         <div class="section__content">
                             <div class="container">
                                 <div class="row">
+
+
+                                    {% for cat in links|slice:":4" %}
+
                                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30">
                                         <div class="category-o">
                                             <div class="aspect aspect--bg-grey aspect--square category-o__img-wrap">
 
-                                                <img class="aspect__img category-o__img" src="{% static 'images/product/category/cat_house2.jpg' %}" style="width:600 height:600;" alt=""></div>
+                                                <img class="aspect__img category-o__img" src="{{cat.cat_image.url}}" alt=""></div>
+
                                             <div class="category-o__info">
 
-                                                <a class="category-o__shop-now btn--e-white-brand" href="#">House & Apartments</a></div>
+                                                <a class="category-o__shop-now btn--e-white-brand" href="{{cat.get_url}}">{{cat.category_name}}</a></div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30">
-                                        <div class="category-o">
-                                            <div class="aspect aspect--bg-grey aspect--square category-o__img-wrap">
-
-                                                <img class="aspect__img category-o__img" src="{% static 'images/product/category/cat_car1.jpg' %}" style="width:600 height:600;" alt=""></div>
-                                            <div class="category-o__info">
-
-                                                <a class="category-o__shop-now btn--e-white-brand" href="#">Cars</a></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30">
-                                        <div class="category-o">
-                                            <div class="aspect aspect--bg-grey aspect--square category-o__img-wrap">
-
-                                                <img class="aspect__img category-o__img" src="{%static 'images/product/category/cat_bike1.jpg' %}" alt=""></div>
-                                            <div class="category-o__info">
-
-                                                <a class="category-o__shop-now btn--e-white-brand" href="#">Bikes</a></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30">
-                                        <div class="category-o">
-                                            <div class="aspect aspect--bg-grey aspect--square category-o__img-wrap">
-
-                                                <img class="aspect__img category-o__img" src="{%static 'images/product/category/cat_furn.jpg' %}" alt=""></div>
-                                            <div class="category-o__info">
-
-                                                <a class="category-o__shop-now btn--e-white-brand" href="#">Furniture</a></div>
-                                        </div>
-                                    </div>
+                                    {% endfor %}
 
                                 </div>
                             </div>

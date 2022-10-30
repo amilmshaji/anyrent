@@ -184,7 +184,7 @@ pre_save.connect(slug_generator,sender=Other_Product)
 
 
 class All_Products(models.Model):
-    # user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
     house = models.ForeignKey(House_Product, on_delete=models.CASCADE)
     # variations = models.ManyToManyField(Variation, blank=True)
     car = models.ForeignKey(Car_Product, on_delete=models.CASCADE, null=True)
@@ -192,9 +192,9 @@ class All_Products(models.Model):
     # color = models.ForeignKey(Color,on_delete=models.CASCADE)
     # price = models.PositiveIntegerField(default=0)
     # image = models.ImageField(upload_to="product_imgs/",null=True)
-    #
-    # quantity = models.IntegerField()
-    # proudct_id = models.CharField(max_length=250, blank=True)
+
+    quantity = models.IntegerField()
+    proudct_id = models.CharField(max_length=250, blank=True)
     date_added = models.DateField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
 #

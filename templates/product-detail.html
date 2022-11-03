@@ -126,7 +126,7 @@
                                             </div>
                                             <div class="u-s-m-b-15">
 
-                                                <button class="btn btn--e-brand-b-2" type="submit">RENT IT</button></div>
+                                                <button class="btn btn--e-brand-b-2" type="submit">REQUEST TO CHAT</button></div>
                                         </div>
                                     </form>
                                 </div>
@@ -166,11 +166,11 @@
 <!--                                        <li class="nav-item">-->
 
 <!--                                            <a class="nav-link" data-toggle="tab" href="#pd-tag">TAGS</a></li>-->
-                                        <li class="nav-item">
+<!--                                        <li class="nav-item">-->
 
-                                            <a class="nav-link" id="view-review" data-toggle="tab" href="#pd-rev">REVIEWS
+<!--                                            <a class="nav-link" id="view-review" data-toggle="tab" href="#pd-rev">REVIEWS-->
 
-                                                <span>(23)</span></a></li>
+<!--                                                <span>(23)</span></a></li>-->
                                     </ul>
                                 </div>
                                 <div class="tab-content">
@@ -227,8 +227,7 @@
                                                                 <td>Capacity</td>
                                                                 <td>{{ single_product.capacity }}</td>
                                                             </tr>
-                                                        {% else %}
-
+                                                            {% elif single_product.category.slug == "Cars" %}
 
                                                              <tr>
                                                                 <td>Brand</td>
@@ -247,6 +246,32 @@
                                                                 <td>Fuel type</td>
                                                                 <td>{{ single_product.fuel }}</td>
                                                             </tr>
+
+                                                        {% elif single_product.category.slug == "Bikes" %}
+
+                                                             <tr>
+                                                                <td>Brand</td>
+                                                                <td>{{ single_product.brand }}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Km Driven</td>
+                                                                <td>{{ single_product.driven }}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>No of Owner</td>
+                                                                <td>{{ single_product.own }}</td>
+                                                            </tr>
+
+
+                                                        {% elif single_product.category.slug == "Furniture" %}
+
+                                                             <tr>
+                                                                <td>Type</td>
+                                                                <td>{{ single_product.type }}</td>
+                                                            </tr>
+
+
+
                                                         {% endif %}
 
 

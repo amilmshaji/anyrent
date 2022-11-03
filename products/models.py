@@ -122,8 +122,8 @@ class Bike_Product(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
 
-    # def get_url(self):
-    #     return reverse('product_detail', args=[self.category.slug, self.slug])
+    def get_url(self):
+        return reverse('product_detail', args=[self.category.slug, self.slug])
 
     def __str__(self):
         return self.ad_title
@@ -150,8 +150,8 @@ class Furn_Product(models.Model):      #Furniture table product adding table
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
 
-    # def get_url(self):
-    #     return reverse('product_detail', args=[self.category.slug, self.slug])
+    def get_url(self):
+        return reverse('product_detail', args=[self.category.slug, self.slug])
 
     def __str__(self):
         return self.ad_title
@@ -179,8 +179,8 @@ class Other_Product(models.Model):                #Other table product adding ta
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
 
-    # def get_url(self):
-    #     return reverse('product_detail', args=[self.category.slug, self.slug])
+    def get_url(self):
+        return reverse('product_detail', args=[self.category.slug, self.slug])
 
     def __str__(self):
         return self.ad_title

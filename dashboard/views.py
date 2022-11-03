@@ -89,7 +89,6 @@ def myproducts(request, category_slug=None):
 
 
 
-
     context = {
         'h_products' : h_products,
         'c_products': c_products,

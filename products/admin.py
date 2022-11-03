@@ -1,5 +1,5 @@
 from django.contrib import admin
-import admin_thumbnails
+# import admin_thumbnails
 
 
 # Register your models here.

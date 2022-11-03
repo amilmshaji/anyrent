@@ -48,12 +48,18 @@ def shop(request, category_slug=None):
 def product_detail(request,  category_slug, product_slug):
     if category_slug == "House-and-Appartments":
         single_product = House_Product.objects.get(category__slug=category_slug, slug=product_slug)
-        print(single_product.category)
 
-    else:
+    elif category_slug == "Cars":
         single_product = Car_Product.objects.get(category__slug=category_slug, slug=product_slug)
-        print(single_product.category)
 
+    elif category_slug =="Bikes":
+        single_product = Bike_Product.objects.get(category__slug=category_slug, slug=product_slug)
+
+    elif category_slug =="Furniture":
+        single_product = Furn_Product.objects.get(category__slug=category_slug, slug=product_slug)
+
+    elif category_slug =="Others":
+        single_product = Other_Product.objects.get(category__slug=category_slug, slug=product_slug)
 
 
 

@@ -32,17 +32,17 @@ class Category(models.Model):
 class House_Product(models.Model):
     user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
 
-    ad_title = models.CharField(max_length=200, unique=True)
+    ad_title = models.CharField(max_length=200, unique=True,editable=False)
     slug = models.SlugField(max_length=200, unique=True,editable=False)
-    add_info = models.TextField(max_length=500, blank=True)
-    rent = models.IntegerField()
-    bedroom = models.IntegerField()
-    bathroom = models.IntegerField()
-    builtup= models.IntegerField()
-    capacity= models.IntegerField()
-    type = models.CharField(max_length=200,blank=True)
-    furnish = models.CharField(max_length=200,blank=True)
-    images = models.ImageField(upload_to='photos/house')
+    add_info = models.TextField(max_length=500, blank=True,editable=False)
+    rent = models.IntegerField(editable=False)
+    bedroom = models.IntegerField(editable=False)
+    bathroom = models.IntegerField(editable=False)
+    builtup= models.IntegerField(editable=False)
+    capacity= models.IntegerField(editable=False)
+    type = models.CharField(max_length=200,blank=True,editable=False)
+    furnish = models.CharField(max_length=200,blank=True,editable=False)
+    images = models.ImageField(upload_to='photos/house',editable=False)
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
 
@@ -68,8 +68,6 @@ def slug_generator(sender,instance,*args,**kwargs):
     if not instance.slug:
         instance.slug=unique_slug_generator(instance)
 pre_save.connect(slug_generator,sender=House_Product)
-
-
 
 
 

@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'products',
     'dashboard',
     'jazzmin',
-    'wishlist',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

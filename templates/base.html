@@ -221,41 +221,16 @@
                                             <div class="mega-menu-wrap">
                                                 <div class="mega-menu-list">
                                                     <ul>
+                                                         {% for cat in links %}
+
                                                         <li class="js-active">
 
-                                                            <a href="#"><i class="fas fa-tv u-s-m-r-6"></i>
+                                                            <a href="{{cat.get_url}}"><i class="fas fa-tv u-s-m-r-6"></i>
 
-                                                                <span>House and Apartment</span></a>
+                                                                <span>{{cat.category_name}}</span></a>
 
                                                             <span class="js-menu-toggle js-toggle-mark"></span></li>
-                                                        <li>
-
-                                                            <a href="#"><i class="fas fa-female u-s-m-r-6"></i>
-
-                                                                <span>Cars</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="#"><i class="fas fa-male u-s-m-r-6"></i>
-
-                                                                <span>Bikes</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="#"><i class="fas fa-utensils u-s-m-r-6"></i>
-
-                                                                <span>Furniture</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="#"><i class="fas fa-couch u-s-m-r-6"></i>
-
-                                                                <span>Other</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
+                                                        {% endfor %}
 
                                                     </ul>
                                                 </div>

@@ -72,19 +72,19 @@ pre_save.connect(slug_generator,sender=House_Product)
 
 
 class Car_Product(models.Model):
-    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
     ad_title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True,editable=False)
-    add_info = models.TextField(max_length=500, blank=True)
-    rent = models.IntegerField()
-    brand = models.CharField(max_length=200,blank=True)
-    driven = models.IntegerField()
-    own = models.CharField(max_length=200,blank=True)
-    fuel = models.CharField(max_length=200,blank=True)
-    images = models.ImageField(upload_to='photos/house')
+    slug = models.SlugField(max_length=200, unique=True,editable=False )
+    add_info = models.TextField(max_length=500, blank=True,editable=False )
+    rent = models.IntegerField(editable=False)
+    brand = models.CharField(max_length=200,blank=True,editable=False)
+    driven = models.IntegerField(editable=False )
+    own = models.CharField(max_length=200,blank=True,editable=False)
+    fuel = models.CharField(max_length=200,blank=True,editable=False)
+    images = models.ImageField(upload_to='photos/house',editable=False )
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=2)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=2,editable=False )
 
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
@@ -105,15 +105,15 @@ class Bike_Product(models.Model):
     user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
     ad_title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True,editable=False)
-    add_info = models.TextField(max_length=500, blank=True)
-    rent = models.IntegerField()
-    brand = models.CharField(max_length=200,blank=True)
-    driven = models.IntegerField()
-    own = models.CharField(max_length=200,blank=True)
-    images = models.ImageField(upload_to='photos/house')
+    add_info = models.TextField(max_length=500, blank=True,editable=False)
+    rent = models.IntegerField(editable=False)
+    brand = models.CharField(max_length=200,blank=True,editable=False)
+    driven = models.IntegerField(editable=False)
+    own = models.CharField(max_length=200,blank=True,editable=False)
+    images = models.ImageField(upload_to='photos/house',editable=False)
 
 
-    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=3)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=3,editable=False)
 
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
@@ -133,18 +133,18 @@ pre_save.connect(slug_generator,sender=Bike_Product)
 
 
 class Furn_Product(models.Model):      #Furniture table product adding table
-    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
-    ad_title = models.CharField(max_length=200, unique=True)
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
+    ad_title = models.CharField(max_length=200, unique=True,editable=False)
     slug = models.SlugField(max_length=200, unique=True,editable=False)
-    add_info = models.TextField(max_length=500, blank=True)
-    rent = models.IntegerField()
-    images = models.ImageField(upload_to='photos/house')
+    add_info = models.TextField(max_length=500, blank=True,editable=False)
+    rent = models.IntegerField(editable=False)
+    images = models.ImageField(upload_to='photos/house',editable=False)
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
-    type = models.CharField(max_length=200,blank=True)
+    type = models.CharField(max_length=200,blank=True,editable=False)
 
 
-    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=4)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=4,editable=False)
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
 
@@ -162,17 +162,17 @@ pre_save.connect(slug_generator,sender=Furn_Product)
 
 
 class Other_Product(models.Model):                #Other table product adding table
-    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
-    ad_title = models.CharField(max_length=200, unique=True)
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
+    ad_title = models.CharField(max_length=200, unique=True, editable=False)
     slug = models.SlugField(max_length=200, unique=True,editable=False)
-    add_info = models.TextField(max_length=500, blank=True)
-    rent = models.IntegerField()
-    images = models.ImageField(upload_to='photos/house')
+    add_info = models.TextField(max_length=500, blank=True,editable=False)
+    rent = models.IntegerField(editable=False)
+    images = models.ImageField(upload_to='photos/house',editable=False)
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
-    type = models.CharField(max_length=200,blank=True)
+    type = models.CharField(max_length=200,blank=True,editable=False)
 
-    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=5)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=5,editable=False)
 
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
@@ -189,26 +189,6 @@ def slug_generator(sender,instance,*args,**kwargs):   #To make slug in the table
 pre_save.connect(slug_generator,sender=Other_Product)
 
 
-class All_Products(models.Model):
-    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
-    house = models.ForeignKey(House_Product, on_delete=models.CASCADE)
-    # variations = models.ManyToManyField(Variation, blank=True)
-    car = models.ForeignKey(Car_Product, on_delete=models.CASCADE, null=True)
-    # product = models.ForeignKey(product, on_delete=models.CASCADE)
-    # color = models.ForeignKey(Color,on_delete=models.CASCADE)
-    # price = models.PositiveIntegerField(default=0)
-    # image = models.ImageField(upload_to="product_imgs/",null=True)
-
-    quantity = models.IntegerField()
-    proudct_id = models.CharField(max_length=250, blank=True)
-    date_added = models.DateField(auto_now_add=True)
-    is_active = models.BooleanField(default=True)
-#
-    # def sub_total(self):
-    #     return self.product.price*self.quantity
-    #
-    # def __unicode__(self):
-    #     return self.product
 
 
 

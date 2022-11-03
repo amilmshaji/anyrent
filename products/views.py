@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.paginator import Paginator
@@ -31,7 +32,7 @@ def add_house(request):
         house=House_Product(user=current_user,type=type,furnish=furnish,bedroom=bedroom,bathroom=bathroom,
                             builtup=builtup,capacity=capacity,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
         house.save()
-        return redirect('/')
+        return redirect('shop')
     return render(request, 'add_house.html')
 
 
@@ -53,7 +54,9 @@ def add_car(request):
         car=Car_Product(user=current_user,brand=brand,fuel=fuel,driven=driven,own=own,
                             rent=rent,ad_title=ad_title,add_info=add_info,images=images)
         car.save()
-        return redirect('/')
+        messages.success(request, 'Your product is kept for rent!')
+
+        return redirect('shop')
     return render(request, 'add_car.html')
 
 
@@ -78,7 +81,7 @@ def add_bike(request):
         bike=Bike_Product(user=current_user,brand=brand,driven=driven,own=own,
                             rent=rent,ad_title=ad_title,add_info=add_info,images=images)
         bike.save()
-        return redirect('/')
+        return redirect('shop')
     return render(request, 'add_bike.html')
 
 from .models import Furn_Product
@@ -97,7 +100,7 @@ def add_furn(request):
         images=request.FILES['images']
         furniture=Furn_Product(user=current_user,type=type,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
         furniture.save()
-        return redirect('/')
+        return redirect('shop')
     return render(request, 'add_furn.html')
 
 
@@ -118,11 +121,3 @@ def add_other(request):
         return redirect('/')
     return render(request, 'add_other.html')
 
-# def all_products(request):
-#     if request.user.is_authenticated:
-#         allproducts = All_Products.objects.all().filter(user=request.user).order_by('id')
-#     context = {
-#         'allproducts': allproducts
-#
-#     }
-#     return render(request, 'myproducts.html', context)

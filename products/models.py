@@ -28,9 +28,16 @@ class Category(models.Model):
         return self.category_name  #shows the name
 
 
+    @property
+    def thumbnail_preview5(self):    #funtion to show image preview in admin panel side
+        if self.cat_image:
+            return mark_safe('<img src="{}" width="100" height="100" />'.format(self.cat_image.url))
+        return ""
+
+
 #house product table
 class House_Product(models.Model):
-    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
 
     ad_title = models.CharField(max_length=200, unique=True,editable=False)
     slug = models.SlugField(max_length=200, unique=True,editable=False)
@@ -46,7 +53,7 @@ class House_Product(models.Model):
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
 
-    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=1)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=1,editable=False)
 
 
     created_date = models.DateTimeField(auto_now_add=True)
@@ -95,6 +102,13 @@ class Car_Product(models.Model):
     def __str__(self):
         return self.ad_title
 
+
+    @property
+    def thumbnail_preview1(self):    #funtion to show image preview in admin panel side
+        if self.images:
+            return mark_safe('<img src="{}" width="100" height="100" />'.format(self.images.url))
+        return ""
+
 def slug_generator(sender,instance,*args,**kwargs):
     if not instance.slug:
         instance.slug=unique_slug_generator(instance)
@@ -102,7 +116,7 @@ pre_save.connect(slug_generator,sender=Car_Product)
 
 
 class Bike_Product(models.Model):
-    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
     ad_title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True,editable=False)
     add_info = models.TextField(max_length=500, blank=True,editable=False)
@@ -125,6 +139,13 @@ class Bike_Product(models.Model):
 
     def __str__(self):
         return self.ad_title
+
+    @property
+    def thumbnail_preview2(self):    #funtion to show image preview in admin panel side
+        if self.images:
+            return mark_safe('<img src="{}" width="100" height="100" />'.format(self.images.url))
+        return ""
+
 
 def slug_generator(sender,instance,*args,**kwargs):
     if not instance.slug:
@@ -154,6 +175,12 @@ class Furn_Product(models.Model):      #Furniture table product adding table
     def __str__(self):
         return self.ad_title
 
+    @property
+    def thumbnail_preview3(self):    #funtion to show image preview in admin panel side
+        if self.images:
+            return mark_safe('<img src="{}" width="100" height="100" />'.format(self.images.url))
+        return ""
+
 def slug_generator(sender,instance,*args,**kwargs):   #To make slug in the table when vendor add products
     if not instance.slug:
         instance.slug=unique_slug_generator(instance)
@@ -182,6 +209,12 @@ class Other_Product(models.Model):                #Other table product adding ta
 
     def __str__(self):
         return self.ad_title
+
+    @property
+    def thumbnail_preview4(self):    #funtion to show image preview in admin panel side
+        if self.images:
+            return mark_safe('<img src="{}" width="100" height="100" />'.format(self.images.url))
+        return ""
 
 def slug_generator(sender,instance,*args,**kwargs):   #To make slug in the table when vendor add products
     if not instance.slug:

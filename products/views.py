@@ -32,6 +32,8 @@ def add_house(request):
         house=House_Product(user=current_user,type=type,furnish=furnish,bedroom=bedroom,bathroom=bathroom,
                             builtup=builtup,capacity=capacity,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
         house.save()
+        messages.success(request, 'Your product is kept for rent!')
+
         return redirect('shop')
     return render(request, 'add_house.html')
 
@@ -81,6 +83,8 @@ def add_bike(request):
         bike=Bike_Product(user=current_user,brand=brand,driven=driven,own=own,
                             rent=rent,ad_title=ad_title,add_info=add_info,images=images)
         bike.save()
+        messages.success(request, 'Your product is kept for rent!')
+
         return redirect('shop')
     return render(request, 'add_bike.html')
 
@@ -100,6 +104,8 @@ def add_furn(request):
         images=request.FILES['images']
         furniture=Furn_Product(user=current_user,type=type,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
         furniture.save()
+        messages.success(request, 'Your product is kept for rent!')
+
         return redirect('shop')
     return render(request, 'add_furn.html')
 
@@ -118,6 +124,8 @@ def add_other(request):
         images=request.FILES['images']
         other=Other_Product(user=current_user,type=type,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
         other.save()
+        messages.success(request, 'Your product is kept for rent!')
+
         return redirect('/')
     return render(request, 'add_other.html')
 

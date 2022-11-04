@@ -23,7 +23,7 @@ def dashboard(request):
     }
     return render(request, 'dashboard/dash-my-profile.html', context)
 
-
+@login_required(login_url='login')
 def editprofile(request):
     # orders = Order.objects.order_by(
     #     '-created_at').filter(user_id=request.user.id, is_ordered=True)
@@ -77,15 +77,15 @@ def changePassword(request):
 
 
 
-
+@login_required(login_url='login')
 def myproducts(request, category_slug=None):
 
     # if request.user.is_authenticated:
-    c_products = Car_Product.objects.all().filter(is_available=True,user=request.user.id)
-    h_products = House_Product.objects.all().filter(is_available=True,user=request.user.id)
-    b_products = Bike_Product.objects.all().filter(is_available=True, user=request.user.id)
-    f_products = Furn_Product.objects.all().filter(is_available=True, user=request.user.id)
-    o_products = Other_Product.objects.all().filter(is_available=True, user=request.user.id)
+    c_products = Car_Product.objects.all().filter(user=request.user.id)
+    h_products = House_Product.objects.all().filter(user=request.user.id)
+    b_products = Bike_Product.objects.all().filter(user=request.user.id)
+    f_products = Furn_Product.objects.all().filter(user=request.user.id)
+    o_products = Other_Product.objects.all().filter(user=request.user.id)
 
 
 

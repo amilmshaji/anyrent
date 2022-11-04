@@ -16,10 +16,10 @@
                                 <ul class="breadcrumb__list">
                                     <li class="has-separator">
 
-                                        <a href="index.html">Home</a></li>
+                                        <a href="{% url 'home' %}">Home</a></li>
                                     <li class="is-marked">
 
-                                        <a href="dash-my-order.html">My Account</a></li>
+                                        <a href="#">My Account</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                                 <div class="col-lg-9 col-md-12">
                                     <div class="dash__box dash__box--shadow dash__box--radius dash__box--bg-white u-s-m-b-30">
                                         <div class="dash__pad-2">
-                                            <h1 class="dash__h1 u-s-m-b-14">My Orders</h1>
+                                            <h1 class="dash__h1 u-s-m-b-14">My Products</h1>
 
                                             <span class="dash__text u-s-m-b-30">Here you can see all products that have been Kept for rent.</span>
 <!--                                            <form class="m-order u-s-m-b-30">-->
@@ -75,7 +75,8 @@
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
 
-                                                                    <a href="{% url 'managemypd' %}">MANAGE</a></div>
+<!--                                                                    <a href="{% url 'managemypd' %}">MANAGE</a>-->
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -119,7 +120,8 @@
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
 
-                                                                    <a href="{% url 'managemypd' %}">MANAGE</a></div>
+<!--                                                                    <a href="{% url 'managemypd' %}">MANAGE</a>-->
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -163,7 +165,8 @@
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
 
-                                                                    <a href="{% url 'managemypd' %}">MANAGE</a></div>
+<!--                                                                    <a href="{% url 'managemypd' %}">MANAGE</a>-->
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -185,9 +188,9 @@
                                                                     <span class="manage-o__text-2 u-c-secondary">{{b_product.brand}}</span></span></div>
                                                             <div>
 
-                                                                <span class="manage-o__text-2 u-c-silver">Fuel:
+                                                                <span class="manage-o__text-2 u-c-silver">KM Driven:
 
-                                                                    <span class="manage-o__text-2 u-c-secondary">{{b_product.fuel}}</span></span></div>
+                                                                    <span class="manage-o__text-2 u-c-secondary">{{b_product.driven}}</span></span></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -208,7 +211,8 @@
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
 
-                                                                    <a href="{% url 'managemypd' %}">MANAGE</a></div>
+<!--                                                                    <a href="{% url 'managemypd' %}">MANAGE</a>-->
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -223,17 +227,19 @@
                                                             <div>
 
                                                                 <span class="manage-o__badge badge--processing">{{f_product.rent}}/month</span></div>
+                                                            <div>
+
+                                                                <span class="manage-o__text-2 u-c-silver">Type:
+
+                                                                    <span class="manage-o__text-2 u-c-secondary">{{f_product.type}}</span></span>
+                                                            </div>
 <!--                                                            <div>-->
-
-<!--                                                                <span class="manage-o__text-2 u-c-silver">Brand:-->
-
-<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{f_product.brand}}</span></span></div>-->
-<!--&lt;!&ndash;                                                            <div>&ndash;&gt;-->
 
 <!--                                                                <span class="manage-o__text-2 u-c-silver">Fuel:-->
 
-<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{b_product.fuel}}</span></span></div>-->
-<!--                                                        </div>-->
+<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{b_product.fuel}}</span></span>-->
+<!--                                                            </div>-->
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 {% endfor %}
@@ -252,7 +258,8 @@
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
 
-                                                                    <a href="{% url 'managemypd' %}">MANAGE</a></div>
+<!--                                                                    <a href="{% url 'managemypd' %}">MANAGE</a>-->
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>

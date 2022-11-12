@@ -29,8 +29,12 @@ def add_house(request):
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')
         images=request.FILES['images']
+        state = request.POST.get('state')
+        place = request.POST.get('place')
+        street = request.POST.get('street')
         house=House_Product(user=current_user,type=type,furnish=furnish,bedroom=bedroom,bathroom=bathroom,
-                            builtup=builtup,capacity=capacity,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
+                            builtup=builtup,capacity=capacity,rent=rent,ad_title=ad_title,add_info=add_info,images=images,
+                            state=state,place=place,street=street)
         house.save()
         messages.success(request, 'Your product is kept for rent!')
 

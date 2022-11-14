@@ -37,6 +37,7 @@ class Category(models.Model):
 
 #house product table
 class House_Product(models.Model):
+    id = models.AutoField(primary_key=True)
     user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
 
     ad_title = models.CharField(max_length=200, unique=True,editable=False)

@@ -2,7 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="updated">
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0002_alter_account_email_alter_account_fname_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/accounts_account.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/accounts_account_groups.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/accounts_account_user_permissions.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/anyrent.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/auth_group.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/auth_group_permissions.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/auth_permission.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/db.sqlite3.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/django_admin_log.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/django_content_type.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/django_migrations.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/django_session.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/products_bike_product.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/products_car_product.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/products_category.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/products_furn_product.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/products_house_product.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/products_other_product.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataas/sqlite_sequence.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/categories/RENT-banner_drEHNUa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/categories/b2_Xr8wgyV.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/categories/cat_bike1_UnBwGoZ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/categories/cat_car1_vwVhZkc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/categories/cat_house2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/categories/f2_199q4WA.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/categories/house_DtnRkQ0.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/categories/image_Pt5tHFs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/categories/other.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/categories/s_POPdtaM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/b2_lSZgXQE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/b2_o59Q6UK.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/b2_sZAse6S.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/cot_FfHe2S1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/cot_UngOi5W.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h1_A1EnOve.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h1_GX1VXXg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h5_wPhIXfI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/hundai_wB1qG2M.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/image_HDXUgar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/image_Kp4K8xo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0003_remove_house_product_is_featured_house_product_city_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0004_bike_product_city_bike_product_location_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productsonly.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03-11-2022_15_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03-11-2022_15_57__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03-11-2022_15_58__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03-11-2022_15_58__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03-11-2022_15_58__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03-11-2022_15_58__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03-11-2022_15_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03-11-2022_15_59__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12-11-2022_21_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12-11-2022_21_27__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12-11-2022_21_28__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12-11-2022_21_28__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-10-2022_11_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-10-2022_11_55__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_bike.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_bike.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_car.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_furn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_furn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_house.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_house.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/add_other.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_other.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product-detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +105,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

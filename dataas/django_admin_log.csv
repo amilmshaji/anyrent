@@ -1,0 +1,16 @@
+id,object_id,object_repr,action_flag,change_message,content_type_id,user_id,action_time
+1,1,House and Appartments,1,"[{""added"": {}}]",2,1,2022-11-03 15:23:29.257604
+2,2,Car,1,"[{""added"": {}}]",2,1,2022-11-03 15:24:47.224863
+3,3,Bikes,1,"[{""added"": {}}]",2,1,2022-11-03 15:25:36.729544
+4,4,Furniture,1,"[{""added"": {}}]",2,1,2022-11-03 15:26:08.303560
+5,5,Other,1,"[{""added"": {}}]",2,1,2022-11-03 15:26:28.739162
+6,2,aysha@gmail.com,2,"[{""changed"": {""fields"": [""Is active""]}}]",1,1,2022-11-03 16:12:19.900317
+7,1,Furnished House for Rent in Kannur city,3,,4,1,2022-11-03 16:29:50.689128
+8,1,House and Appartments,2,"[{""changed"": {""fields"": [""Cat image""]}}]",2,1,2022-11-03 16:55:42.204133
+9,2,Car,2,"[{""changed"": {""fields"": [""Cat image""]}}]",2,1,2022-11-03 16:55:58.728949
+10,3,Bikes,2,"[{""changed"": {""fields"": [""Cat image""]}}]",2,1,2022-11-03 16:56:09.296317
+11,4,Furniture,2,"[{""changed"": {""fields"": [""Cat image""]}}]",2,1,2022-11-03 16:56:22.178892
+12,3,1BHK house for Rent in Balamrai,2,"[{""changed"": {""fields"": [""Is available""]}}]",4,1,2022-11-04 02:59:35.863648
+13,3,1BHK house for Rent in Balamrai,2,"[{""changed"": {""fields"": [""Is available""]}}]",4,1,2022-11-04 02:59:57.275213
+14,2,Cars,2,"[{""changed"": {""fields"": [""Category name"", ""Slug"", ""Description""]}}]",2,1,2022-11-04 05:04:22.798171
+15,3,Good Condition,2,"[{""changed"": {""fields"": [""Is available""]}}]",7,1,2022-11-04 06:21:05.330803

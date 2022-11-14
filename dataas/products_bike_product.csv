@@ -1,0 +1,4 @@
+id,ad_title,slug,add_info,rent,brand,driven,own,images,is_available,is_featured,created_date,modified_date,category_id,user_id
+1,CLASSIC 350,classic-350,good condition vehicle,9000,Royal Enfield,45000,2,photos/house/b1_amTOoEg.jpg,1,0,2022-11-03 16:46:09.343246,2022-11-03 16:46:09.343246,3,2
+2,XPULSE 200 (2021) (ABS),xpulse-200-2021-abs,First Owner-1 Showroom Condition  No Scratches  2 keys 5 years insurance valid  Next To New CONDITION  Single Handed Used  Loan Facility Available  Credit card Facility Also Available,15000,Hero,7000,1,photos/house/b2_IdJ5aht.jpg,1,0,2022-11-03 16:47:29.955989,2022-11-03 16:47:29.955989,3,2
+3,Good Condition,good-condition,bike,600,Hero,45876,1,photos/house/b2_cK1b1Xc.jpg,0,0,2022-11-04 06:19:38.224829,2022-11-04 06:21:05.122955,3,3

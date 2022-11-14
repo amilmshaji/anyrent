@@ -1,0 +1,25 @@
+id,app,name,applied
+1,contenttypes,0001_initial,2022-11-03 14:37:02.170939
+2,contenttypes,0002_remove_content_type_name,2022-11-03 14:37:02.263868
+3,auth,0001_initial,2022-11-03 14:37:02.462197
+4,auth,0002_alter_permission_name_max_length,2022-11-03 14:37:02.560356
+5,auth,0003_alter_user_email_max_length,2022-11-03 14:37:02.650921
+6,auth,0004_alter_user_username_opts,2022-11-03 14:37:02.732122
+7,auth,0005_alter_user_last_login_null,2022-11-03 14:37:02.820096
+8,auth,0006_require_contenttypes_0002,2022-11-03 14:37:02.900264
+9,auth,0007_alter_validators_add_error_messages,2022-11-03 14:37:02.990050
+10,auth,0008_alter_user_username_max_length,2022-11-03 14:37:03.070764
+11,auth,0009_alter_user_last_name_max_length,2022-11-03 14:37:03.163907
+12,auth,0010_alter_group_name_max_length,2022-11-03 14:37:03.261297
+13,auth,0011_update_proxy_permissions,2022-11-03 14:37:03.350075
+14,auth,0012_alter_user_first_name_max_length,2022-11-03 14:37:03.434115
+15,accounts,0001_initial,2022-11-03 14:37:03.734210
+16,admin,0001_initial,2022-11-03 14:37:03.991917
+17,admin,0002_logentry_remove_auto_add,2022-11-03 14:37:04.091860
+18,admin,0003_logentry_add_action_flag_choices,2022-11-03 14:37:04.272815
+19,products,0001_initial,2022-11-03 14:37:04.588838
+20,sessions,0001_initial,2022-11-03 14:37:04.757676
+21,accounts,0002_alter_account_email_alter_account_fname_and_more,2022-11-03 15:15:44.842180
+22,products,0002_alter_bike_product_add_info_alter_bike_product_brand_and_more,2022-11-03 15:15:45.433025
+23,products,0003_alter_house_product_category_and_more,2022-11-03 17:28:53.135879
+24,products,0004_alter_bike_product_user,2022-11-03 17:34:56.057026

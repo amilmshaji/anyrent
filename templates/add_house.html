@@ -334,12 +334,35 @@
 
                                                         </div>
                                                          <div class="gl-inline">
+                                                              <div class="u-s-m-b-30">
+
+                                                                <label class="gl-label" for="ad_title">Location/street of the product*</label>
+
+                                                                <input class="input-text input-text--primary-style" type="text" name="location" id="street" placeholder="Location/street" onblur="return validate()" onKeyUp="return validate()">
+                                                            <span id="st" style="color: red;"></span>
+                                                            </div>
+                                                             <div class="u-s-m-b-30">
+
+                                                                     <label class="gl-label" for="type">District/City*</label>
+                                                                    <input class="input-text input-text--primary-style" type="text" id="place" name="city" placeholder="District/City" onblur="return validate()" onKeyUp="return validate()">
+
+                                                </select><span id="pl" style="color: red;"></span>
+
+
+
+                                                            </div>
+
+
+
+                                                        </div>
+
+                                                        <div class="gl-inline">
                                                             <div class="u-s-m-b-30">
 
                                                                      <label class="gl-label" for="type">State *</label>
-                                                                 <select class="select-box select-box--primary-style" name="furnish" id="state" data-bill="" onblur="return validate()" onKeyUp="return validate()">
-                                                    <option selected value="">Choose the Type</option>
-                                                    <option value="Furnished">Andhra Pradesh</option>
+                                                                 <select class="select-box select-box--primary-style" name="state" id="state" data-bill="" onblur="return validate()" onKeyUp="return validate()">
+                                                    <option selected value="">Enter the state</option>
+                                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
                                                     <option value="Semi-Furnished">Arunachal Pradesh</option>
                                                     <option value="Unfurnished">Assam</option>
                                                     <option value="Furnished">Bihar</option>
@@ -351,7 +374,7 @@
                                                     <option value="Furnished">Jammu and Kashmir</option>
                                                     <option value="Semi-Furnished">Jharkhand</option>
                                                     <option value="Unfurnished">Karnataka</option>
-                                                                    <option value="Unfurnished">Kerala</option>
+                                                                    <option value="Kerala">Kerala</option>
                                                     <option value="Furnished">Madhya Pradesh</option>
                                                     <option value="Semi-Furnished">Maharashtra</option>
                                                     <option value="Unfurnished">Manipur</option>
@@ -376,35 +399,14 @@
 
 
                                                             </div>
-                                                             <div class="u-s-m-b-30">
-
-                                                                     <label class="gl-label" for="type">Place*</label>
-                                                                    <input class="input-text input-text--primary-style" type="text" id="place" name="builtup" placeholder="Enter Place" onblur="return validate()" onKeyUp="return validate()">
-
-                                                </select><span id="pl" style="color: red;"></span>
 
 
-
-                                                            </div>
-
-
-
-                                                        </div>
-
-                                                        <div class="gl-inline">
 
                                                             <div class="u-s-m-b-30">
 
-                                                                <label class="gl-label" for="ad_title">Street*</label>
+                                                                <label class="gl-label" for="ad_title">Ad title *</label>
 
-                                                                <input class="input-text input-text--primary-style" type="text" name="ad_title" id="street" placeholder="Key features of your item" onblur="return validate()" onKeyUp="return validate()">
-                                                            <span id="st" style="color: red;"></span>
-                                                            </div>
-                                                            <div class="u-s-m-b-30">
-
-                                                                <label class="gl-label" for="add_info">Ad title *</label>
-
-                                                                <input class="input-text input-text--primary-style" type="text" id="add_info" name="add_info" placeholder="Include conditon,features and reason for selling" onblur="return validate()" onKeyUp="return validate()" >
+                                                                <input class="input-text input-text--primary-style" type="text" id="ad_title" name="ad_title" placeholder="Include conditon,features and reason for selling" onblur="return validate()" onKeyUp="return validate()" >
                                                             <span id="ai" style="color: red;"></span>
                                                             </div>
                                                         </div>
@@ -417,9 +419,9 @@
 
                                                             <div class="u-s-m-b-30">
 
-                                                                <label class="gl-label" for="ad_title">Additional Information*</label>
+                                                                <label class="gl-label" for="add_info">Additional Information*</label>
 
-                                                                <input class="input-text input-text--primary-style" type="text" name="ad_title" id="ad_title" placeholder="Key features of your item" onblur="return validate()" onKeyUp="return validate()">
+                                                                <input class="input-text input-text--primary-style" type="text" name="add_info" id="add_info" placeholder="Key features of your item" onblur="return validate()" onKeyUp="return validate()">
                                                             <span id="at" style="color: red;"></span>
                                                             </div>
 

@@ -30,11 +30,10 @@ def add_house(request):
         add_info = request.POST.get('add_info')
         images=request.FILES['images']
         state = request.POST.get('state')
-        place = request.POST.get('place')
-        street = request.POST.get('street')
-        house=House_Product(user=current_user,type=type,furnish=furnish,bedroom=bedroom,bathroom=bathroom,
-                            builtup=builtup,capacity=capacity,rent=rent,ad_title=ad_title,add_info=add_info,images=images,
-                            state=state,place=place,street=street)
+        city = request.POST.get('city')
+        location = request.POST.get('location')
+        house=House_Product(user=current_user,type=type,furnish=furnish,bedroom=bedroom,bathroom=bathroom,builtup=builtup,capacity=capacity,
+                            rent=rent,state=state,city=city,location=location,ad_title=ad_title,add_info=add_info,images=images,)
         house.save()
         messages.success(request, 'Your product is kept for rent!')
 
@@ -45,7 +44,6 @@ def add_house(request):
 
 
 @login_required(login_url='login')
-
 def add_car(request):
     current_user = request.user
     if request.method=="POST":
@@ -57,8 +55,11 @@ def add_car(request):
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')
         images=request.FILES['images']
+        state = request.POST.get('state')
+        city = request.POST.get('city')
+        location = request.POST.get('location')
         car=Car_Product(user=current_user,brand=brand,fuel=fuel,driven=driven,own=own,
-                            rent=rent,ad_title=ad_title,add_info=add_info,images=images)
+                            rent=rent,ad_title=ad_title,add_info=add_info,images=images,state=state,city=city,location=location)
         car.save()
         messages.success(request, 'Your product is kept for rent!')
 
@@ -84,8 +85,11 @@ def add_bike(request):
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')
         images=request.FILES['images']
+        state = request.POST.get('state')
+        city = request.POST.get('city')
+        location = request.POST.get('location')
         bike=Bike_Product(user=current_user,brand=brand,driven=driven,own=own,
-                            rent=rent,ad_title=ad_title,add_info=add_info,images=images)
+                            rent=rent,ad_title=ad_title,add_info=add_info,images=images,state=state,city=city,location=location)
         bike.save()
         messages.success(request, 'Your product is kept for rent!')
 
@@ -106,7 +110,11 @@ def add_furn(request):
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')
         images=request.FILES['images']
-        furniture=Furn_Product(user=current_user,type=type,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
+        state = request.POST.get('state')
+        city = request.POST.get('city')
+        location = request.POST.get('location')
+        furniture=Furn_Product(user=current_user,type=type,rent=rent,ad_title=ad_title,add_info=add_info,images=images,
+                               state=state,city=city,location=location)
         furniture.save()
         messages.success(request, 'Your product is kept for rent!')
 
@@ -126,7 +134,11 @@ def add_other(request):
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')
         images=request.FILES['images']
-        other=Other_Product(user=current_user,type=type,rent=rent,ad_title=ad_title,add_info=add_info,images=images)
+        state = request.POST.get('state')
+        city = request.POST.get('city')
+        location = request.POST.get('location')
+        other=Other_Product(user=current_user,type=type,rent=rent,ad_title=ad_title,add_info=add_info,images=images,
+                            state=state,city=city,location=location)
         other.save()
         messages.success(request, 'Your product is kept for rent!')
 

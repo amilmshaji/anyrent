@@ -49,16 +49,12 @@ class House_Product(models.Model):
     capacity= models.IntegerField(editable=False)
     type = models.CharField(max_length=200,blank=True,editable=False)
     furnish = models.CharField(max_length=200,blank=True,editable=False)
-    state = models.CharField(max_length=200,blank=True,editable=False)
-    place = models.CharField(max_length=200,blank=True,editable=False)
-    street = models.CharField(max_length=200,blank=True,editable=False)
-    images = models.ImageField(upload_to='photos/house',editable=False)
+    location = models.CharField(max_length=200,blank=True,null=True,editable=False)
+    city = models.CharField(max_length=200,blank=True,null=True,editable=False)
+    state = models.CharField(max_length=200,blank=True,null=True,editable=False)
+    images = models.ImageField(upload_to='photos/house',editable=False,null=True)
     is_available = models.BooleanField(default=True)
-    is_featured = models.BooleanField(default=False)
-
     category = models.ForeignKey(Category, on_delete=models.CASCADE,default=1,editable=False)
-
-
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
 
@@ -91,6 +87,9 @@ class Car_Product(models.Model):
     driven = models.IntegerField(editable=False )
     own = models.CharField(max_length=200,blank=True,editable=False)
     fuel = models.CharField(max_length=200,blank=True,editable=False)
+    location = models.CharField(max_length=200,blank=True,null=True,editable=False)
+    city = models.CharField(max_length=200,blank=True,null=True,editable=False)
+    state = models.CharField(max_length=200,blank=True,null=True,editable=False)
     images = models.ImageField(upload_to='photos/house',editable=False )
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
@@ -128,6 +127,9 @@ class Bike_Product(models.Model):
     driven = models.IntegerField(editable=False)
     own = models.CharField(max_length=200,blank=True,editable=False)
     images = models.ImageField(upload_to='photos/house',editable=False)
+    location = models.CharField(max_length=200,blank=True,null=True,editable=False)
+    city = models.CharField(max_length=200,blank=True,null=True,editable=False)
+    state = models.CharField(max_length=200,blank=True,null=True,editable=False)
 
 
     category = models.ForeignKey(Category, on_delete=models.CASCADE,default=3,editable=False)
@@ -166,6 +168,9 @@ class Furn_Product(models.Model):      #Furniture table product adding table
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
     type = models.CharField(max_length=200,blank=True,editable=False)
+    location = models.CharField(max_length=200,blank=True,null=True,editable=False)
+    city = models.CharField(max_length=200,blank=True,null=True,editable=False)
+    state = models.CharField(max_length=200,blank=True,null=True,editable=False)
 
 
     category = models.ForeignKey(Category, on_delete=models.CASCADE,default=4,editable=False)
@@ -201,6 +206,9 @@ class Other_Product(models.Model):                #Other table product adding ta
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
     type = models.CharField(max_length=200,blank=True,editable=False)
+    location = models.CharField(max_length=200,blank=True,null=True,editable=False)
+    city = models.CharField(max_length=200,blank=True,null=True,editable=False)
+    state = models.CharField(max_length=200,blank=True,null=True,editable=False)
 
     category = models.ForeignKey(Category, on_delete=models.CASCADE,default=5,editable=False)
 

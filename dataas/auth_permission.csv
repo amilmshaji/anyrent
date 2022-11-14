@@ -1,0 +1,53 @@
+id,content_type_id,codename,name
+1,1,add_account,Can add account
+2,1,change_account,Can change account
+3,1,delete_account,Can delete account
+4,1,view_account,Can view account
+5,2,add_category,Can add category
+6,2,change_category,Can change category
+7,2,delete_category,Can delete category
+8,2,view_category,Can view category
+9,3,add_other_product,Can add other_ product
+10,3,change_other_product,Can change other_ product
+11,3,delete_other_product,Can delete other_ product
+12,3,view_other_product,Can view other_ product
+13,4,add_house_product,Can add house_ product
+14,4,change_house_product,Can change house_ product
+15,4,delete_house_product,Can delete house_ product
+16,4,view_house_product,Can view house_ product
+17,5,add_furn_product,Can add furn_ product
+18,5,change_furn_product,Can change furn_ product
+19,5,delete_furn_product,Can delete furn_ product
+20,5,view_furn_product,Can view furn_ product
+21,6,add_car_product,Can add car_ product
+22,6,change_car_product,Can change car_ product
+23,6,delete_car_product,Can delete car_ product
+24,6,view_car_product,Can view car_ product
+25,7,add_bike_product,Can add bike_ product
+26,7,change_bike_product,Can change bike_ product
+27,7,delete_bike_product,Can delete bike_ product
+28,7,view_bike_product,Can view bike_ product
+29,8,add_all_products,Can add all_ products
+30,8,change_all_products,Can change all_ products
+31,8,delete_all_products,Can delete all_ products
+32,8,view_all_products,Can view all_ products
+33,9,add_logentry,Can add log entry
+34,9,change_logentry,Can change log entry
+35,9,delete_logentry,Can delete log entry
+36,9,view_logentry,Can view log entry
+37,10,add_permission,Can add permission
+38,10,change_permission,Can change permission
+39,10,delete_permission,Can delete permission
+40,10,view_permission,Can view permission
+41,11,add_group,Can add group
+42,11,change_group,Can change group
+43,11,delete_group,Can delete group
+44,11,view_group,Can view group
+45,12,add_contenttype,Can add content type
+46,12,change_contenttype,Can change content type
+47,12,delete_contenttype,Can delete content type
+48,12,view_contenttype,Can view content type
+49,13,add_session,Can add session
+50,13,change_session,Can change session
+51,13,delete_session,Can delete session
+52,13,view_session,Can view session

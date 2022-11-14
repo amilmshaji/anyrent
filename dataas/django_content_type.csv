@@ -1,0 +1,14 @@
+id,app_label,model
+1,accounts,account
+2,products,category
+3,products,other_product
+4,products,house_product
+5,products,furn_product
+6,products,car_product
+7,products,bike_product
+8,products,all_products
+9,admin,logentry
+10,auth,permission
+11,auth,group
+12,contenttypes,contenttype
+13,sessions,session

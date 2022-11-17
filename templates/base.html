@@ -52,22 +52,22 @@
                         <!--====== End - Main Logo ======-->
 
 
-<!--                        &lt;!&ndash;====== Search Form ======&ndash;&gt;-->
-<!--                        <form >-->
+                        <!--====== Search Form ======-->
+                        <form action="{% url 'location_search' %}" method="get" >
 
 
-<!--                            <input class="input-text input-text&#45;&#45;border-radius input-text" type="text" id="main-search1" placeholder="Search by location">-->
+                            <input class="input-text input-text--border-radius input-text" type="text" id="main-search1" name="location" placeholder="Search by location">
 
-<!--                            <button class="btn btn&#45;&#45;icon main-search-button" type="submit"></button></form>-->
-<!--                        &lt;!&ndash;====== End - Search Form ======&ndash;&gt;-->
+                            <button class="btn btn--icon main-search-button" type="submit"></button></form>
+                        <!--====== End - Search Form ======-->
 
 
                         <!--====== Search Form ======-->
-                        <form class="main-form">
+                        <form class="main-form" action="{% url 'search' %}" method="get">
 
                             <label for="main-search"></label>
 
-                            <input class="input-text input-text--border-radius input-text--style-2" type="text" id="main-search" placeholder="Search">
+                            <input class="input-text input-text--border-radius input-text--style-2" type="text" id="main-search" name="keyword" placeholder="Find House,Cars,Bikes,Furnitures and more....">
 
                             <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button></form>
                         <!--====== End - Search Form ======-->

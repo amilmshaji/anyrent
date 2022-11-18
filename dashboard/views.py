@@ -113,7 +113,7 @@ def managehouse(request,house_id):
         rent = request.POST.get('rent')
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')
-        # images=request.FILES['images']
+        images=request.FILES['images']
         state = request.POST.get('state')
         city = request.POST.get('city')
         location = request.POST.get('location')
@@ -127,7 +127,7 @@ def managehouse(request,house_id):
         h_product.rent=rent
         h_product.ad_title=ad_title
         h_product.add_info=add_info
-        # h_product.images=images
+        h_product.images=images
         h_product.state=state
         h_product.city=city
         h_product.location=location

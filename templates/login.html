@@ -58,6 +58,20 @@
 
 
                 <!--====== Section Content ======-->
+                                  {% if request.GET.command == 'verification' %}
+
+    <div class="container mx-auto alert alert-info text-center" role="alert"
+        style="max-width: 1020px; margin-top:100px;">
+        Thank You For Registering With Us. We Have Send Email Verifications To Your Email Address
+        [{{request.GET.email}}].
+        Please Verify'
+        <br><br>
+        Already Verify? <a href="{% url 'login' %}">Login</a>
+
+
+    </div>
+
+    {% else %}
                 <div class="section__content">
                     <div class="container">
                         <div class="row row--center">
@@ -70,18 +84,6 @@
                                         <span class="gl-text u-s-m-b-30">If you have an account with us, please log in.</span>
                                         <form class="l-f-o__form" action="{% url 'login' %}" method="post">
                                             {% csrf_token %}
-<!--                                            <div class="gl-s-api">-->
-<!--                                                <div class="u-s-m-b-15">-->
-
-<!--                                                    <button class="gl-s-api_btn gl-s-api_btn&#45;&#45;fb" type="button"><i class="fab fa-facebook-f"></i>-->
-
-<!--                                                        <span>Signin with Facebook</span></button></div>-->
-<!--                                                <div class="u-s-m-b-15">-->
-
-<!--                                                    <button class="gl-s-api_btn gl-s-api_btn&#45;&#45;gplus" type="button"><i class="fab fa-google"></i>-->
-
-<!--                                                        <span>Signin with Google</span></button></div>-->
-<!--                                            </div>-->
                                             <div class="u-s-m-b-30">
 
                                                 <label class="gl-label" for="email">E-MAIL *</label>
@@ -127,6 +129,8 @@
                         </div>
                     </div>
                 </div>
+                        {% endif %}
+
                 <!--====== End - Section Content ======-->
             </div>
             <!--====== End - Section 2 ======-->

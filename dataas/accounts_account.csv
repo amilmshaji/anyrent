@@ -1,5 +1,0 @@
-password,is_superuser,id,fname,lname,email,phone_number,date_joined,last_login,is_staff,is_admin,is_active,is_superadmin
-pbkdf2_sha256$390000$2ALhgfF6e6AR7Ec2ELYpca$nc/BgecoMP6w6GbeIxDHCfW+qvU3DnyeifKKgnoLU4s=,0,1,Diya,Jacob,diya@gmail.com,9747979988,2022-11-03 14:39:08.959368,2022-11-08 10:35:59.659511,1,1,1,1
-pbkdf2_sha256$390000$e6dRAsUsOomDe0VS5rnDLI$HEKRtYQjKL8h1mvsiN/oseaf6+BzekrhoFIq1hgCrWk=,0,2,aysha,kathoon,aysha@gmail.com,9747927631,2022-11-03 16:11:34.757966,2022-11-04 06:09:29.070014,1,0,1,0
-pbkdf2_sha256$390000$vgxUjdMa5b7Tb43wKT6XOM$M7lcBoW+fgWfjUxSQI8oLwkeC+NOP+s8awUC3za+3Fc=,0,3,Divya,Jacob,diyamoljacob2023a@mca.ajce.in,9747927631,2022-11-04 06:16:35.556096,2022-11-04 06:26:51.976603,1,0,1,0
-pbkdf2_sha256$390000$9LUyRivL5AdiowY1zeab9b$06uOrms/eHDOL8u4NUFeKMCCY9ekUW4E3sO1DZTEtJg=,0,4,Diyamol,Jacob,diyajacob1952001@gmail.com,9747927631,2022-11-04 07:20:54.237787,2022-11-04 07:21:22.703887,1,0,1,0

@@ -120,20 +120,20 @@ pre_save.connect(slug_generator,sender=Car_Product)
 
 class Bike_Product(models.Model):
     user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
-    ad_title = models.CharField(max_length=200, unique=True)
+    ad_title = models.CharField(max_length=200, unique=True,null=True)
     slug = models.SlugField(max_length=200, unique=True,editable=False)
-    add_info = models.TextField(max_length=500, blank=True,editable=False)
-    rent = models.IntegerField(editable=False)
-    brand = models.CharField(max_length=200,blank=True,editable=False)
-    driven = models.IntegerField(editable=False)
-    own = models.CharField(max_length=200,blank=True,editable=False)
-    images = models.ImageField(upload_to='photos/house',editable=False)
+    add_info = models.TextField(max_length=500, blank=True,null=True)
+    rent = models.IntegerField(null=True)
+    brand = models.CharField(max_length=200,blank=True,null=True)
+    driven = models.IntegerField(null=True)
+    own = models.CharField(max_length=200,blank=True,null=True)
+    images = models.ImageField(upload_to='photos/house',null=True)
     location = models.CharField(max_length=200,blank=True,null=True,editable=False)
     city = models.CharField(max_length=200,blank=True,null=True,editable=False)
     state = models.CharField(max_length=200,blank=True,null=True,editable=False)
 
 
-    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=3,editable=False)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE,default=3,editable=False,null=True)
 
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)

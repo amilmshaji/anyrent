@@ -125,6 +125,62 @@
 
 
 					}
+
+					 var s=/^[a-zA-Z^\s]+$/;
+
+					var lo=document.getElementById("location").value;
+
+					if(lo=="")
+                {
+                    document.getElementById('loc').style.display = "block";
+
+                    document.getElementById('loc').innerHTML="**Please Enter  Location";
+                    return false;
+                }
+					if(lo!="" && s.test(lo)==false){
+
+						document.getElementById('loc').style.display = "block";
+						document.getElementById('loc').innerHTML = "Invalid Location";
+						return false;
+					}
+					else{
+						document.getElementById('loc').style.display = "none";
+
+					}
+					var ci=document.getElementById("city").value;
+
+					if(ci=="")
+                {
+                    document.getElementById('cit').style.display = "block";
+
+                    document.getElementById('cit').innerHTML="**Please Enter  District/City";
+                    return false;
+                }
+					if(ci!="" && s.test(ci)==false){
+
+						document.getElementById('cit').style.display = "block";
+						document.getElementById('cit').innerHTML = "Invalid District/City";
+						return false;
+					}
+					else{
+						document.getElementById('cit').style.display = "none";
+
+					}
+					 var st = document.getElementById("state").value;
+					if(st=="")
+                {
+                    document.getElementById('sta').style.display = "block";
+
+                    document.getElementById('sta').innerHTML="**Please Enter The State";
+                    return false;
+                }
+                else{
+						document.getElementById('sta').style.display = "none";
+
+					}
+
+
+
 					var i = document.getElementById("ad_title").value;
 					if(i=="")
                 {

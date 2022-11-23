@@ -169,12 +169,3 @@ def resetPassword(request):
 
 
 
-    #filter Data
-
-# def filter_data(request):
-#     categories=request.GET.getlist('color[]')
-#     brands = request.GET.getlist('color[]')
-#     allProducts = Product.objects.all().order_by('-id')
-#     t=render_to_string('ajax/product-list',{'data':allProducts})
-#     return JsonResponse({'data':t})
-

@@ -2,13 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="verification in login">
+      <change afterPath="$PROJECT_DIR$/media/photos/house/b1_CoB3MrB.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/b2_0lbW8SY.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/b2_DOWAiaE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/b2_hkGGbC7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/banner4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/c2_1W5PyMw.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/f1_B1ASWiB.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h1_mSoyVlq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h2_HtBqYqW.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h2_ZHbgF4z.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_IkXwYQr.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/house_banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/hundai_YqYkG3G.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/image_6nrC5HP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0006_alter_bike_product_ad_title.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0007_alter_bike_product_add_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0008_alter_bike_product_brand_alter_bike_product_category_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0009_alter_bike_product_add_info_alter_bike_product_brand_and_more.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anyrent_pjct/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/anyrent_pjct/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/accounts_account.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/accounts_account_groups.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/accounts_account_user_permissions.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/anyrent.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/auth_group.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/auth_group_permissions.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/auth_permission.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/db.sqlite3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/django_admin_log.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/django_content_type.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/django_migrations.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/django_session.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/products_bike_product.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/products_car_product.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/products_category.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/products_furn_product.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/products_house_product.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/products_other_product.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataas/sqlite_sequence.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_bike.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_bike.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_car.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_furn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_furn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_house.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_house.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_other.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_other.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/dash-edit-bike-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dash-edit-bike-products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/dashboard/dash-edit-car-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dash-edit-car-products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/dash-edit-furniture-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dash-edit-furniture-products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/dash-edit-house-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dash-edit-house-products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/dash-edit-other-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dash-edit-other-products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/dash-edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dash-edit-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/dash-my-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dash-my-profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +98,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/MINI_PROJECT/Sanitaryware_Online_Shop" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -390,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668765122469</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="verification in login">
+      <created>1669217261196</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1669217261196</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -47,126 +47,93 @@
                                     <!--====== End - Dashboard Features ======-->
                                 </div>
                                 <div class="col-lg-9 col-md-12">
-                                                <script>
+            <script>
                  function validate()
                 {
-					var a=document.getElementById("type").value;
+					var a=document.getElementById("brand").value;
 					   if(a=="")
                 {
                     document.getElementById('te').style.display = "block";
 
-                    document.getElementById('te').innerHTML="**Please Enter  Type";
+                    document.getElementById('te').innerHTML="**Please enter  brand type";
                     return false;
                 }
                 else{
 						document.getElementById('te').style.display = "none";
 
 					}
-						var b=document.getElementById("furnish").value;
+						var b=document.getElementById("fuel").value;
 					   if(b=="")
                 {
                     document.getElementById('fh').style.display = "block";
 
-                    document.getElementById('fh').innerHTML="**please Choose";
+                    document.getElementById('fh').innerHTML="**please choose fuel type";
                     return false;
                 }
-                else{
+                  else{
 						document.getElementById('fh').style.display = "none";
 
 					}
-					var c=document.getElementById("bedroom").value;
-					   if(c=="")
-                {
-                    document.getElementById('bdm').style.display = "block";
+			    var expr = /^[0-9]+$/;
+			    var c = document.getElementById("driven").value;
 
-                    document.getElementById('bdm').innerHTML="**Please Choose Number of bedrooms";
+
+				if(c=="")
+                {
+                    document.getElementById('dn').style.display = "block";
+
+                    document.getElementById('dn').innerHTML="**Please Enter Rent";
+                    return false;
+                }
+					else if(c!="" && expr.test(c)==false){
+						document.getElementById('dn').style.display = "block";
+						document.getElementById('dn').innerHTML = "**Invalid Input";
+						return false;
+								}
+								else{
+						document.getElementById('dn').style.display = "none";
+
+
+					}
+					var d=document.getElementById("own").value;
+					   if(d=="")
+                {
+                    document.getElementById('on').style.display = "block";
+
+                    document.getElementById('on').innerHTML="**Please enter  brand type";
                     return false;
                 }
                 else{
-						document.getElementById('bdm').style.display = "none";
+						document.getElementById('on').style.display = "none";
+
 
 					}
-				var d=document.getElementById("bathroom").value;
 
-				if(d=="")
+					var g = document.getElementById("images").value;
+
+				if(g=="")
                 {
-                    document.getElementById('btm').style.display = "block";
+                    document.getElementById('img').style.display = "block";
 
-                    document.getElementById('btm').innerHTML="**Please Choose Number of bathrooms";
+                    document.getElementById('img').innerHTML="**Please upload image";
                     return false;
                 }
-                else{
-						document.getElementById('btm').style.display = "none";
+				else{
+						document.getElementById('img').style.display = "none";
 
 					}
+				 var expr = /^[0-9]+$/;
+			    var e = document.getElementById("rent").value;
 
-
-					var e = document.getElementById("builtup").value;
-					var expr = /^[0-9]+$/;
 
 				if(e=="")
-                {
-                    document.getElementById('bp').style.display = "block";
-
-                    document.getElementById('bp').innerHTML="**Please Enter Builtup Area";
-                    return false;
-                }
-					else if(e!="" && expr.test(e)==false){
-						document.getElementById('bp').style.display = "block";
-						document.getElementById('bp').innerHTML = "**Invalid Input";
-						return false;
-								}
-								else{
-						document.getElementById('bp').style.display = "none";
-
-					}
-					var f = document.getElementById("capacity").value;
-					var expr = /^[0-9]+$/;
-
-				if(f=="")
-                {
-                    document.getElementById('cy').style.display = "block";
-
-                    document.getElementById('cy').innerHTML="**Please Enter Capacity Area";
-                    return false;
-                }
-					else if(f!="" && expr.test(f)==false){
-						document.getElementById('cy').style.display = "block";
-						document.getElementById('cy').innerHTML = "**Invalid Input";
-						return false;
-								}
-								else{
-						document.getElementById('cy').style.display = "none";
-
-					}
-<!--					var g = document.getElementById("images").value;-->
-
-<!--				if(g=="")-->
-<!--                {-->
-<!--                    document.getElementById('img').style.display = "block";-->
-
-<!--                    document.getElementById('img').innerHTML="**Please upload image";-->
-<!--                    return false;-->
-<!--                }-->
-<!--				else{-->
-<!--						document.getElementById('img').style.display = "none";-->
-
-<!--					}-->
-
-
-
-
-					var h = document.getElementById("rent").value;
-					var expr = /^[0-9]+$/;
-
-				if(h=="")
                 {
                     document.getElementById('rt').style.display = "block";
 
                     document.getElementById('rt').innerHTML="**Please Enter Rent";
                     return false;
                 }
-					else if(h!="" && expr.test(h)==false){
+					else if(e!="" && expr.test(e)==false){
 						document.getElementById('rt').style.display = "block";
 						document.getElementById('rt').innerHTML = "**Invalid Input";
 						return false;
@@ -174,7 +141,65 @@
 								else{
 						document.getElementById('rt').style.display = "none";
 
+
+
 					}
+
+					 var s=/^[a-zA-Z^\s]+$/;
+
+					var lo=document.getElementById("location").value;
+
+					if(lo=="")
+                {
+                    document.getElementById('loc').style.display = "block";
+
+                    document.getElementById('loc').innerHTML="**Please Enter  Location";
+                    return false;
+                }
+					if(lo!="" && s.test(lo)==false){
+
+						document.getElementById('loc').style.display = "block";
+						document.getElementById('loc').innerHTML = "Invalid Location";
+						return false;
+					}
+					else{
+						document.getElementById('loc').style.display = "none";
+
+					}
+					var ci=document.getElementById("city").value;
+
+					if(ci=="")
+                {
+                    document.getElementById('cit').style.display = "block";
+
+                    document.getElementById('cit').innerHTML="**Please Enter  District/City";
+                    return false;
+                }
+					if(ci!="" && s.test(ci)==false){
+
+						document.getElementById('cit').style.display = "block";
+						document.getElementById('cit').innerHTML = "Invalid District/City";
+						return false;
+					}
+					else{
+						document.getElementById('cit').style.display = "none";
+
+					}
+					 var st = document.getElementById("state").value;
+					if(st=="")
+                {
+                    document.getElementById('sta').style.display = "block";
+
+                    document.getElementById('sta').innerHTML="**Please Enter The State";
+                    return false;
+                }
+                else{
+						document.getElementById('sta').style.display = "none";
+
+					}
+
+
+
 					var i = document.getElementById("ad_title").value;
 					if(i=="")
                 {
@@ -201,11 +226,10 @@
 
 					}
 
-				}
-			</script>
+            }
+            </script>
 
-            <!--====== Section 2 ======-->
-<!--            <div class="u-s-p-b-60">-->
+
 
                 <!--====== Section Content ======-->
                 <div class="section__content">
@@ -219,7 +243,7 @@
 
                                             <div class="row">
                                                 <div class="col-lg-12">
-                                                    <form class="dash-edit-p" method="post" action="{% url 'add_car' %}"  enctype="multipart/form-data" onsubmit="return validate();">
+                                                    <form class="dash-edit-p" method="post" action="{% url 'managecar' c_product.id %}"  enctype="multipart/form-data" onsubmit="return validate();">
                                                         {% csrf_token %}
                                                             <div class="gl-inline">
                                                             <div class="u-s-m-b-30">
@@ -281,8 +305,17 @@
                                                             </div>
                                                         </div>
                                                         <div class="gl-inline">
+                                                                     <div class="u-s-m-b-30">
+
+                                                                <label class="gl-label" for="images">Image *</label>
+
+                                                                <input class="input-text input-text--primary-style" type="file" name="images" id="images" placeholder="Image" onblur="return validate()" onKeyUp="return validate()" accept="image/png, image/jpeg">
+                                                             <span id="img" style="color:red"> </span>
+
+                                                            </div>
 
                                                             <div class="u-s-m-b-30">
+
 
                                                                 <label class="gl-label" for="rent">Rent/Month *</label>
 
@@ -297,14 +330,14 @@
                                                                 <label class="gl-label" for="location">Location/street of the product*</label>
 
                                                                 <input class="input-text input-text--primary-style" type="text" name="location" id="location" value="{{c_product.location}}" placeholder="Location/street" onblur="return validate()" onKeyUp="return validate()">
-                                                            <span id="st" style="color: red;"></span>
+                                                            <span id="loc" style="color: red;"></span>
                                                             </div>
                                                              <div class="u-s-m-b-30">
 
                                                                      <label class="gl-label" for="city">District/City*</label>
                                                                     <input class="input-text input-text--primary-style" type="text" id="city" name="city" value="{{c_product.city}}" placeholder="District/City" onblur="return validate()" onKeyUp="return validate()">
 
-                                                </select><span id="pl" style="color: red;"></span>
+                                                </select><span id="cit" style="color: red;"></span>
 
 
 
@@ -321,35 +354,34 @@
                                                                 <label class="gl-label" for="state">State *</label>
                                                                 <select class="select-box select-box--primary-style" name="state" id="state" data-bill="" onblur="return validate()" onKeyUp="return validate()">
                                                     <option selected value="{{c_product.state}}">{{c_product.state}}</option>
-                                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
-                                                    <option value="Semi-Furnished">Arunachal Pradesh</option>
-                                                    <option value="Unfurnished">Assam</option>
-                                                    <option value="Furnished">Bihar</option>
-                                                    <option value="Semi-Furnished">Chhattisgarh</option>
-                                                    <option value="Unfurnished">Goa</option>
-                                                    <option value="Furnished">Gujarat</option>
-                                                    <option value="Semi-Furnished">Haryana</option>
-                                                    <option value="Unfurnished">Himachal Pradesh</option>
-                                                    <option value="Furnished">Jammu and Kashmir</option>
-                                                    <option value="Semi-Furnished">Jharkhand</option>
-                                                    <option value="Unfurnished">Karnataka</option>
-                                                                    <option value="Unfurnished">Kerala</option>
-                                                    <option value="Furnished">Madhya Pradesh</option>
-                                                    <option value="Semi-Furnished">Maharashtra</option>
-                                                    <option value="Unfurnished">Manipur</option>
-                                                    <option value="Furnished">Meghalaya</option>
-                                                    <option value="Semi-Furnished">Mizoram</option>
-                                                    <option value="Unfurnished">Nagaland</option>
-                                                    <option value="Furnished">Odisha</option>
-                                                    <option value="Semi-Furnished">Punjab</option>
-                                                    <option value="Unfurnished">Rajasthan</option>
-                                                    <option value="Furnished">Sikkim</option>
-                                                    <option value="Furnished">Tamil Nadu</option>
-                                                    <option value="Semi-Furnished">Telangana</option>
-                                                    <option value="Unfurnished">Tripura</option>
-                                                    <option value="Furnished">Uttar Pradesh</option>
-                                                    <option value="Semi-Furnished">Uttarakhand</option>
-                                                    <option value="Unfurnished">West Bengal</option>
+                                                               <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                    <option value="Assam">Assam</option>
+                                                    <option value="Bihar">Bihar</option>
+                                                    <option value="Chattisgarh">Chattisgarh</option>
+                                                    <option value="Goa">Goa</option>
+                                                    <option value="Gujarat">Gujarat</option>
+                                                    <option value="Haryana">Haryana</option>
+                                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                                    <option value="Jharkhand">Jharkhand</option>
+                                                    <option value="Karnataka">Karnataka</option>
+                                                        <option value="Kerala">Kerala</option>
+                                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Manipur">Manipur</option>
+                                                    <option value="Meghalaya">Meghalaya</option>
+                                                    <option value="Mizoram">Mizoram</option>
+                                                    <option value="Nagaland">Nagaland</option>
+                                                    <option value="Odisha">Odisha</option>
+                                                    <option value="Punjab">Punjab</option>
+                                                    <option value="Rajasthan">Rajasthan</option>
+                                                    <option value="Sikkim">Sikkim</option>
+                                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                                    <option value="Telangana">Telangana</option>
+                                                    <option value="Tripura">Tripura</option>
+                                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                    <option value="Uttarakhand">Uttarakhand</option>
+                                                    <option value="West Bengal">West Bengal</option>
 
                                                 </select><span id="sta" style="color: red;"></span>
 
@@ -372,7 +404,7 @@
 
                                                                 <label class="gl-label" for="add_info">Additional Information *</label>
 
-                                                                <input class="input-text input-text--primary-style" type="text" name="add_info" id="add_info" value="{{h_product.add_info}}" placeholder="Include conditon,features and reason for selling" onblur="return validate()" onKeyUp="return validate()">
+                                                                <input class="input-text input-text--primary-style" type="text" name="add_info" id="add_info" value="{{c_product.add_info}}" placeholder="Include conditon,features and reason for selling" onblur="return validate()" onKeyUp="return validate()">
                                                                 <span id="at" style="color: red;"></span>
                                                                     </div>
 

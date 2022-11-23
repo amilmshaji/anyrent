@@ -28,7 +28,7 @@
                 </div>
             </div>
             <!--====== End - Section 1 ======-->
-            <script>
+                                                <script>
                  function validate()
                 {
 					var a=document.getElementById("type").value;
@@ -134,7 +134,10 @@
 
 					}
 
-                var h = document.getElementById("rent").value;
+
+
+
+					var h = document.getElementById("rent").value;
 					var expr = /^[0-9]+$/;
 
 				if(h=="")
@@ -153,56 +156,74 @@
 						document.getElementById('rt').style.display = "none";
 
 					}
-					var i=document.getElementById("state").value;
-					   if(i=="")
+                    var s=/^[a-zA-Z^\s]+$/;
+
+					var lo=document.getElementById("location").value;
+
+					if(lo=="")
+                {
+                    document.getElementById('loc').style.display = "block";
+
+                    document.getElementById('loc').innerHTML="**Please Enter  Location";
+                    return false;
+                }
+					if(lo!="" && s.test(lo)==false){
+
+						document.getElementById('loc').style.display = "block";
+						document.getElementById('loc').innerHTML = "Invalid Location";
+						return false;
+					}
+					else{
+						document.getElementById('loc').style.display = "none";
+
+					}
+					var ci=document.getElementById("city").value;
+
+					if(ci=="")
+                {
+                    document.getElementById('cit').style.display = "block";
+
+                    document.getElementById('cit').innerHTML="**Please Enter  District/City";
+                    return false;
+                }
+					if(ci!="" && s.test(ci)==false){
+
+						document.getElementById('cit').style.display = "block";
+						document.getElementById('cit').innerHTML = "Invalid District/City";
+						return false;
+					}
+					else{
+						document.getElementById('cit').style.display = "none";
+
+					}
+					 var st = document.getElementById("state").value;
+					if(st=="")
                 {
                     document.getElementById('sta').style.display = "block";
 
-                    document.getElementById('sta').innerHTML="**please Choose State";
+                    document.getElementById('sta').innerHTML="**Please Enter The State";
                     return false;
                 }
                 else{
-						document.getElementById('st').style.display = "none";
+						document.getElementById('sta').style.display = "none";
 
 					}
-					var j=document.getElementById("place").value;
-					   if(j=="")
-                {
-                    document.getElementById('pl').style.display = "block";
 
-                    document.getElementById('pl').innerHTML="**please Enter place";
-                    return false;
-                }
-                else{
-						document.getElementById('pl').style.display = "none";
 
-					}
-					var k=document.getElementById("street").value;
-					   if(k=="")
-                {
-                    document.getElementById('st').style.display = "block";
-
-                    document.getElementById('st').innerHTML="**please Enter Street";
-                    return false;
-                }
-                else{
-						document.getElementById('st').style.display = "none";
-
-					}
-					var l = document.getElementById("ad_title").value;
-					if(l=="")
+					var i = document.getElementById("ad_title").value;
+					if(i=="")
                 {
                     document.getElementById('at').style.display = "block";
 
-                    document.getElementById('at').innerHTML="**Please Enter Advertisement Title";
+                    document.getElementById('at').innerHTML="**Please Enter Advertisment Title";
                     return false;
                 }
                 else{
 						document.getElementById('at').style.display = "none";
 
 					}
-			    var m = document.getElementById("add_info").value;
-					if(m=="")
+			    var j = document.getElementById("add_info").value;
+					if(j=="")
                 {
                     document.getElementById('ai').style.display = "block";
 
@@ -362,35 +383,33 @@
                                                                      <label class="gl-label" for="type">State *</label>
                                                                  <select class="select-box select-box--primary-style" name="state" id="state" data-bill="" onblur="return validate()" onKeyUp="return validate()">
                                                     <option selected value="">Enter the state</option>
-                                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
-                                                    <option value="Semi-Furnished">Arunachal Pradesh</option>
-                                                    <option value="Unfurnished">Assam</option>
-                                                    <option value="Furnished">Bihar</option>
-                                                    <option value="Semi-Furnished">Chhattisgarh</option>
-                                                    <option value="Unfurnished">Goa</option>
-                                                    <option value="Furnished">Gujarat</option>
-                                                    <option value="Semi-Furnished">Haryana</option>
-                                                    <option value="Unfurnished">Himachal Pradesh</option>
-                                                    <option value="Furnished">Jammu and Kashmir</option>
-                                                    <option value="Semi-Furnished">Jharkhand</option>
-                                                    <option value="Unfurnished">Karnataka</option>
-                                                                    <option value="Kerala">Kerala</option>
-                                                    <option value="Furnished">Madhya Pradesh</option>
-                                                    <option value="Semi-Furnished">Maharashtra</option>
-                                                    <option value="Unfurnished">Manipur</option>
-                                                    <option value="Furnished">Meghalaya</option>
-                                                    <option value="Semi-Furnished">Mizoram</option>
-                                                    <option value="Unfurnished">Nagaland</option>
-                                                    <option value="Furnished">Odisha</option>
-                                                    <option value="Semi-Furnished">Punjab</option>
-                                                    <option value="Unfurnished">Rajasthan</option>
-                                                    <option value="Furnished">Sikkim</option>
-                                                    <option value="Furnished">Tamil Nadu</option>
-                                                    <option value="Semi-Furnished">Telangana</option>
-                                                    <option value="Unfurnished">Tripura</option>
-                                                    <option value="Furnished">Uttar Pradesh</option>
-                                                    <option value="Semi-Furnished">Uttarakhand</option>
-                                                    <option value="Unfurnished">West Bengal</option>
+                                                       <option value="Assam">Assam</option>
+                                                    <option value="Bihar">Bihar</option>
+                                                    <option value="Chattisgarh">Chattisgarh</option>
+                                                    <option value="Goa">Goa</option>
+                                                    <option value="Gujarat">Gujarat</option>
+                                                    <option value="Haryana">Haryana</option>
+                                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                                    <option value="Jharkhand">Jharkhand</option>
+                                                    <option value="Karnataka">Karnataka</option>
+                                                        <option value="Kerala">Kerala</option>
+                                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Manipur">Manipur</option>
+                                                    <option value="Meghalaya">Meghalaya</option>
+                                                    <option value="Mizoram">Mizoram</option>
+                                                    <option value="Nagaland">Nagaland</option>
+                                                    <option value="Odisha">Odisha</option>
+                                                    <option value="Punjab">Punjab</option>
+                                                    <option value="Rajasthan">Rajasthan</option>
+                                                    <option value="Sikkim">Sikkim</option>
+                                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                                    <option value="Telangana">Telangana</option>
+                                                    <option value="Tripura">Tripura</option>
+                                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                    <option value="Uttarakhand">Uttarakhand</option>
+                                                    <option value="West Bengal">West Bengal</option>
 
                                                 </select><span id="sta" style="color: red;"></span>
 

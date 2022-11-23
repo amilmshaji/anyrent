@@ -73,12 +73,10 @@ from django.shortcuts import render, redirect
 from .models import  Bike_Product
 
 @login_required(login_url='login')
-
 def add_bike(request):
     current_user = request.user
     if request.method=="POST":
         brand=request.POST.get('brand')
-        # year=request.POST.get('year')
         driven=request.POST.get('driven')
         own=request.POST.get('own')
         rent = request.POST.get('rent')
@@ -100,7 +98,6 @@ from .models import Furn_Product
 
 
 @login_required(login_url='login')
-
 def add_furn(request):
     current_user = request.user
     if request.method=="POST":

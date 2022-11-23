@@ -113,7 +113,7 @@ def managehouse(request,house_id):
         rent = request.POST.get('rent')
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')
-        images=request.FILES['images']
+        # images=request.FILES.get('images')
         state = request.POST.get('state')
         city = request.POST.get('city')
         location = request.POST.get('location')
@@ -127,7 +127,7 @@ def managehouse(request,house_id):
         h_product.rent=rent
         h_product.ad_title=ad_title
         h_product.add_info=add_info
-        h_product.images=images
+        # h_product.images=images
         h_product.state=state
         h_product.city=city
         h_product.location=location
@@ -146,38 +146,31 @@ def managehouse(request,house_id):
 
 def managecar(request,car_id):
     c_product = Car_Product.objects.get(id=car_id)
-    # if request.method=="POST":
-    #     type=request.POST('type')
-    #     furnish=request.POST('furnish')
-    #     bedroom=request.POST('bedroom')
-    #     bathroom=request.POST('bathroom')
-    #
-    #     builtup = request.POST('builtup')
-    #     capacity = request.POST('capacity')
-    #     rent = request.POST('rent')
-    #     ad_title = request.POST('ad_title')
-    #     add_info = request.POST('add_info')
-    #     images=request.FILES['images']
-    #     state = request.POST('state')
-    #     city = request.POST('city')
-    #     location = request.POST('location')
-    #
-    #     h_product.type=type
-    #     h_product.furnish=furnish
-    #     h_product.bedroom=bedroom
-    #     h_product.bathroom=bathroom
-    #     h_product.builtup=builtup
-    #     h_product.capacity=capacity
-    #     h_product.rent=rent
-    #     h_product.ad_title=ad_title
-    #     h_product.add_info=add_info
-    #     h_product.images=images
-    #     h_product.state=state
-    #     h_product.city=city
-    #     h_product.location=location
-    #     h_product.save()
-    #     messages.success(request, 'your product details is updated...!')
+    if request.method=="POST":
+        brand = request.POST.get('brand')
+        fuel = request.POST.get('fuel')
+        driven = request.POST.get('driven')
+        own = request.POST.get('own')
+        rent = request.POST.get('rent')
+        ad_title = request.POST.get('ad_title')
+        add_info = request.POST.get('add_info')
+        state = request.POST.get('state')
+        city = request.POST.get('city')
+        location = request.POST.get('location')
 
+        c_product.fuel=fuel
+        c_product.brand=brand
+        c_product.driven=driven
+        c_product.own=own
+        c_product.rent=rent
+        c_product.ad_title=ad_title
+        c_product.add_info=add_info
+        c_product.state=state
+        c_product.city=city
+        c_product.location=location
+        c_product.save()
+        messages.success(request, 'your product details is updated...!')
+        return redirect('myproducts')
 
 
     context = {

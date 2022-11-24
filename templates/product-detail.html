@@ -271,6 +271,14 @@
                                                                 <td>{{ single_product.type }}</td>
                                                             </tr>
 
+                                                        {% elif single_product.category.slug == "Others" %}
+
+                                                             <tr>
+                                                                <td>Type</td>
+                                                                <td>{{ single_product.type }}</td>
+                                                            </tr>
+
+
 
 
                                                         {% endif %}

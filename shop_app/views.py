@@ -76,15 +76,15 @@ def search(request):
         keyword = request.GET['keyword']
         if keyword:
             h_products = House_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword))
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
             c_products = Car_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword))
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
             b_products = Bike_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword))
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
             f_products = Furn_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword))
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
             o_products = Other_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword))
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
             product_count = h_products.count()
     context = {
         'h_products': h_products,

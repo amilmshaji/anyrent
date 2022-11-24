@@ -299,3 +299,38 @@ def manageother(request,other_id):
     }
     return render(request, 'dashboard/dash-edit-other-products.html', context)
 
+@login_required(login_url='login')
+def deletehouse(request,house_id):
+    h_product = House_Product.objects.get(id=house_id)
+    h_product.delete()
+
+    return redirect('myproducts')
+
+
+@login_required(login_url='login')
+def deletecar(request,car_id):
+    c_product = Car_Product.objects.get(id=car_id)
+    c_product.delete()
+
+    return redirect('myproducts')
+
+@login_required(login_url='login')
+def deletebike(request,bike_id):
+    h_product = Bike_Product.objects.get(id=bike_id)
+    h_product.delete()
+
+    return redirect('myproducts')
+
+@login_required(login_url='login')
+def deletefurn(request,furn_id):
+    h_product = Furn_Product.objects.get(id=furn_id)
+    h_product.delete()
+
+    return redirect('myproducts')
+
+@login_required(login_url='login')
+def deleteother(request,other_id):
+    h_product = Other_Product.objects.get(id=other_id)
+    h_product.delete()
+
+    return redirect('myproducts')

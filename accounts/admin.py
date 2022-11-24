@@ -12,6 +12,7 @@ class UserAdmin(admin.ModelAdmin):
     list_display_links = (
         'email', 'fname', 'lname',
     )
+    list_editable = ['is_active']
     readonly_fields = (
         'last_login', 'date_joined',
     )

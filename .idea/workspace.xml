@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="edit products completed">
-      <change afterPath="$PROJECT_DIR$/media/photos/house/Sofa-set_-__-_3-1-1_-_VB201705171774173-ak_LWBP1570481307-1658243128_lg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/bik44.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/f44.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/goa-camera-rental-10158468-47d5ed68.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/h2_X845pou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/riders-hut-manarcaudu-kottayam-bike-on-rent-rn3pmv1a07.jpg" afterDir="false" />
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="mini project completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anyrent_pjct/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/anyrent_pjct/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/myproducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/myproducts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +44,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -76,20 +64,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00001" summary="product app">
-      <created>1665673076305</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1665673076305</updated>
-    </task>
-    <task id="LOCAL-00002" summary="email verification">
-      <created>1665683536588</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1665683536588</updated>
     </task>
     <task id="LOCAL-00003" summary="alerts">
       <created>1665683906780</created>
@@ -420,7 +394,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669227065462</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="mini project completed">
+      <created>1669299638813</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1669299638813</updated>
+    </task>
+    <task id="LOCAL-00051" summary="mini project completed">
+      <created>1669299658814</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1669299658815</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -458,7 +446,8 @@
     <MESSAGE value="finished" />
     <MESSAGE value="verification in login" />
     <MESSAGE value="edit products completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit products completed" />
+    <MESSAGE value="mini project completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="mini project completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

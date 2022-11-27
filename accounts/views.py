@@ -16,14 +16,6 @@ from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import EmailMessage
 from django.core.mail import send_mail
 
-
-# Create your views here.
-
-
-
-
-
-
 def login(request):
     if request.method == 'POST':
         email=request.POST['email']
@@ -99,8 +91,6 @@ def activate(request, uidb64, token):
     else:
         messages.error(request, 'Invalid activation link')
         return redirect('register')
-
-
 
 def forgotPassword(request):
     if request.method == 'POST':

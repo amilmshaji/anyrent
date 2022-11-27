@@ -1,14 +1,9 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.core.exceptions import ObjectDoesNotExist
-from django.core.paginator import Paginator
-from django.shortcuts import render, redirect
 
-# Create your views here.
+
 from .models import House_Product
 from .models import Car_Product
-
-
 
 def Category(request):
 

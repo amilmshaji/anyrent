@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.contrib.auth.models import Group
 from django.urls import path
 from django.urls.conf import include
-from django.conf import settings
+from django.conf import setting
 
 admin.site.unregister(Group)
 

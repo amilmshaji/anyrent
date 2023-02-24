@@ -1,10 +1,15 @@
-from django.shortcuts import render
 from django.shortcuts import get_object_or_404, redirect, render
-
+import pandas as pd
+import folium
 from products.models import Car_Product, House_Product, Bike_Product, Furn_Product, Other_Product, Category
-from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator, InvalidPage
 from django.db.models import Q
+
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+
+from .forms import ReviewForm
 # Create your views here.
+from .models import ReviewRating, Location
 
 
 def Home(request):
@@ -62,11 +67,13 @@ def product_detail(request,  category_slug, product_slug):
         single_product = Other_Product.objects.get(category__slug=category_slug, slug=product_slug)
 
 
-
+    reviews = ReviewRating.objects.filter(
+        product_id=single_product.id, status=True)
 
 
     context = {
         'single_product': single_product,
+        'reviews': reviews,
 
     }
     return render(request, 'product-detail.html', context)
@@ -124,5 +131,47 @@ def location_search(request):
     return render(request, 'shop.html', context)
 
 
+@login_required(login_url='login')
+def submit_review(request, product_id):
+    url = request.META.get('HTTP_REFERER')
+    if request.method == 'POST':
+        try:
 
+            reviews = ReviewRating.objects.get(
+                user__id=request.user.id, product__id=product_id)
+            form = ReviewForm(request.POST, instance=reviews)
+            form.save()
+            messages.success(request, 'Thank you ! Your Review is Updated')
+            return redirect(url)
+        except ReviewRating.DoesNotExist:
+            form = ReviewForm(request.POST)
+            if form.is_valid():
+                data = ReviewRating()
+                data.rating = form.cleaned_data['rating']
+                data.review = form.cleaned_data['review']
+
+
+
+                data.ip = request.META.get('REMOTE_ADDR')
+                data.product_id = product_id
+                data.user_id = request.user.id
+                data.save()
+                messages.success(
+                    request, 'Thank You ! Your Review Has Been Submitted')
+                return redirect(url)
+
+
+def map_view(request):
+    locations = Location.objects.all()
+
+    # Create the map
+    m = folium.Map(location=[9.939093, 76.270523], zoom_start=8)
+
+    # Add markers to the map
+    for location in locations:
+        folium.Marker([location.latitude, location.longitude], popup=location.name).add_to(m)
+
+    # Render the map
+    m = m._repr_html_()
+    return render(request, 'map.html', {'map': m})
 

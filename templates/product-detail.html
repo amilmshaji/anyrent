@@ -167,11 +167,11 @@
 <!--                                        <li class="nav-item">-->
 
 <!--                                            <a class="nav-link" data-toggle="tab" href="#pd-tag">TAGS</a></li>-->
-<!--                                        <li class="nav-item">-->
+                                        <li class="nav-item">
 
-<!--                                            <a class="nav-link" id="view-review" data-toggle="tab" href="#pd-rev">REVIEWS-->
+                                            <a class="nav-link" id="view-review" data-toggle="tab" href="#pd-rev">REVIEWS
 
-<!--                                                <span>(23)</span></a></li>-->
+                                                <span>({{single_product.countReview}})</span></a></li>
                                     </ul>
                                 </div>
                                 <div class="tab-content">
@@ -330,14 +330,27 @@
 
 
                                     <!--====== Tab 3 ======-->
-                                    <div class="tab-pane" id="pd-rev">
+                                    <div class="tab-pane fade show active" id="pd-rev">
                                         <div class="pd-tab__rev">
                                             <div class="u-s-m-b-30">
                                                 <div class="pd-tab__rev-score">
                                                     <div class="u-s-m-b-8">
-                                                        <h2>23 Reviews - 4.6 (Overall)</h2>
+                                                        <h2>{{single_product.countReview}} Reviews - {{single_product.averageReview}} (Overall)</h2>
                                                     </div>
-                                                    <div class="gl-rating-style-2 u-s-m-b-8"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                                                    <div class="gl-rating-style-2 u-s-m-b-8">
+
+                                                         <i class="fa fa-star{% if single_product.averageReview < 0.5 %}-o{% elif single_product.averageReview >= 0.5 and single_product.averageReview < 1 %}-half-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if single_product.averageReview < 1.5 %}-o{% elif single_product.averageReview >= 1.5 and single_product.averageReview < 2 %}-half-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if single_product.averageReview < 2.5 %}-o{% elif single_product.averageReview >= 2.5 and single_product.averageReview < 3 %}-half-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if single_product.averageReview < 3.5 %}-o{% elif single_product.averageReview >= 3.5 and single_product.averageReview < 4 %}-half-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if single_product.averageReview < 4.5 %}-o{% elif single_product.averageReview >= 4.5 and single_product.averageReview < 5 %}-half-o {% endif %}"
+                                        aria-hidden="true"></i>
+
+                                                    </div>
                                                     <div class="u-s-m-b-8">
                                                         <h4>We want to hear from you!</h4>
                                                     </div>
@@ -349,54 +362,53 @@
                                                 <form class="pd-tab__rev-f1">
                                                     <div class="rev-f1__group">
                                                         <div class="u-s-m-b-15">
-                                                            <h2>23 Review(s) for Man Ruched Floral Applique Tee</h2>
+                                                            <h2>{{single_product.countReview}} Review(s) for {{single_product.product_name}}</h2>
                                                         </div>
                                                         <div class="u-s-m-b-15">
 
-                                                            <label for="sort-review"></label><select class="select-box select-box--primary-style" id="sort-review">
-                                                                <option selected>Sort by: Best Rating</option>
-                                                                <option>Sort by: Worst Rating</option>
-                                                            </select></div>
+<!--                                                            <label for="sort-review"></label><select class="select-box select-box&#45;&#45;primary-style" id="sort-review">-->
+<!--                                                                <option selected>Sort by: Best Rating</option>-->
+<!--                                                                <option>Sort by: Worst Rating</option>-->
+<!--                                                            </select>-->
+                                                        </div>
                                                     </div>
                                                     <div class="rev-f1__review">
+
+                                                        {% for review in reviews %}
                                                         <div class="review-o u-s-m-b-15">
                                                             <div class="review-o__info u-s-m-b-8">
 
-                                                                <span class="review-o__name">John Doe</span>
+                                                                <span class="review-o__name">{{review.user.fname}}</span>
 
-                                                                <span class="review-o__date">27 Feb 2018 10:57:43</span></div>
-                                                            <div class="review-o__rating gl-rating-style u-s-m-b-8"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                                                <span class="review-o__date">{{review.updated_at}}</span></div>
+                                                            <div class="review-o__rating gl-rating-style u-s-m-b-8">
 
-                                                                <span>(4)</span></div>
-                                                            <p class="review-o__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                                 <i class="fa fa-star{% if review.rating < 0.5 %}-o{% elif review.rating >= 0.5 and review.rating < 1 %}-half-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if review.rating < 1.5 %}-o{% elif review.rating >= 1.5 and review.rating < 2 %}-half-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if review.rating < 2.5 %}-o{% elif review.rating >= 2.5 and review.rating < 3 %}-half-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if review.rating < 3.5 %}-o{% elif review.rating >= 3.5 and review.rating < 4 %}-half-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                    <i class="fa fa-star{% if review.rating < 4.5 %}-o{% elif review.rating >= 4.5 and review.rating < 5 %}-half-o {% endif %}"
+                                        aria-hidden="true"></i>
+                                                                <span>({{review.rating}})</span>
+                                                            </div>
+                                                            <p class="review-o__text">
+                                                                {{review.review}}
+                                                            </p>
                                                         </div>
-                                                        <div class="review-o u-s-m-b-15">
-                                                            <div class="review-o__info u-s-m-b-8">
+                                                        {% endfor %}
 
-                                                                <span class="review-o__name">John Doe</span>
 
-                                                                <span class="review-o__date">27 Feb 2018 10:57:43</span></div>
-                                                            <div class="review-o__rating gl-rating-style u-s-m-b-8"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-
-                                                                <span>(4)</span></div>
-                                                            <p class="review-o__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                                        </div>
-                                                        <div class="review-o u-s-m-b-15">
-                                                            <div class="review-o__info u-s-m-b-8">
-
-                                                                <span class="review-o__name">John Doe</span>
-
-                                                                <span class="review-o__date">27 Feb 2018 10:57:43</span></div>
-                                                            <div class="review-o__rating gl-rating-style u-s-m-b-8"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-
-                                                                <span>(4)</span></div>
-                                                            <p class="review-o__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                                        </div>
                                                     </div>
                                                 </form>
                                             </div>
                                             <div class="u-s-m-b-30">
-                                                <form class="pd-tab__rev-f2">
+                                                <form class="pd-tab__rev-f2" action="{% url 'submit_review' single_product.id %}" method="POST">
+                                                    {% csrf_token %}
+
                                                     <h2 class="u-s-m-b-15">Add a Review</h2>
 
                                                     <span class="gl-text u-s-m-b-15">Your email address will not be published. Required fields are marked *</span>
@@ -459,7 +471,7 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-1" name="rating">
+                                                                                <input type="radio" id="star-1" name="rating" value="1" required>
                                                                                 <div class="radio-box__state radio-box__state--primary">
 
                                                                                     <label class="radio-box__label" for="star-1"></label></div>
@@ -471,7 +483,7 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-1.5" name="rating">
+                                                                                <input type="radio" id="star-1.5" name="rating" value="1.5" required>
                                                                                 <div class="radio-box__state radio-box__state--primary">
 
                                                                                     <label class="radio-box__label" for="star-1.5"></label></div>
@@ -483,7 +495,7 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-2" name="rating">
+                                                                                <input type="radio" id="star-2" name="rating" value="2" required>
                                                                                 <div class="radio-box__state radio-box__state--primary">
 
                                                                                     <label class="radio-box__label" for="star-2"></label></div>
@@ -495,7 +507,7 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-2.5" name="rating">
+                                                                                <input type="radio" id="star-2.5" name="rating" value="2.5" required>
                                                                                 <div class="radio-box__state radio-box__state--primary">
 
                                                                                     <label class="radio-box__label" for="star-2.5"></label></div>
@@ -507,7 +519,7 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-3" name="rating">
+                                                                                <input type="radio" id="star-3" name="rating" value="3" required>
                                                                                 <div class="radio-box__state radio-box__state--primary">
 
                                                                                     <label class="radio-box__label" for="star-3"></label></div>
@@ -519,7 +531,7 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-3.5" name="rating">
+                                                                                <input type="radio" id="star-3.5" name="rating" value="3.5" required>
                                                                                 <div class="radio-box__state radio-box__state--primary">
 
                                                                                     <label class="radio-box__label" for="star-3.5"></label></div>
@@ -531,7 +543,7 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-4" name="rating">
+                                                                                <input type="radio" id="star-4" name="rating" value="4" required>
                                                                                 <div class="radio-box__state radio-box__state--primary">
 
                                                                                     <label class="radio-box__label" for="star-4"></label></div>
@@ -543,7 +555,7 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-4.5" name="rating">
+                                                                                <input type="radio" id="star-4.5" name="rating" value="4.5" required>
                                                                                 <div class="radio-box__state radio-box__state--primary">
 
                                                                                     <label class="radio-box__label" for="star-4.5"></label></div>
@@ -555,7 +567,7 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-5" name="rating">
+                                                                                <input type="radio" id="star-5" name="rating" value="5" required>
                                                                                 <div class="radio-box__state radio-box__state--primary">
 
                                                                                     <label class="radio-box__label" for="star-5"></label></div>
@@ -570,18 +582,19 @@
                                                     <div class="rev-f2__group">
                                                         <div class="u-s-m-b-15">
 
-                                                            <label class="gl-label" for="reviewer-text">YOUR REVIEW *</label><textarea class="text-area text-area--primary-style" id="reviewer-text"></textarea></div>
+                                                            <label class="gl-label" for="reviewer-text">YOUR REVIEW *</label>
+                                                            <textarea class="text-area text-area--primary-style" id="reviewer-text"  name="review"></textarea></div>
                                                         <div>
-                                                            <p class="u-s-m-b-30">
+<!--                                                            <p class="u-s-m-b-30">-->
 
-                                                                <label class="gl-label" for="reviewer-name">NAME *</label>
+<!--                                                                <label class="gl-label" for="reviewer-name" >Review Title:</label>-->
 
-                                                                <input class="input-text input-text--primary-style" type="text" id="reviewer-name"></p>
-                                                            <p class="u-s-m-b-30">
+<!--                                                                <input class="input-text input-text&#45;&#45;primary-style" type="text"  name="subject" id="reviewer-name"></p>-->
+<!--                                                            <p class="u-s-m-b-30">-->
 
-                                                                <label class="gl-label" for="reviewer-email">EMAIL *</label>
+<!--                                                                <label class="gl-label" for="reviewer-email">EMAIL *</label>-->
 
-                                                                <input class="input-text input-text--primary-style" type="text" id="reviewer-email"></p>
+<!--                                                                <input class="input-text input-text&#45;&#45;primary-style" type="text" id="reviewer-email"></p>-->
                                                         </div>
                                                     </div>
                                                     <div>
@@ -591,6 +604,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <!--====== End - Tab 3 ======-->
                                 </div>
                             </div>

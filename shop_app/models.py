@@ -26,6 +26,7 @@ class Location(models.Model):
     name = models.CharField(max_length=100)
     latitude = models.FloatField()
     longitude = models.FloatField()
+    images = models.ImageField(upload_to='photos/loc', null=True)
 
     def __str__(self):
         return self.name

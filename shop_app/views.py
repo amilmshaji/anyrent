@@ -169,7 +169,14 @@ def map_view(request):
 
     # Add markers to the map
     for location in locations:
-        folium.Marker([location.latitude, location.longitude], popup=location.name).add_to(m)
+        if location.images:
+            popup_html = f'<img src="{location.images.url}" width="200"><br>{location.name}'
+        else:
+            popup_html = location.name
+        folium.Marker(
+            [location.latitude, location.longitude],
+            popup=folium.Popup(popup_html, max_width=300)
+        ).add_to(m)
 
     # Render the map
     m = m._repr_html_()

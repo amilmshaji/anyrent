@@ -16,13 +16,19 @@ class CatAdmin(admin.ModelAdmin):
     # prepopulated_fields = {'slug': ('ad_title',)}
 
 
-
-
-
     def thumbnail_preview5(self, obj):
         return obj.thumbnail_preview5
     thumbnail_preview5.short_description = 'Image Preview'
     thumbnail_preview5.allow_tags = True
+
+    def has_add_permission(self, request):
+        return False
+
+        # This will help you to disable delete functionaliyt
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+
 
 
 admin.site.register(Category,CatAdmin)
@@ -112,15 +118,15 @@ class BikeAdmin(admin.ModelAdmin):
     # prepopulated_fields = {'slug': ('ad_title',)}
 
     list_editable = ['is_available']
-    #
-    # # This will help you to disbale add functionality
-    # def has_add_permission(self, request):
-    #     return False
-    #
-    #     # This will help you to disable delete functionaliyt
-    #
-    # def has_delete_permission(self, request, obj=None):
-    #     return False
+
+
+    def has_add_permission(self, request):
+        return False
+
+        # This will help you to disable delete functionaliyt
+
+    def has_delete_permission(self, request, obj=None):
+        return False
 
 
     def thumbnail_preview2(self, obj):

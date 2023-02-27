@@ -334,3 +334,63 @@ def deleteother(request,other_id):
     h_product.delete()
 
     return redirect('myproducts')
+
+@login_required(login_url='login')
+def archive_house(request,house_id):
+    h_product = House_Product.objects.get(id=house_id)
+    if h_product.is_available==True:
+        h_product.is_available=False
+        h_product.save()
+    else:
+        h_product.is_available = True
+        h_product.save()
+
+    return redirect('myproducts')
+
+@login_required(login_url='login')
+def archive_car(request,car_id):
+    c_product = Car_Product.objects.get(id=car_id)
+    if c_product.is_available==True:
+        c_product.is_available=False
+        c_product.save()
+    else:
+        c_product.is_available = True
+        c_product.save()
+
+    return redirect('myproducts')
+
+@login_required(login_url='login')
+def archive_bike(request,bike_id):
+    b_product = Bike_Product.objects.get(id=bike_id)
+    if b_product.is_available==True:
+        b_product.is_available=False
+        b_product.save()
+    else:
+        b_product.is_available = True
+        b_product.save()
+
+    return redirect('myproducts')
+
+@login_required(login_url='login')
+def archive_furn(request,furn_id):
+    f_product = Furn_Product.objects.get(id=furn_id)
+    if f_product.is_available==True:
+        f_product.is_available=False
+        f_product.save()
+    else:
+        f_product.is_available = True
+        f_product.save()
+
+    return redirect('myproducts')
+
+@login_required(login_url='login')
+def archive_other(request,other_id):
+    o_product = Other_Product.objects.get(id=other_id)
+    if o_product.is_available==True:
+        o_product.is_available=False
+        o_product.save()
+    else:
+        o_product.is_available = True
+        o_product.save()
+
+    return redirect('myproducts')

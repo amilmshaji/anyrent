@@ -1,5 +1,8 @@
 from django.shortcuts import get_object_or_404, redirect, render
 import pandas as pd
+import geocoder
+from geopy.geocoders import Nominatim
+
 import folium
 from products.models import Car_Product, House_Product, Bike_Product, Furn_Product, Other_Product, Category
 from django.db.models import Q
@@ -162,23 +165,69 @@ def submit_review(request, product_id):
 
 
 def map_view(request):
-    locations = Location.objects.all()
-
+    h_products = House_Product.objects.all()
+    b_products = Bike_Product.objects.all()
     # Create the map
     m = folium.Map(location=[9.939093, 76.270523], zoom_start=8)
 
-    # Add markers to the map
-    for location in locations:
-        if location.images:
-            popup_html = f'<img src="{location.images.url}" width="200"><br>{location.name}'
+    geolocator = Nominatim(user_agent="my_app")
+    for h_product in h_products:
+        location = geolocator.geocode(h_product.location)
+        if h_product.images:
+            popup_html = f'<img src="{h_product.images.url}" width="200"><br>{h_product.location}<br>{h_product.ad_title} '
         else:
-            popup_html = location.name
+            popup_html = h_product.location
         folium.Marker(
             [location.latitude, location.longitude],
             popup=folium.Popup(popup_html, max_width=300)
-        ).add_to(m)
+            ).add_to(m)
 
     # Render the map
     m = m._repr_html_()
     return render(request, 'map.html', {'map': m})
 
+
+
+
+
+
+
+
+
+##taking longitiude and latitude from location table
+ # locations = Location.objects.all()
+# for h_product in h_products:
+#     for location in locations:
+#         if h_product.location == location.name:
+#             if h_product.images:
+#                 popup_html = f'<img src="{h_product.images.url}" width="200"><br>{h_product.location}'
+#             else:
+#                 popup_html = h_product.location
+#             folium.Marker(
+#                 [location.latitude, location.longitude],
+#                 popup=folium.Popup(popup_html, max_width=300)
+#             ).add_to(m)
+#
+# for b_product in b_products:
+#     for location in locations:
+#         if b_product.location == location.name:
+#             if b_product.images:
+#                 popup_html = f'<img src="{b_product.images.url}" width="200"><br>{b_product.location}'
+#             else:
+#                 popup_html = b_product.location
+#             folium.Marker(
+#                 [location.latitude, location.longitude],
+#                 popup=folium.Popup(popup_html, max_width=300)
+#             ).add_to(m)
+
+    #
+    # # Add markers to the map
+    # for location in locations:
+    #     if location.images:
+    #         popup_html = f'<img src="{location.images.url}" width="200"><br>{location.name}'
+    #     else:
+    #         popup_html = location.name
+    #     folium.Marker(
+    #         [location.latitude, location.longitude],
+    #         popup=folium.Popup(popup_html, max_width=300)
+    #     ).add_to(m)

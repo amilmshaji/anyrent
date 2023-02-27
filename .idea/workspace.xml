@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="">
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="adding user images to the map">
+      <change afterPath="$PROJECT_DIR$/media/photos/house/b2_12XJDnS.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/c2_4q8d8La.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h1_Z7YFqfa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h5_HUmxFLT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/loc/c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/loc/h3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/loc/image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_app/migrations/0003_location_images.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/resetPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/resetPassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/myproducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/myproducts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -33,9 +42,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
   <component name="ProjectId" id="2ETHlXJ2VD9F8NAMQ3PnZqbJpSN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,22 +50,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MINIPJCT/anyrent_pjct&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="C:/MINI_PROJECT/Sanitaryware_Online_Shop" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PROJECTS\anyrent_pjct\static\images\logo" />
+      <recent name="D:\PROJECTS\anyrent_pjct" />
+      <recent name="D:\PROJECTS\anyrent_pjct\shop_app" />
       <recent name="D:\PROJECTS\anyrent_pjct\templates\dashboard" />
       <recent name="D:\Python\anyrent_pjct\shop_app" />
-      <recent name="D:\Python\anyrent_pjct\wishlist" />
-      <recent name="D:\Python\anyrent_pjct\templates\product_detail" />
-      <recent name="D:\Python\anyrent_pjct\templates" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="anyrent_pjct" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -69,6 +103,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
+    </task>
+    <task id="LOCAL-00005" summary="full up">
+      <created>1665725959695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665725959695</updated>
+    </task>
+    <task id="LOCAL-00006" summary="forgot my password">
+      <created>1665805657172</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665805657172</updated>
+    </task>
+    <task id="LOCAL-00007" summary="validation">
+      <created>1665848214478</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665848214478</updated>
+    </task>
+    <task id="LOCAL-00008" summary="validation">
+      <created>1665901167208</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665901167208</updated>
     </task>
     <task id="LOCAL-00009" summary="validation">
       <created>1665920607515</created>
@@ -371,49 +433,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669299658815</updated>
     </task>
-    <task id="LOCAL-00052" summary="changes">
-      <created>1677127307027</created>
+    <task id="LOCAL-00052" summary="mini project completed">
+      <created>1669561343942</created>
       <option name="number" value="00052" />
       <option name="presentableId" value="LOCAL-00052" />
       <option name="project" value="LOCAL" />
-      <updated>1677127307027</updated>
+      <updated>1669561343944</updated>
     </task>
-    <task id="LOCAL-00053" summary="main project">
-      <created>1677127931496</created>
+    <task id="LOCAL-00053" summary="adding user images to the map">
+      <created>1677261134732</created>
       <option name="number" value="00053" />
       <option name="presentableId" value="LOCAL-00053" />
       <option name="project" value="LOCAL" />
-      <updated>1677127931496</updated>
+      <updated>1677261134732</updated>
     </task>
-    <task id="LOCAL-00054" summary="main project">
-      <created>1677128184143</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1677128184143</updated>
-    </task>
-    <task id="LOCAL-00055" summary="updated main task in main project">
-      <created>1677128206586</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1677128206586</updated>
-    </task>
-    <task id="LOCAL-00056" summary="deleted some error codes">
-      <created>1677128232644</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1677128232644</updated>
-    </task>
-    <task id="LOCAL-00057" summary="deleted some error codes">
-      <created>1677306109949</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1677306109949</updated>
-    </task>
-    <option name="localTasksCounter" value="58" />
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -426,9 +460,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="product app" />
     <MESSAGE value="email verification" />
     <MESSAGE value="alerts" />
     <MESSAGE value="full up" />
@@ -450,11 +486,8 @@
     <MESSAGE value="verification in login" />
     <MESSAGE value="edit products completed" />
     <MESSAGE value="mini project completed" />
-    <MESSAGE value="changes" />
-    <MESSAGE value="main project" />
-    <MESSAGE value="updated main task in main project" />
-    <MESSAGE value="deleted some error codes" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted some error codes" />
+    <MESSAGE value="adding user images to the map" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding user images to the map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

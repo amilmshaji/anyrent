@@ -80,7 +80,14 @@
                                                         <div class="dash-l-r">
                                                             <div>
                                                                 <div class="manage-o__text-2 u-c-secondary">
-                                                                    <a href="{% url 'deletehouse' h_product.id %}" >REMOVE</a>
+                                                                    <a href="{% url 'deletehouse' h_product.id %}" >REMOVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                                  {% if h_product.is_available == True %}
+
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_house' h_product.id %}" >ARCHIVE</a>
+                                                               {% else %}
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_house' h_product.id %}" >UNARCHIVE</a>
+                                                               {% endif %}
                                                                 </div>
 <!--                                                                <div class="manage-o__text u-c-silver">Placed on 26 Oct 2016 09:08:37</div>-->
                                                             </div>
@@ -126,7 +133,13 @@
                                                     <div class="manage-o__header u-s-m-b-30">
                                                         <div class="dash-l-r">
                                                            <div class="manage-o__text-2 u-c-secondary">
-                                                                    <a href="{% url 'deletecar' c_product.id %}" >REMOVE</a>
+                                                                    <a href="{% url 'deletecar' c_product.id %}" >REMOVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                               {% if c_product.is_available == True %}
+
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_car' c_product.id %}" >ARCHIVE</a>
+                                                               {% else %}
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_car' c_product.id %}" >UNARCHIVE</a>
+                                                               {% endif %}
                                                                 </div>
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
@@ -171,6 +184,12 @@
                                                         <div class="dash-l-r">
                                                           <div class="manage-o__text-2 u-c-secondary">
                                                                     <a href="{% url 'deletebike' b_product.id %}" >REMOVE</a>
+                                                              {% if b_product.is_available == True %}
+
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_bike' b_product.id %}" >ARCHIVE</a>
+                                                               {% else %}
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_bike' b_product.id %}" >UNARCHIVE</a>
+                                                               {% endif %}
                                                                 </div>
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
@@ -216,6 +235,12 @@
                                                         <div class="dash-l-r">
                                                             <div class="manage-o__text-2 u-c-secondary">
                                                                     <a href="{% url 'deletefurn' f_product.id %}" >REMOVE</a>
+                                                                {% if f_product.is_available == True %}
+
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_furn' f_product.id %}" >ARCHIVE</a>
+                                                               {% else %}
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_furn' f_product.id %}" >UNARCHIVE</a>
+                                                               {% endif %}
                                                                 </div>
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
@@ -263,6 +288,14 @@
                                                         <div class="dash-l-r">
                                                            <div class="manage-o__text-2 u-c-secondary">
                                                                     <a href="{% url 'deleteother' o_product.id %}" >REMOVE</a>
+                                                               {% if o_product.is_available == True %}
+
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_other' o_product.id %}" >ARCHIVE</a>
+                                                               {% else %}
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_other' o_product.id %}" >UNARCHIVE</a>
+                                                               {% endif %}
+
+
                                                                 </div>
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">

@@ -71,6 +71,8 @@ class House_Product(models.Model):
             return mark_safe('<img src="{}" width="100" height="100" />'.format(self.images.url))
         return ""
 
+
+
 def slug_generator(sender,instance,*args,**kwargs):
     if not instance.slug:
         instance.slug=unique_slug_generator(instance)

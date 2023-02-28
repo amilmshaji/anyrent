@@ -187,6 +187,7 @@ def map_view(request):
 
 
     for b_product in b_products:
+        geolocator = Nominatim(user_agent="my_app")
         location = geolocator.geocode(b_product.location)
         if b_product.images:
             popup_html = f'<img src="{b_product.images.url}" width="200"><br>{b_product.location}<br>{b_product.ad_title} '
@@ -198,6 +199,7 @@ def map_view(request):
         ).add_to(m)
 
     for c_product in c_products:
+        geolocator = Nominatim(user_agent="my_app")
         location = geolocator.geocode(c_product.location)
         if c_product.images:
             popup_html = f'<img src="{c_product.images.url}" width="200"><br>{c_product.location}<br>{c_product.ad_title} '
@@ -209,6 +211,7 @@ def map_view(request):
         ).add_to(m)
 
     for f_product in f_products:
+        geolocator = Nominatim(user_agent="my_app")
         location = geolocator.geocode(f_product.location)
         if f_product.images:
             popup_html = f'<img src="{f_product.images.url}" width="200"><br>{f_product.location}<br>{f_product.ad_title} '
@@ -220,6 +223,7 @@ def map_view(request):
         ).add_to(m)
 
     for o_product in o_products:
+        geolocator = Nominatim(user_agent="my_app")
         location = geolocator.geocode(o_product.location)
         if o_product.images:
             popup_html = f'<img src="{o_product.images.url}" width="200"><br>{o_product.location}<br>{o_product.ad_title} '

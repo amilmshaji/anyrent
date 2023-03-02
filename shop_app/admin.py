@@ -30,4 +30,4 @@ class RatingAdmin(admin.ModelAdmin):
 
 admin.site.register(ReviewRating, RatingAdmin)
 
-# admin.site.register(Location)
+admin.site.register(Location)

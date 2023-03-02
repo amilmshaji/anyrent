@@ -170,69 +170,180 @@ def map_view(request):
     c_products = Car_Product.objects.all()
     f_products = Furn_Product.objects.all()
     o_products = Other_Product.objects.all()
+    locs=Location.objects.all()
     # Create the map
     m = folium.Map(location=[9.939093, 76.270523], zoom_start=8) #initial state the map
 
     geolocator = Nominatim(user_agent="my_app")
     for h_product in h_products:
-        location = geolocator.geocode(h_product.location)
-        if h_product.images:
-            popup_html = f'<img src="{h_product.images.url}" width="200"><br>{h_product.location}<br>{h_product.ad_title} '
+        results = Location.objects.filter(name=h_product.location)
+        if results.exists():
+            for result in results:
+                if h_product.location == result.name:
+                    if h_product.images:
+                        popup_html = f'<img src="{h_product.images.url}" width="200"><br>{h_product.location}'
+                    else:
+                        popup_html = h_product.location
+
+                    # Check if there are multiple house products with the same location
+                    same_loc = House_Product.objects.filter(location=h_product.location).exclude(id=h_product.id)
+                    if same_loc.exists():
+                        # Offset the latitude and longitude by 0.004 degrees
+                        result.latitude += 0.004
+                        result.longitude += 0.004
+                    folium.Marker(
+                        [result.latitude, result.longitude],
+                        popup=folium.Popup(popup_html, max_width=300)
+                    ).add_to(m)
+
         else:
-            popup_html = h_product.location
-        folium.Marker(
-            [location.latitude, location.longitude],
-            popup=folium.Popup(popup_html, max_width=300)
+            geoloc = geolocator.geocode(h_product.location)
+            l = Location(name=h_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+            l.save()
+            if h_product.images:
+                popup_html = f'<img src="{h_product.images.url}" width="200"><br>{h_product.location}<br>{h_product.ad_title} '
+            else:
+                popup_html = h_product.location
+            folium.Marker(
+                [geoloc.latitude, geoloc.longitude],
+                popup=folium.Popup(popup_html, max_width=300)
             ).add_to(m)
 
+    for c_product in c_products:
+        results = Location.objects.filter(name=c_product.location)
+        if results.exists():
+            for result in results:
+                if c_product.location == result.name:
+                    if c_product.images:
+                        popup_html = f'<img src="{c_product.images.url}" width="200"><br>{c_product.location}'
+                    else:
+                        popup_html = c_product.location
+
+                    # Check if there are multiple house products with the same location
+                    same_loc = Car_Product.objects.filter(location=c_product.location).exclude(id=c_product.id)
+                    if same_loc.exists():
+                        # Offset the latitude and longitude by 0.004 degrees
+                        result.latitude += 0.004
+                        result.longitude += 0.004
+                    folium.Marker(
+                        [result.latitude, result.longitude],
+                        popup=folium.Popup(popup_html, max_width=300)
+                    ).add_to(m)
+
+        else:
+            geoloc = geolocator.geocode(c_product.location)
+            l = Location(name=c_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+            l.save()
+            if c_product.images:
+                popup_html = f'<img src="{c_product.images.url}" width="200"><br>{c_product.location}<br>{c_product.ad_title} '
+            else:
+                popup_html = c_product.location
+            folium.Marker(
+                [geoloc.latitude, geoloc.longitude],
+                popup=folium.Popup(popup_html, max_width=300)
+            ).add_to(m)
 
     for b_product in b_products:
-        geolocator = Nominatim(user_agent="my_app")
-        location = geolocator.geocode(b_product.location)
-        if b_product.images:
-            popup_html = f'<img src="{b_product.images.url}" width="200"><br>{b_product.location}<br>{b_product.ad_title} '
-        else:
-            popup_html = b_product.location
-        folium.Marker(
-            [location.latitude, location.longitude],
-            popup=folium.Popup(popup_html, max_width=300)
-        ).add_to(m)
+        results = Location.objects.filter(name=b_product.location)
+        if results.exists():
+            for result in results:
+                if b_product.location == result.name:
+                    if b_product.images:
+                        popup_html = f'<img src="{b_product.images.url}" width="200"><br>{b_product.location}'
+                    else:
+                        popup_html = b_product.location
 
-    for c_product in c_products:
-        geolocator = Nominatim(user_agent="my_app")
-        location = geolocator.geocode(c_product.location)
-        if c_product.images:
-            popup_html = f'<img src="{c_product.images.url}" width="200"><br>{c_product.location}<br>{c_product.ad_title} '
+                    # Check if there are multiple house products with the same location
+                    same_loc = Bike_Product.objects.filter(location=b_product.location).exclude(id=b_product.id)
+                    if same_loc.exists():
+                        # Offset the latitude and longitude by 0.004 degrees
+                        result.latitude += 0.004
+                        result.longitude += 0.004
+                    folium.Marker(
+                        [result.latitude, result.longitude],
+                        popup=folium.Popup(popup_html, max_width=300)
+                    ).add_to(m)
+
         else:
-            popup_html = c_product.location
-        folium.Marker(
-            [location.latitude, location.longitude],
-            popup=folium.Popup(popup_html, max_width=300)
-        ).add_to(m)
+            geoloc = geolocator.geocode(b_product.location)
+            l = Location(name=b_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+            l.save()
+            if b_product.images:
+                popup_html = f'<img src="{b_product.images.url}" width="200"><br>{b_product.location}<br>{b_product.ad_title} '
+            else:
+                popup_html = b_product.location
+            folium.Marker(
+                [geoloc.latitude, geoloc.longitude],
+                popup=folium.Popup(popup_html, max_width=300)
+            ).add_to(m)
 
     for f_product in f_products:
-        geolocator = Nominatim(user_agent="my_app")
-        location = geolocator.geocode(f_product.location)
-        if f_product.images:
-            popup_html = f'<img src="{f_product.images.url}" width="200"><br>{f_product.location}<br>{f_product.ad_title} '
+        results = Location.objects.filter(name=f_product.location)
+        if results.exists():
+            for result in results:
+                if f_product.location == result.name:
+                    if f_product.images:
+                        popup_html = f'<img src="{f_product.images.url}" width="200"><br>{f_product.location}'
+                    else:
+                        popup_html = f_product.location
+
+                    # Check if there are multiple house products with the same location
+                    same_loc = Furn_Product.objects.filter(location=f_product.location).exclude(id=f_product.id)
+                    if same_loc.exists():
+                        # Offset the latitude and longitude by 0.004 degrees
+                        result.latitude += 0.004
+                        result.longitude += 0.004
+                    folium.Marker(
+                        [result.latitude, result.longitude],
+                        popup=folium.Popup(popup_html, max_width=300)
+                    ).add_to(m)
+
         else:
-            popup_html = f_product.location
-        folium.Marker(
-            [location.latitude, location.longitude],
-            popup=folium.Popup(popup_html, max_width=300)
-        ).add_to(m)
+            geoloc = geolocator.geocode(f_product.location)
+            l = Location(name=f_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+            l.save()
+            if f_product.images:
+                popup_html = f'<img src="{f_product.images.url}" width="200"><br>{f_product.location}<br>{f_product.ad_title} '
+            else:
+                popup_html = f_product.location
+            folium.Marker(
+                [geoloc.latitude, geoloc.longitude],
+                popup=folium.Popup(popup_html, max_width=300)
+            ).add_to(m)
 
     for o_product in o_products:
-        geolocator = Nominatim(user_agent="my_app")
-        location = geolocator.geocode(o_product.location)
-        if o_product.images:
-            popup_html = f'<img src="{o_product.images.url}" width="200"><br>{o_product.location}<br>{o_product.ad_title} '
+        results = Location.objects.filter(name=o_product.location)
+        if results.exists():
+            for result in results:
+                if o_product.location == result.name:
+                    if o_product.images:
+                        popup_html = f'<img src="{o_product.images.url}" width="200"><br>{o_product.location}'
+                    else:
+                        popup_html = o_product.location
+
+                    # Check if there are multiple house products with the same location
+                    same_loc = Other_Product.objects.filter(location=o_product.location).exclude(id=o_product.id)
+                    if same_loc.exists():
+                        # Offset the latitude and longitude by 0.004 degrees
+                        result.latitude += 0.004
+                        result.longitude += 0.004
+                    folium.Marker(
+                        [result.latitude, result.longitude],
+                        popup=folium.Popup(popup_html, max_width=300)
+                    ).add_to(m)
+
         else:
-            popup_html = o_product.location
-        folium.Marker(
-            [location.latitude, location.longitude],
-            popup=folium.Popup(popup_html, max_width=300)
-        ).add_to(m)
+            geoloc = geolocator.geocode(o_product.location)
+            l = Location(name=o_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+            l.save()
+            if o_product.images:
+                popup_html = f'<img src="{o_product.images.url}" width="200"><br>{o_product.location}<br>{o_product.ad_title} '
+            else:
+                popup_html = o_product.location
+            folium.Marker(
+                [geoloc.latitude, geoloc.longitude],
+                popup=folium.Popup(popup_html, max_width=300)
+            ).add_to(m)
 
 
     # Render the map
@@ -246,44 +357,3 @@ def map_view(request):
 
 
 
-
-
-
-
-##taking longitiude and latitude from location table
- # locations = Location.objects.all()
-# for h_product in h_products:
-#     for location in locations:
-#         if h_product.location == location.name:
-#             if h_product.images:
-#                 popup_html = f'<img src="{h_product.images.url}" width="200"><br>{h_product.location}'
-#             else:
-#                 popup_html = h_product.location
-#             folium.Marker(
-#                 [location.latitude, location.longitude],
-#                 popup=folium.Popup(popup_html, max_width=300)
-#             ).add_to(m)
-#
-# for b_product in b_products:
-#     for location in locations:
-#         if b_product.location == location.name:
-#             if b_product.images:
-#                 popup_html = f'<img src="{b_product.images.url}" width="200"><br>{b_product.location}'
-#             else:
-#                 popup_html = b_product.location
-#             folium.Marker(
-#                 [location.latitude, location.longitude],
-#                 popup=folium.Popup(popup_html, max_width=300)
-#             ).add_to(m)
-
-    #
-    # # Add markers to the map
-    # for location in locations:
-    #     if location.images:
-    #         popup_html = f'<img src="{location.images.url}" width="200"><br>{location.name}'
-    #     else:
-    #         popup_html = location.name
-    #     folium.Marker(
-    #         [location.latitude, location.longitude],
-    #         popup=folium.Popup(popup_html, max_width=300)
-    #     ).add_to(m)

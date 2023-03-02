@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="mapp full finished(corrected limit exceeded error)">
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="map product connected to detail page">
+      <change afterPath="$PROJECT_DIR$/chat/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/chat/chat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anyrent_pjct/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/anyrent_pjct/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anyrent_pjct/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/anyrent_pjct/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product-detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -52,16 +60,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MINI_PROJECT/Sanitaryware_Online_Shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/chat" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PROJECTS\anyrent_pjct\chat" />
       <recent name="D:\PROJECTS\anyrent_pjct\static\images\logo" />
       <recent name="D:\PROJECTS\anyrent_pjct" />
       <recent name="D:\PROJECTS\anyrent_pjct\shop_app" />
       <recent name="D:\PROJECTS\anyrent_pjct\templates\dashboard" />
-      <recent name="D:\Python\anyrent_pjct\shop_app" />
     </key>
   </component>
   <component name="RunManager">
@@ -100,13 +108,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00009" summary="validation">
-      <created>1665920607515</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1665920607515</updated>
     </task>
     <task id="LOCAL-00010" summary="validation full set">
       <created>1665924605407</created>
@@ -444,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677774418701</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="map product connected to detail page">
+      <created>1677779523869</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1677779523869</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +469,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="email verification" />
     <MESSAGE value="alerts" />
     <MESSAGE value="full up" />
     <MESSAGE value="forgot my password" />
@@ -486,6 +493,7 @@
     <MESSAGE value="map updated" />
     <MESSAGE value="Changes" />
     <MESSAGE value="mapp full finished(corrected limit exceeded error)" />
-    <option name="LAST_COMMIT_MESSAGE" value="mapp full finished(corrected limit exceeded error)" />
+    <MESSAGE value="map product connected to detail page" />
+    <option name="LAST_COMMIT_MESSAGE" value="map product connected to detail page" />
   </component>
 </project>

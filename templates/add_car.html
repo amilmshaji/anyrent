@@ -55,7 +55,7 @@
 						document.getElementById('fh').style.display = "none";
 
 					}
-			    var expr = /^[0-9]+$/;
+                var expr = /^[1-9][0-9]*$/;
 			    var c = document.getElementById("driven").value;
 
 
@@ -63,7 +63,7 @@
                 {
                     document.getElementById('dn').style.display = "block";
 
-                    document.getElementById('dn').innerHTML="**Please Enter Rent";
+                    document.getElementById('dn').innerHTML="**Please Enter KM driven";
                     return false;
                 }
 					else if(c!="" && expr.test(c)==false){
@@ -103,7 +103,7 @@
 						document.getElementById('img').style.display = "none";
 
 					}
-				 var expr = /^[0-9]+$/;
+                var expr = /^[1-9][0-9]*$/;
 			    var e = document.getElementById("rent").value;
 
 

@@ -351,6 +351,7 @@ def map_view(request):
     return render(request, 'map.html', {'map': m})
 
 
+
 def prod_map_view(request,location):
     h_products = House_Product.objects.all()
     b_products = Bike_Product.objects.all()
@@ -358,11 +359,15 @@ def prod_map_view(request,location):
     f_products = Furn_Product.objects.all()
     o_products = Other_Product.objects.all()
     locs=Location.objects.all()
-    res = Location.objects.get(name=location)
-    print(res)
+    r = Location.objects.filter(name=location)
+    if r.exists():
+
+        res = Location.objects.get(name=location)
+        m = folium.Map(location=[res.latitude, res.longitude], zoom_start=15)  # initial state the map
+    else:
+        m = folium.Map(location=[9.939093, 76.270523], zoom_start=8)  # initial state the map
 
     # Create the map
-    m = folium.Map(location=[res.latitude, res.longitude], zoom_start=15) #initial state the map
 
     geolocator = Nominatim(user_agent="my_app")
     for h_product in h_products:

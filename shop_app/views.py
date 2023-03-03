@@ -81,30 +81,30 @@ def product_detail(request,  category_slug, product_slug):
     }
     return render(request, 'product-detail.html', context)
 
-def search(request):
-    if 'keyword' in request.GET:
-        keyword = request.GET['keyword']
-        if keyword:
-            h_products = House_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
-            c_products = Car_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
-            b_products = Bike_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
-            f_products = Furn_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
-            o_products = Other_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
-            product_count = h_products.count()
-    context = {
-        'h_products': h_products,
-        'c_products': c_products,
-        'f_products': f_products,
-        'b_products': b_products,
-        'o_products': o_products,
-        'product_count': product_count,
-    }
-    return render(request, 'shop.html', context)
+# def search(request):
+#     if 'keyword' in request.GET:
+#         keyword = request.GET['keyword']
+#         if keyword:
+#             h_products = House_Product.objects.order_by(
+#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
+#             c_products = Car_Product.objects.order_by(
+#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
+#             b_products = Bike_Product.objects.order_by(
+#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
+#             f_products = Furn_Product.objects.order_by(
+#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
+#             o_products = Other_Product.objects.order_by(
+#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
+#             product_count = h_products.count()
+#     context = {
+#         'h_products': h_products,
+#         'c_products': c_products,
+#         'f_products': f_products,
+#         'b_products': b_products,
+#         'o_products': o_products,
+#         'product_count': product_count,
+#     }
+#     return render(request, 'shop.html', context)
 
 
 
@@ -135,6 +135,68 @@ def location_search(request):
     }
     return render(request, 'shop.html', context)
 
+def search(request):
+    if 'keyword' in request.GET:
+        keyword = request.GET['keyword']
+        if keyword:
+            products = House_Product.objects.order_by(
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            c_products = Car_Product.objects.order_by(
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            product_count = products.count()
+    context = {
+        'products': products,
+        'c_products': c_products,
+
+        'product_count': product_count,
+    }
+    return render(request, 'shop.html', context)
+from django.http import JsonResponse
+from django.db.models import Q
+
+def search_suggestions(request):
+    if 'keyword' in request.GET:
+        keyword = request.GET['keyword']
+        if keyword:
+            products = House_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            c_products = Car_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            b_products = Bike_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            f_products = Furn_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            o_products = Other_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+
+            suggestions = []
+            for product in products:
+                suggestion = {
+                    'name': product.ad_title,
+                    'url': product.get_url()
+                }
+                suggestions.append(suggestion)
+            for c_product in c_products:
+                suggestion = {
+                    'name': c_product.ad_title,
+                    'url': c_product.get_url()
+                }
+                suggestions.append(suggestion)
+            for b_product in b_products:
+                suggestion = {
+                    'name': b_product.ad_title,
+                    'url': b_product.get_url()
+                }
+                suggestions.append(suggestion)
+            for f_product in f_products:
+                suggestion = {
+                    'name': f_product.ad_title,
+                    'url': f_product.get_url()
+                }
+                suggestions.append(suggestion)
+            for o_product in o_products:
+                suggestion = {
+                    'name': o_product.ad_title,
+                    'url': o_product.get_url()
+                }
+                suggestions.append(suggestion)
+            return JsonResponse(suggestions, safe=False)
+    return JsonResponse([], safe=False)
 
 @login_required(login_url='login')
 def submit_review(request, product_id):

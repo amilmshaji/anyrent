@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="validation updated">
-      <change afterPath="$PROJECT_DIR$/media/photos/house/b13.jpg" afterDir="false" />
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="header in map">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product-detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="C:/Sanitaryware_Online_Shop" />
+    <property name="last_opened_file_path" value="C:/MINI_PROJECT/Sanitaryware_Online_Shop" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -97,13 +98,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00012" summary="lost password">
-      <created>1665928145742</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1665928145742</updated>
     </task>
     <task id="LOCAL-00013" summary="lost password">
       <created>1666014466298</created>
@@ -441,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677818783124</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="header in map">
+      <created>1677824095554</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1677824095554</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -458,7 +459,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="forgot my password" />
     <MESSAGE value="validation" />
     <MESSAGE value="validation full set" />
     <MESSAGE value="products visible" />
@@ -483,6 +483,7 @@
     <MESSAGE value="map product connected to detail page" />
     <MESSAGE value="chat" />
     <MESSAGE value="validation updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="validation updated" />
+    <MESSAGE value="header in map" />
+    <option name="LAST_COMMIT_MESSAGE" value="header in map" />
   </component>
 </project>

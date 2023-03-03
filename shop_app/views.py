@@ -106,6 +106,8 @@ def search(request):
     }
     return render(request, 'shop.html', context)
 
+
+
 def location_search(request):
     if 'location' in request.GET:
         keyword = request.GET['location']
@@ -181,7 +183,7 @@ def map_view(request):
             for result in results:
                 if h_product.location == result.name:
                     if h_product.images:
-                        popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.location}</a>'
+                        popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.ad_title}<br>{h_product.location}</a>'
                     else:
                         popup_html = f'<a href="{h_product.get_url()}" target="_blank">{h_product.location}</a>'
 
@@ -201,7 +203,7 @@ def map_view(request):
             l = Location(name=h_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
             l.save()
             if h_product.images:
-                popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.location}</a>'
+                popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.ad_title}<br>{h_product.location}</a>'
             else:
                 popup_html = f'<a href="{h_product.get_url()}" target="_blank">{h_product.location}</a>'
             folium.Marker(
@@ -215,7 +217,7 @@ def map_view(request):
             for result in results:
                 if c_product.location == result.name:
                     if c_product.images:
-                        popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.location}</a>'
+                        popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.ad_title}<br>{c_product.location}</a>'
                     else:
                         popup_html = c_product.location
 
@@ -235,7 +237,7 @@ def map_view(request):
             l = Location(name=c_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
             l.save()
             if c_product.images:
-                popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.location}</a>'
+                popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.ad_title}<br>{c_product.location}</a>'
             else:
                 popup_html = f'<a href="{c_product.get_url()}" target="_blank">{c_product.location}</a>'
             folium.Marker(
@@ -249,7 +251,7 @@ def map_view(request):
             for result in results:
                 if b_product.location == result.name:
                     if b_product.images:
-                        popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.location}</a>'
+                        popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.ad_title}<br>{b_product.location}</a>'
                     else:
                         popup_html = f'<a href="{b_product.get_url()}" target="_blank">{b_product.location}</a>'
 
@@ -269,7 +271,7 @@ def map_view(request):
             l = Location(name=b_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
             l.save()
             if b_product.images:
-                popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.location}</a>'
+                popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.ad_title}<br>{b_product.location}</a>'
             else:
                 popup_html = f'<a href="{b_product.get_url()}" target="_blank">{b_product.location}</a>'
             folium.Marker(
@@ -283,9 +285,9 @@ def map_view(request):
             for result in results:
                 if f_product.location == result.name:
                     if f_product.images:
-                        popup_html = f'<a href="{f_product.get_url()}" target="_blank"><img src="{f_product.images.url}" width="200"><br>{f_product.location}</a>'
+                        popup_html = f'<a href="{f_product.get_url()}" target="_blank"><img src="{f_product.images.url}" width="200"><br>{f_product.ad_title}<br>{f_product.location}</a>'
                     else:
-                        popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}</a>'
+                        popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}<br>{f_product.ad_title}</a>'
 
                     # Check if there are multiple house products with the same location
                     same_loc = Furn_Product.objects.filter(location=f_product.location).exclude(id=f_product.id)
@@ -303,9 +305,9 @@ def map_view(request):
             l = Location(name=f_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
             l.save()
             if f_product.images:
-                popup_html = f'<img src="{f_product.images.url}" width="200"><br>{f_product.location}<br>{f_product.ad_title} '
+                popup_html = f'<a href="{f_product.get_url()}" target="_blank"><img src="{f_product.images.url}" width="200"><br>{f_product.ad_title}<br>{f_product.location}</a>'
             else:
-                popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}</a>'
+                popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}<br>{f_product.ad_title}</a>'
             folium.Marker(
                 [geoloc.latitude, geoloc.longitude],
                 popup=folium.Popup(popup_html, max_width=300)
@@ -317,9 +319,9 @@ def map_view(request):
             for result in results:
                 if o_product.location == result.name:
                     if o_product.images:
-                        popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.location}</a>'
+                        popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.ad_title}<br>{o_product.location}</a>'
                     else:
-                        popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}</a>'
+                        popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}<br>{o_product.ad_title}</a>'
 
                     # Check if there are multiple house products with the same location
                     same_loc = Other_Product.objects.filter(location=o_product.location).exclude(id=o_product.id)
@@ -337,9 +339,9 @@ def map_view(request):
             l = Location(name=o_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
             l.save()
             if o_product.images:
-                popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.location}</a>'
+                popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.ad_title}<br>{o_product.location}</a>'
             else:
-                popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}</a>'
+                popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}<br>{o_product.ad_title}</a>'
             folium.Marker(
                 [geoloc.latitude, geoloc.longitude],
                 popup=folium.Popup(popup_html, max_width=300)

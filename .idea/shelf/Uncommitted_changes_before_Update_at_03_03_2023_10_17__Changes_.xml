@@ -1,0 +1,1954 @@
+<changelist name="Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]" date="1677818835043" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 03/03/2023 10:17 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Beulah" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Beulah" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Yekaterinburg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Yekaterinburg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/ca/LC_MESSAGES/djangojs.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/djangojs.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Cancun" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Cancun" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Kolkata" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Kolkata" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/hsb/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/flatpages/locale/kk/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django1.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Phoenix" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Phoenix" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Canada/Atlantic" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Atlantic" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sites/locale/az/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django2.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Tokyo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Tokyo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/af/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django3.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Perth" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Perth" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/indexers.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/indexers.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/contenttypes/locale/fi/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django4.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Bahia" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Bahia" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Queensland" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Queensland" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Greenwich1" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Greenwich1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/django1.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django11.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Porto-Novo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Porto-Novo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Simferopol" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Simferopol" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Phoenix" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Phoenix1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Curacao" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Curacao" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/nl/LC_MESSAGES/djangojs.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/djangojs1.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/South_Pole" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/South_Pole" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/El_Salvador" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/El_Salvador" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Saskatchewan" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Saskatchewan" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/_imagingft.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/_imagingft.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Bogota" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Bogota" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Kinshasa" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Kinshasa" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/hi/LC_MESSAGES/djangojs.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/djangojs2.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/flatpages/locale/be/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django5.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/auth/locale/ml/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django6.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Majuro" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Majuro" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Oral" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Oral" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/es_MX/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django7.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Macquarie" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Macquarie" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/auth/locale/zh_Hant/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django8.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Asia/Irkutsk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Irkutsk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Broken_Hill" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Broken_Hill" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/humanize/locale/fi/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django9.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Gibraltar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Gibraltar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/dsb/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django10.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/mn/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django12.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Saratov" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Saratov" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/humanize/locale/gl/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django13.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/is/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django14.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Guatemala" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Guatemala" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Budapest" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Budapest" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admindocs/locale/dsb/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django15.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/contenttypes/locale/hy/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django16.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Vilnius" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Vilnius" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Bermuda" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Bermuda" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/contenttypes/locale/pa/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django17.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sites/locale/en/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django18.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/NZ" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/NZ" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Scripts/python.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/python.exe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Vientiane" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Vientiane" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Rangoon" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Rangoon" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/flatpages/locale/dsb/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django19.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/flatpages/locale/pl/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django20.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="db.sqlite3" />
+    <option name="AFTER_PATH" value="db.sqlite3" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/db.sqlite3" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Asia/Qatar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Qatar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/contenttypes/locale/nl/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django21.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Algiers" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Algiers" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Lome" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Lome" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Africa/Casablanca" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Casablanca" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Vienna" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Vienna" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Faroe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Faroe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Indiana/Petersburg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Petersburg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/contenttypes/locale/gl/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django22.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Argentina/Salta" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Salta" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Africa/Mogadishu" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Mogadishu" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Asia/Oral" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Oral1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Nipigon" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Nipigon" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/lb/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django23.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Marengo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Marengo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admindocs/locale/ms/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django24.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/ar/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django25.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admindocs/locale/km/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django26.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Canada/Yukon" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Yukon" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Skopje" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Skopje" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/ky/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django27.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/ja/LC_MESSAGES/django.po" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django.po" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT+7" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT+7" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Metlakatla" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Metlakatla" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/id/LC_MESSAGES/djangojs.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/djangojs3.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/postgres/locale/mk/LC_MESSAGES/django.po" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django1.po" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Asia/Ulaanbaatar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Ulaanbaatar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT+6" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT+6" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/setuptools/cli.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/cli.exe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Catamarca" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Catamarca" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/en/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django28.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/St_Lucia" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/St_Lucia" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Pacific/Fakaofo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Fakaofo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Edmonton" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Edmonton" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/hr/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django29.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT+9" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT+9" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Libreville" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Libreville" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/ro/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django30.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/el/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django31.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admindocs/locale/bn/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django32.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT+8" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT+8" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/postgres/locale/hsb/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django33.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Indian/Mayotte" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Mayotte" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Ciudad_Juarez" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Ciudad_Juarez" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Grenada" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Grenada" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/bs/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django34.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admindocs/locale/bg/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django35.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/auth/locale/hu/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django36.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/GMT+0" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT+0" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Japan" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Japan" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT+12" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT+12" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/fi/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django37.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Nicosia1" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Nicosia1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Yangon" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Yangon" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Chuuk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Chuuk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/zh_Hant/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django38.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/es_CO/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django39.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/eu/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django40.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Ashkhabad" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Ashkhabad" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Guernsey" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Guernsey" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admindocs/locale/hr/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django41.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Asmara" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Asmara" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/fy/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django42.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/ur/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django43.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Port-au-Prince" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Port-au-Prince" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Qyzylorda" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Qyzylorda" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/io/LC_MESSAGES/djangojs.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/djangojs4.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Pacific/Rarotonga" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Rarotonga" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Enderbury" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Enderbury" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/hy/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django44.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Marquesas" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Marquesas" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Tasmania" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Tasmania" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/humanize/locale/nl/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django45.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Zaporozhye" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Zaporozhye" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/da/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django46.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Dacca" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Dacca" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Guatemala" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Guatemala1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Irkutsk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Irkutsk1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/id/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django47.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/uz/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django48.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Indiana/Vincennes" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Vincennes" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/AdminLTELogo.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/AdminLTELogo.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/ms/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django49.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Amsterdam" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Amsterdam" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Eirunepe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Eirunepe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Tirane" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Tirane" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/az/LC_MESSAGES/djangojs.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/djangojs5.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/ka/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django50.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Punta_Arenas" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Punta_Arenas" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Asia/Nicosia" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Nicosia" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Sao_Paulo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Sao_Paulo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Santa_Isabel" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Santa_Isabel" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/postgres/locale/nn/LC_MESSAGES/django.po" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django2.po" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sites/locale/da/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django51.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Luxembourg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Luxembourg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Africa/Cairo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Cairo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Paramaribo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Paramaribo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Choibalsan" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Choibalsan" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/auth/locale/bg/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django52.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Adelaide" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Adelaide" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Ashgabat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Ashgabat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/sr/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django53.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Toronto" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Toronto" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Etc/GMT0" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT0" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Funafuti" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Funafuti" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/flatpages/locale/ka/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django54.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Auckland" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Auckland" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/numpy/random/_generator.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/_generator.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/postgres/locale/es_CO/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django55.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Tell_City" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Tell_City" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Norfolk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Norfolk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Monrovia" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Monrovia" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/bs/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django56.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Seoul" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Seoul" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Atikokan" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Atikokan" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Africa/Ndjamena" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Ndjamena" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/UTC" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/UTC" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Galapagos" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Galapagos" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/nl/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django57.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Louisville1" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Louisville1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Isle_of_Man" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Isle_of_Man" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Knox" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Knox" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Kentucky/Monticello" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Monticello" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/humanize/locale/hy/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django58.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/base.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/base.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Buenos_Aires" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Buenos_Aires" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Asia/Krasnoyarsk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Krasnoyarsk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sites/locale/ka/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django59.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Sao_Paulo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Sao_Paulo1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/te/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django60.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Dublin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Dublin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Eastern1" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Eastern1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Pyongyang" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Pyongyang" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Asia/Yangon" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Yangon1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/ne/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django61.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Mountain" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Mountain" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/numpy/core/_struct_ufunc_tests.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/_struct_ufunc_tests.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/gl/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django62.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Arizona" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Arizona" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Ulyanovsk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Ulyanovsk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Malta" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Malta" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/fa-brands-400.woff" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/fa-brands-400.woff" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Salta" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Salta1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/HST" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/HST" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/properties.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/properties.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Truk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Truk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Bucharest" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Bucharest" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Winnipeg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Winnipeg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/auth/locale/sr_Latn/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django63.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Hongkong" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Hongkong" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/pa/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django64.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Katmandu" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Katmandu" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Havana" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Havana" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Lima" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Lima" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/auth/locale/ga/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django65.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Riga" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Riga" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Kwajalein" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Kwajalein" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/gl/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django66.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Anguilla" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Anguilla" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/default.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/default.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/is/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django67.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Chicago" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Chicago" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/ky/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django68.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Atka" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Atka" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Etc/Universal" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Universal" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/period.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/period.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/concrt140.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/concrt140.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Phnom_Penh" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Phnom_Penh" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/NZ" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/NZ1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/br/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django69.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/en_GB/LC_MESSAGES/djangojs.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/djangojs6.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Factory" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Factory" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Halifax" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Halifax" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/ccalendar.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/ccalendar.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/flatpages/locale/en/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django70.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Yellowknife" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Yellowknife" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/fa-solid-900.woff" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/fa-solid-900.woff" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Riga" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Riga1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Asia/Omsk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Omsk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/bn/LC_MESSAGES/django.po" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django3.po" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/flatpages/locale/ca/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django71.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Lisbon" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Lisbon" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/contenttypes/locale/hr/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django72.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Gaborone" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Gaborone" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Swift_Current" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Swift_Current" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Chatham" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Chatham" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/humanize/locale/udm/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django73.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/is/LC_MESSAGES/djangojs.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/djangojs7.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/postgres/locale/sl/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django74.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/hi/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django75.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/test_py27.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/test_py27.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/my/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django76.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Africa/Douala" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Douala" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/humanize/locale/ar/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django77.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Budapest" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Budapest1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Beulah" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Beulah1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admindocs/locale/id/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django78.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Yukon" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Yukon1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/CST6CDT" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/CST6CDT" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/nattype.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/nattype.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sites/locale/bs/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django79.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/setuptools/cli-arm64.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/cli-arm64.exe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/contenttypes/locale/bn/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django80.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Kaliningrad" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Kaliningrad" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/auth/locale/lb/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django81.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Makassar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Makassar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Katmandu" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Katmandu1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/gd/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django82.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Africa/Nairobi" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Nairobi" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Kuwait" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Kuwait" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Asia/Singapore" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Singapore" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/zh_Hant/LC_MESSAGES/django.po" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django4.po" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Wallis" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Wallis" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Australia/LHI" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/LHI" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Rosario" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Rosario" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/contenttypes/locale/ast/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django83.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Chita" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Chita" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Dar_es_Salaam" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Dar_es_Salaam" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Australia/Currie" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Currie" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/indexing.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/indexing.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Sitka" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Sitka" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Asuncion" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Asuncion" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Vincennes" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Vincennes1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/fa-brands-400.ttf" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/fa-brands-400.ttf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/humanize/locale/lt/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django84.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/ar/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django85.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Bogota" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Bogota1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/test_mi_py27.pkl" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/test_mi_py27.pkl" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Ciudad_Juarez" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Ciudad_Juarez1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/uk/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django86.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/fi/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django87.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT+11" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT+11" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sites/locale/pl/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django88.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Indian/Kerguelen" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Kerguelen" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Pacific/Palau" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Palau" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/es/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django89.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/lv/LC_MESSAGES/djangojs.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/djangojs8.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/ml/LC_MESSAGES/django.po" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django5.po" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/it/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django90.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/humanize/locale/uz/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django91.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/sk/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django92.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT+10" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT+10" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Mexico_City" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Mexico_City" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Ust-Nera" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Ust-Nera" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/eu/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django93.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Johnston" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Johnston" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Porto_Acre" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Porto_Acre" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/auth/locale/sw/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django94.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/flatpages/locale/is/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django95.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT+01" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT+01" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admindocs/locale/ne/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django96.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT-7" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT-7" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/contenttypes/locale/ms/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django97.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Belgrade" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Belgrade" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/numpy/random/_philox.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/_philox.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Bahia_Banderas" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Bahia_Banderas" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/ka/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django98.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/auth/locale/es/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django99.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Asia/Dushanbe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Dushanbe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT-6" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT-6" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Tongatapu" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Tongatapu" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/hy/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django100.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Indian/Antananarivo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Antananarivo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/km/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django101.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Sao_Tome" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Sao_Tome" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Menominee" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Menominee" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/Indianapolis" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Indianapolis" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT-9" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT-9" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Berlin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Berlin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Knox" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Knox1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Brisbane" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Brisbane" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Coral_Harbour" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Coral_Harbour" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Africa/Freetown" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Freetown" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/auth/locale/kab/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django102.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Asia/Dubai" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Dubai" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sessions/locale/bn/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django103.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/id/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django104.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/flatpages/locale/ru/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django105.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/humanize/locale/nb/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django106.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/shutterstock_1715891752-1200x700-compressed.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/shutterstock_1715891752-1200x700-compressed.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT-8" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT-8" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Winamac" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Winamac" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Mountain" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Mountain1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Africa/Maputo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Maputo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/_imagingtk.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/_imagingtk.cp311-win_amd64.pyd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT-3" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT-3" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Krasnoyarsk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Krasnoyarsk1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Aqtau" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Aqtau" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/ia/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django107.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Pontianak" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Pontianak" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/static/admin/fonts/Roboto-Regular-webfont.woff" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Roboto-Regular-webfont.woff" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT-2" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT-2" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Cuba" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Cuba" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/he/LC_MESSAGES/djangojs.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/djangojs9.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Karachi" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Karachi" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/gis/locale/ga/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django108.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT-5" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT-5" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/lt/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django109.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/humanize/locale/ne/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django110.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_28_02_2023_19_51_[Changes]/house-7124141__340.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/house-7124141__340.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admin/locale/ast/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django111.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Scoresbysund" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Scoresbysund" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Hovd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Hovd" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/America/St_Lucia" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/St_Lucia1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/GB-Eire" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GB-Eire" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/postgres/locale/pt_BR/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django112.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Yakutsk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Yakutsk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Chisinau" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Chisinau" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/Newfoundland" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Newfoundland" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/GMT-4" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/GMT-4" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/postgres/locale/eo/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django113.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/redirects/locale/pt_BR/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django114.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sites/locale/kk/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django115.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/conf/locale/ne/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django116.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/Rarotonga" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Rarotonga1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Antarctica/Casey" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Casey" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Moscow" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Moscow" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/postgres/locale/dsb/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django117.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Africa/Dakar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Dakar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_11_15_[Changes]/McMurdo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/McMurdo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/admindocs/locale/fi/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django118.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Africa/Algiers" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Algiers1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sites/locale/cy/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django119.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sites/locale/lt/LC_MESSAGES/django.po" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django6.po" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/tzdata/zoneinfo/Europe/Simferopol" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/Simferopol1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/flatpages/locale/vi/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django120.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="venv/Lib/site-packages/django/contrib/sites/locale/tg/LC_MESSAGES/django.mo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/django121.mo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_27_02_2023_10_30_[Changes]/writers.cp311-win_amd64.pyd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_10_17_[Changes]/writers.cp311-win_amd64.pyd" />
+  </binary>
+</changelist>

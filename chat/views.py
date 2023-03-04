@@ -12,7 +12,7 @@ def chat_view(request, recipient_id):
     recipient = get_object_or_404(Account, id=recipient_id)
     messages = Message.objects.filter(Q(sender=request.user, recipient=recipient) | Q(sender=recipient, recipient=request.user)).order_by('timestamp')
     context = {'recipient': recipient, 'messages': messages}
-    return render(request, 'chat/chat.html', context)
+    return render(request, 'chat/index.html', context)
 
 
 @login_required(login_url='login')

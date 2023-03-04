@@ -1,19 +1,27 @@
-from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+from django.db.models import Q
+from django.shortcuts import get_object_or_404, render, redirect
 from django.views import View
 from django.contrib.auth.models import User
 
 from accounts.models import Account
 from .models import Message
 
-class ChatView(View):
-    def get(self, request):
-        users = Account.objects.exclude(id=request.user.id)
-        return render(request, 'chat/chat.html', {'users': users})
+@login_required(login_url='login')
+def chat_view(request, recipient_id):
+    recipient = get_object_or_404(Account, id=recipient_id)
+    messages = Message.objects.filter(Q(sender=request.user, recipient=recipient) | Q(sender=recipient, recipient=request.user)).order_by('timestamp')
+    context = {'recipient': recipient, 'messages': messages}
+    return render(request, 'chat/chat.html', context)
 
-    def post(self, request):
-        sender = request.user
-        receiver_id = request.POST.get('receiver')
-        receiver = Account.objects.get(id=receiver_id)
+
+@login_required(login_url='login')
+def send_message_view(request, recipient_id):
+    recipient = get_object_or_404(Account, id=recipient_id)
+    if request.method == 'POST':
         message = request.POST.get('message')
-        Message.objects.create(sender=sender, receiver=receiver, message=message)
-        return render(request, 'chat/chat.html', {'receiver': receiver})
+        if message:
+            Message.objects.create(sender=request.user, recipient=recipient, message=message)
+            return redirect('chat', recipient_id=recipient_id)
+    context = {'recipient': recipient}
+    return render(request, 'chat/send_message.html', context)

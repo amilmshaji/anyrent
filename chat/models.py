@@ -8,10 +8,7 @@ from accounts.models import Account
 
 
 class Message(models.Model):
-    sender = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='sender')
-    receiver = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='receiver')
-    message = models.CharField(max_length=500)
-    timestamp = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.message
+    sender = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='sent_messages',blank=True,null=True)
+    recipient = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='received_messages',blank=True,null=True)
+    message = models.TextField(blank=True,null=True)
+    timestamp = models.DateTimeField(auto_now_add=True,blank=True,null=True)

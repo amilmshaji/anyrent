@@ -12,8 +12,8 @@ from django.contrib import messages
 
 from .forms import ReviewForm
 # Create your views here.
-from .models import ReviewRating, Location
-
+# from .models import ReviewRating, Location
+from .models import ReviewRating,Location
 
 def Home(request):
 
@@ -80,6 +80,11 @@ def product_detail(request,  category_slug, product_slug):
 
     }
     return render(request, 'product-detail.html', context)
+
+
+
+
+
 
 # def search(request):
 #     if 'keyword' in request.GET:

@@ -1,5 +1,23 @@
+
 {% extends 'base.html' %}
 
 {% block content %}
-<div id="map">{{ map|safe }}</div>
+<div style="position:relative;">
+    <div id="map1" style="height:500px;"></div>
+    <div style="position:absolute; top:0; left:0; width:100%;">
+        <!-- Add your header content here -->
+        <div id="map">{{ map|safe }}</div>
+
+    </div>
+<!--    <div style="position:absolute; bottom:0; left:0; width:100%;">-->
+<!--        &lt;!&ndash; Add your footer content here &ndash;&gt;-->
+<!--    </div>-->
+</div>
+
+<style>
+    #map1 {
+        width: 100%;
+    }
+</style>
+
 {% endblock %}

@@ -81,30 +81,32 @@ def product_detail(request,  category_slug, product_slug):
     }
     return render(request, 'product-detail.html', context)
 
-def search(request):
-    if 'keyword' in request.GET:
-        keyword = request.GET['keyword']
-        if keyword:
-            h_products = House_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
-            c_products = Car_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
-            b_products = Bike_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
-            f_products = Furn_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
-            o_products = Other_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
-            product_count = h_products.count()
-    context = {
-        'h_products': h_products,
-        'c_products': c_products,
-        'f_products': f_products,
-        'b_products': b_products,
-        'o_products': o_products,
-        'product_count': product_count,
-    }
-    return render(request, 'shop.html', context)
+# def search(request):
+#     if 'keyword' in request.GET:
+#         keyword = request.GET['keyword']
+#         if keyword:
+#             h_products = House_Product.objects.order_by(
+#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
+#             c_products = Car_Product.objects.order_by(
+#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
+#             b_products = Bike_Product.objects.order_by(
+#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
+#             f_products = Furn_Product.objects.order_by(
+#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
+#             o_products = Other_Product.objects.order_by(
+#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
+#             product_count = h_products.count()
+#     context = {
+#         'h_products': h_products,
+#         'c_products': c_products,
+#         'f_products': f_products,
+#         'b_products': b_products,
+#         'o_products': o_products,
+#         'product_count': product_count,
+#     }
+#     return render(request, 'shop.html', context)
+
+
 
 def location_search(request):
     if 'location' in request.GET:
@@ -133,6 +135,68 @@ def location_search(request):
     }
     return render(request, 'shop.html', context)
 
+def search(request):
+    if 'keyword' in request.GET:
+        keyword = request.GET['keyword']
+        if keyword:
+            products = House_Product.objects.order_by(
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            c_products = Car_Product.objects.order_by(
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            product_count = products.count()
+    context = {
+        'products': products,
+        'c_products': c_products,
+
+        'product_count': product_count,
+    }
+    return render(request, 'shop.html', context)
+from django.http import JsonResponse
+from django.db.models import Q
+
+def search_suggestions(request):
+    if 'keyword' in request.GET:
+        keyword = request.GET['keyword']
+        if keyword:
+            products = House_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            c_products = Car_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            b_products = Bike_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            f_products = Furn_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            o_products = Other_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+
+            suggestions = []
+            for product in products:
+                suggestion = {
+                    'name': product.ad_title,
+                    'url': product.get_url()
+                }
+                suggestions.append(suggestion)
+            for c_product in c_products:
+                suggestion = {
+                    'name': c_product.ad_title,
+                    'url': c_product.get_url()
+                }
+                suggestions.append(suggestion)
+            for b_product in b_products:
+                suggestion = {
+                    'name': b_product.ad_title,
+                    'url': b_product.get_url()
+                }
+                suggestions.append(suggestion)
+            for f_product in f_products:
+                suggestion = {
+                    'name': f_product.ad_title,
+                    'url': f_product.get_url()
+                }
+                suggestions.append(suggestion)
+            for o_product in o_products:
+                suggestion = {
+                    'name': o_product.ad_title,
+                    'url': o_product.get_url()
+                }
+                suggestions.append(suggestion)
+            return JsonResponse(suggestions, safe=False)
+    return JsonResponse([], safe=False)
 
 @login_required(login_url='login')
 def submit_review(request, product_id):
@@ -181,7 +245,7 @@ def map_view(request):
             for result in results:
                 if h_product.location == result.name:
                     if h_product.images:
-                        popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.location}</a>'
+                        popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.ad_title}<br>{h_product.location}</a>'
                     else:
                         popup_html = f'<a href="{h_product.get_url()}" target="_blank">{h_product.location}</a>'
 
@@ -201,7 +265,7 @@ def map_view(request):
             l = Location(name=h_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
             l.save()
             if h_product.images:
-                popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.location}</a>'
+                popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.ad_title}<br>{h_product.location}</a>'
             else:
                 popup_html = f'<a href="{h_product.get_url()}" target="_blank">{h_product.location}</a>'
             folium.Marker(
@@ -215,7 +279,7 @@ def map_view(request):
             for result in results:
                 if c_product.location == result.name:
                     if c_product.images:
-                        popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.location}</a>'
+                        popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.ad_title}<br>{c_product.location}</a>'
                     else:
                         popup_html = c_product.location
 
@@ -235,7 +299,7 @@ def map_view(request):
             l = Location(name=c_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
             l.save()
             if c_product.images:
-                popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.location}</a>'
+                popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.ad_title}<br>{c_product.location}</a>'
             else:
                 popup_html = f'<a href="{c_product.get_url()}" target="_blank">{c_product.location}</a>'
             folium.Marker(
@@ -249,7 +313,7 @@ def map_view(request):
             for result in results:
                 if b_product.location == result.name:
                     if b_product.images:
-                        popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.location}</a>'
+                        popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.ad_title}<br>{b_product.location}</a>'
                     else:
                         popup_html = f'<a href="{b_product.get_url()}" target="_blank">{b_product.location}</a>'
 
@@ -269,7 +333,7 @@ def map_view(request):
             l = Location(name=b_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
             l.save()
             if b_product.images:
-                popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.location}</a>'
+                popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.ad_title}<br>{b_product.location}</a>'
             else:
                 popup_html = f'<a href="{b_product.get_url()}" target="_blank">{b_product.location}</a>'
             folium.Marker(
@@ -283,9 +347,9 @@ def map_view(request):
             for result in results:
                 if f_product.location == result.name:
                     if f_product.images:
-                        popup_html = f'<a href="{f_product.get_url()}" target="_blank"><img src="{f_product.images.url}" width="200"><br>{f_product.location}</a>'
+                        popup_html = f'<a href="{f_product.get_url()}" target="_blank"><img src="{f_product.images.url}" width="200"><br>{f_product.ad_title}<br>{f_product.location}</a>'
                     else:
-                        popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}</a>'
+                        popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}<br>{f_product.ad_title}</a>'
 
                     # Check if there are multiple house products with the same location
                     same_loc = Furn_Product.objects.filter(location=f_product.location).exclude(id=f_product.id)
@@ -303,9 +367,9 @@ def map_view(request):
             l = Location(name=f_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
             l.save()
             if f_product.images:
-                popup_html = f'<img src="{f_product.images.url}" width="200"><br>{f_product.location}<br>{f_product.ad_title} '
+                popup_html = f'<a href="{f_product.get_url()}" target="_blank"><img src="{f_product.images.url}" width="200"><br>{f_product.ad_title}<br>{f_product.location}</a>'
             else:
-                popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}</a>'
+                popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}<br>{f_product.ad_title}</a>'
             folium.Marker(
                 [geoloc.latitude, geoloc.longitude],
                 popup=folium.Popup(popup_html, max_width=300)
@@ -317,9 +381,9 @@ def map_view(request):
             for result in results:
                 if o_product.location == result.name:
                     if o_product.images:
-                        popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.location}</a>'
+                        popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.ad_title}<br>{o_product.location}</a>'
                     else:
-                        popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}</a>'
+                        popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}<br>{o_product.ad_title}</a>'
 
                     # Check if there are multiple house products with the same location
                     same_loc = Other_Product.objects.filter(location=o_product.location).exclude(id=o_product.id)
@@ -337,9 +401,9 @@ def map_view(request):
             l = Location(name=o_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
             l.save()
             if o_product.images:
-                popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.location}</a>'
+                popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.ad_title}<br>{o_product.location}</a>'
             else:
-                popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}</a>'
+                popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}<br>{o_product.ad_title}</a>'
             folium.Marker(
                 [geoloc.latitude, geoloc.longitude],
                 popup=folium.Popup(popup_html, max_width=300)

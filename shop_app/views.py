@@ -82,37 +82,6 @@ def product_detail(request,  category_slug, product_slug):
     return render(request, 'product-detail.html', context)
 
 
-
-
-
-
-# def search(request):
-#     if 'keyword' in request.GET:
-#         keyword = request.GET['keyword']
-#         if keyword:
-#             h_products = House_Product.objects.order_by(
-#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
-#             c_products = Car_Product.objects.order_by(
-#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
-#             b_products = Bike_Product.objects.order_by(
-#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(brand__icontains=keyword) | Q(add_info__icontains=keyword))
-#             f_products = Furn_Product.objects.order_by(
-#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
-#             o_products = Other_Product.objects.order_by(
-#                 'created_date').filter(Q(ad_title__icontains=keyword) | Q(type__icontains=keyword) | Q(add_info__icontains=keyword))
-#             product_count = h_products.count()
-#     context = {
-#         'h_products': h_products,
-#         'c_products': c_products,
-#         'f_products': f_products,
-#         'b_products': b_products,
-#         'o_products': o_products,
-#         'product_count': product_count,
-#     }
-#     return render(request, 'shop.html', context)
-
-
-
 def location_search(request):
     if 'location' in request.GET:
         keyword = request.GET['location']
@@ -144,14 +113,23 @@ def search(request):
     if 'keyword' in request.GET:
         keyword = request.GET['keyword']
         if keyword:
-            products = House_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            h_products = House_Product.objects.order_by(
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(category__category_name__icontains=keyword))
             c_products = Car_Product.objects.order_by(
-                'created_date').filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
-            product_count = products.count()
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(category__category_name__icontains=keyword))
+            b_products = Bike_Product.objects.order_by(
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(category__category_name__icontains=keyword))
+            f_products = Furn_Product.objects.order_by(
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(category__category_name__icontains=keyword))
+            o_products = Other_Product.objects.order_by(
+                'created_date').filter(Q(ad_title__icontains=keyword) | Q(category__category_name__icontains=keyword))
+            product_count = h_products.count()
     context = {
-        'products': products,
+        'h_products': h_products,
         'c_products': c_products,
+        'b_products': b_products,
+        'f_products': f_products,
+        'o_products': o_products,
 
         'product_count': product_count,
     }
@@ -163,11 +141,11 @@ def search_suggestions(request):
     if 'keyword' in request.GET:
         keyword = request.GET['keyword']
         if keyword:
-            products = House_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
-            c_products = Car_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
-            b_products = Bike_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
-            f_products = Furn_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
-            o_products = Other_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(add_info__icontains=keyword))
+            products = House_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(category__category_name__icontains=keyword))
+            c_products = Car_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(category__category_name__icontains=keyword))
+            b_products = Bike_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(category__category_name__icontains=keyword))
+            f_products = Furn_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(category__category_name__icontains=keyword))
+            o_products = Other_Product.objects.filter(Q(ad_title__icontains=keyword) | Q(category__category_name__icontains=keyword))
 
             suggestions = []
             for product in products:

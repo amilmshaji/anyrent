@@ -105,7 +105,7 @@
                                     </div>
                                 </div>
 
-
+                                {% if single_product.user != request.user %}
 
                                 <div class="u-s-m-b-15">
                                     <form class="pd-detail__form" action="{% url 'chat' single_product.user.id %}" method="post">
@@ -120,10 +120,12 @@
                                             </div>
                                             <div class="u-s-m-b-15"><a href="{% url 'chat' single_product.user.id %}">
 
-                                                <button class="btn btn--e-brand-b-2" type="submit">REQUEST TO CHAT{{single_product.user.fname}}</button></a></div>
+                                                <button class="btn btn--e-brand-b-2" type="submit">REQUEST TO CHAT{{single_product.user.fname}}</button></a>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
+                                {% endif %}
                                 <div class="u-s-m-b-15">
 
                                     <span class="pd-detail__label u-s-m-b-8">Product Policy:</span>

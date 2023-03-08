@@ -1,0 +1,12 @@
+{% for message in messages %}
+<li>
+  {% if message.sender != user %}
+  <img class="mr-3 avatar other-img" src="{% static 'chat/img/2.jpg' %}" alt="Generic placeholder image">
+  {% endif %}
+
+  <div class="{% if message.sender == user %}alert alert-primary me{% else %}alert alert-primary other{% endif %}">
+    {{ message.message }}
+  </div>
+  <span class="{% if message.sender == user %}me-date{% else %}other-date{% endif %}">sent on: {{message.timestamp}}</span>
+</li>
+{% endfor %}

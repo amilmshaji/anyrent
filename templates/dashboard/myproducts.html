@@ -127,22 +127,27 @@
                                                 </div>
                                                 {% endfor %}
 
-
-                                                {% for c_product in c_products %}
+                      {% for c_product in c_products %}
 
                                                 <div class="m-order__get">
 
                                                     <div class="manage-o__header u-s-m-b-30">
                                                         <div class="dash-l-r">
-                                                           <div class="manage-o__text-2 u-c-secondary">
+                                                            <div>
+                                                                <div class="manage-o__text-2 u-c-secondary">
                                                                     <a href="{% url 'deletecar' c_product.id %}" >REMOVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                               {% if c_product.is_available == True %}
+
+                                                                  {% if c_product.is_available == True %}
 
                                                                     <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_car' c_product.id %}" >ARCHIVE</a>
                                                                {% else %}
                                                                     <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_car' c_product.id %}" >UNARCHIVE</a>
                                                                {% endif %}
                                                                 </div>
+                                                                <div class="manage-o__text u-c-silver">Added on {{c_product.created_date}} </div>
+                                                                    <div class="manage-o__text u-c-silver">Modified on {{c_product.modified_date}}</div>
+
+                                                            </div>
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
 
@@ -176,7 +181,6 @@
                                                     </div>
                                                 </div>
                                                 {% endfor %}
-
 
                                                 {% for b_product in b_products %}
 

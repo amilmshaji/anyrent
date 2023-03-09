@@ -120,7 +120,7 @@
                                             </div>
                                             <div class="u-s-m-b-15"><a href="{% url 'chat' single_product.user.id %}">
 
-                                                <button class="btn btn--e-brand-b-2" type="submit">REQUEST TO CHAT{{single_product.user.fname}}</button></a>
+                                                <button class="btn btn--e-brand-b-2" type="submit">REQUEST TO CHAT         {{single_product.user.fname}}</button></a>
                                             </div>
                                         </div>
                                     </form>
@@ -415,7 +415,7 @@
                                                         {% endfor %}
 
 
-                                                    </div>
+
                                                 </form>
                                             </div>
                                             <div class="u-s-m-b-30">
@@ -425,173 +425,188 @@
                                                     <h2 class="u-s-m-b-15">Add a Review</h2>
 
                                                     <span class="gl-text u-s-m-b-15">Your email address will not be published. Required fields are marked *</span>
-                                                    <div class="u-s-m-b-30">
-                                                        <div class="rev-f2__table-wrap gl-scroll">
-                                                            <table class="rev-f2__table">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i>
+<!--                                                    <div class="u-s-m-b-30">-->
+<!--                                                        <div class="rev-f2__table-wrap gl-scroll">-->
+                                                            <br>
+						<div class="rate">
+							<input type="radio" name="rating" id="rating10" value="5" required /><label for="rating10" title="5"></label>
+							<input type="radio" name="rating" id="rating9" value="4.5" required /><label for="rating9" title="4.5" class="half"></label>
+							<input type="radio" name="rating" id="rating8" value="4" required /><label for="rating8" title="4"></label>
+							<input type="radio" name="rating" id="rating7" value="4.5" required /><label for="rating7" title="4.5" class="half"></label>
+							<input type="radio" name="rating" id="rating6" value="3" required /><label for="rating6" title="3"></label>
+							<input type="radio" name="rating" id="rating5" value="3.5" required /><label for="rating5" title="3.5" class="half"></label>
+							<input type="radio" name="rating" id="rating4" value="2" required /><label for="rating4" title="2"></label>
+							<input type="radio" name="rating" id="rating3" value="1.5" required /><label for="rating3" title="1.5" class="half"></label>
+							<input type="radio" name="rating" id="rating2" value="1" required /><label for="rating2" title="1"></label>
+							<input type="radio" name="rating" id="rating1" value="0.5" required /><label for="rating1" title="0.5" class="half"></label>
+						</div>
+<br>
 
-                                                                                <span>(1)</span></div>
-                                                                        </th>
-                                                                        <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+<!--                                                            <table class="rev-f2__table">-->
+<!--                                                                <thead>-->
+<!--                                                                    <tr>-->
+<!--                                                                        <th>-->
+<!--                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i>-->
 
-                                                                                <span>(1.5)</span></div>
-                                                                        </th>
-                                                                        <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i>
+<!--                                                                                <span>(1)</span></div>-->
+<!--                                                                        </th>-->
+<!--                                                                        <th>-->
+<!--                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>-->
 
-                                                                                <span>(2)</span></div>
-                                                                        </th>
-                                                                        <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+<!--                                                                                <span>(1.5)</span></div>-->
+<!--                                                                        </th>-->
+<!--                                                                        <th>-->
+<!--                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i>-->
 
-                                                                                <span>(2.5)</span></div>
-                                                                        </th>
-                                                                        <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+<!--                                                                                <span>(2)</span></div>-->
+<!--                                                                        </th>-->
+<!--                                                                        <th>-->
+<!--                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>-->
 
-                                                                                <span>(3)</span></div>
-                                                                        </th>
-                                                                        <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+<!--                                                                                <span>(2.5)</span></div>-->
+<!--                                                                        </th>-->
+<!--                                                                        <th>-->
+<!--                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>-->
 
-                                                                                <span>(3.5)</span></div>
-                                                                        </th>
-                                                                        <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+<!--                                                                                <span>(3)</span></div>-->
+<!--                                                                        </th>-->
+<!--                                                                        <th>-->
+<!--                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>-->
 
-                                                                                <span>(4)</span></div>
-                                                                        </th>
-                                                                        <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+<!--                                                                                <span>(3.5)</span></div>-->
+<!--                                                                        </th>-->
+<!--                                                                        <th>-->
+<!--                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>-->
 
-                                                                                <span>(4.5)</span></div>
-                                                                        </th>
-                                                                        <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+<!--                                                                                <span>(4)</span></div>-->
+<!--                                                                        </th>-->
+<!--                                                                        <th>-->
+<!--                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>-->
 
-                                                                                <span>(5)</span></div>
-                                                                        </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
+<!--                                                                                <span>(4.5)</span></div>-->
+<!--                                                                        </th>-->
+<!--                                                                        <th>-->
+<!--                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>-->
 
-                                                                            <!--====== Radio Box ======-->
-                                                                            <div class="radio-box">
-
-                                                                                <input type="radio" id="star-1" name="rating" value="1" required>
-                                                                                <div class="radio-box__state radio-box__state--primary">
-
-                                                                                    <label class="radio-box__label" for="star-1"></label></div>
-                                                                            </div>
-                                                                            <!--====== End - Radio Box ======-->
-                                                                        </td>
-                                                                        <td>
-
-                                                                            <!--====== Radio Box ======-->
-                                                                            <div class="radio-box">
-
-                                                                                <input type="radio" id="star-1.5" name="rating" value="1.5" required>
-                                                                                <div class="radio-box__state radio-box__state--primary">
-
-                                                                                    <label class="radio-box__label" for="star-1.5"></label></div>
-                                                                            </div>
-                                                                            <!--====== End - Radio Box ======-->
-                                                                        </td>
-                                                                        <td>
+<!--                                                                                <span>(5)</span></div>-->
+<!--                                                                        </th>-->
+<!--                                                                    </tr>-->
+<!--                                                                </thead>-->
+<!--                                                                <tbody>-->
+<!--                                                                    <tr>-->
+<!--                                                                        <td>-->
 
                                                                             <!--====== Radio Box ======-->
-                                                                            <div class="radio-box">
+<!--                                                                            <div class="radio-box">-->
 
-                                                                                <input type="radio" id="star-2" name="rating" value="2" required>
-                                                                                <div class="radio-box__state radio-box__state--primary">
+<!--                                                                                <input type="radio" id="star-1" name="rating" value="1" required>-->
+<!--                                                                                <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
 
-                                                                                    <label class="radio-box__label" for="star-2"></label></div>
-                                                                            </div>
-                                                                            <!--====== End - Radio Box ======-->
-                                                                        </td>
-                                                                        <td>
+<!--                                                                                    <label class="radio-box__label" for="star-1"></label></div>-->
+<!--                                                                            </div>-->
+<!--                                                                            &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+<!--                                                                        </form>-->
+<!--                                                                        <td>-->
 
-                                                                            <!--====== Radio Box ======-->
-                                                                            <div class="radio-box">
+<!--                                                                            &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                                            <div class="radio-box">-->
 
-                                                                                <input type="radio" id="star-2.5" name="rating" value="2.5" required>
-                                                                                <div class="radio-box__state radio-box__state--primary">
+<!--                                                                                <input type="radio" id="star-1.5" name="rating" value="1.5" required>-->
+<!--                                                                                <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
 
-                                                                                    <label class="radio-box__label" for="star-2.5"></label></div>
-                                                                            </div>
-                                                                            <!--====== End - Radio Box ======-->
-                                                                        </td>
-                                                                        <td>
+<!--                                                                                    <label class="radio-box__label" for="star-1.5"></label></div>-->
+<!--                                                                            </div>-->
+<!--                                                                            &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+<!--                                                                        </td>-->
+<!--                                                                        <td>-->
 
-                                                                            <!--====== Radio Box ======-->
-                                                                            <div class="radio-box">
+<!--                                                                            &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                                            <div class="radio-box">-->
 
-                                                                                <input type="radio" id="star-3" name="rating" value="3" required>
-                                                                                <div class="radio-box__state radio-box__state--primary">
+<!--                                                                                <input type="radio" id="star-2" name="rating" value="2" required>-->
+<!--                                                                                <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
 
-                                                                                    <label class="radio-box__label" for="star-3"></label></div>
-                                                                            </div>
-                                                                            <!--====== End - Radio Box ======-->
-                                                                        </td>
-                                                                        <td>
+<!--                                                                                    <label class="radio-box__label" for="star-2"></label></div>-->
+<!--                                                                            </div>-->
+<!--                                                                            &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+<!--                                                                        </td>-->
+<!--                                                                        <td>-->
 
-                                                                            <!--====== Radio Box ======-->
-                                                                            <div class="radio-box">
+<!--                                                                            &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                                            <div class="radio-box">-->
 
-                                                                                <input type="radio" id="star-3.5" name="rating" value="3.5" required>
-                                                                                <div class="radio-box__state radio-box__state--primary">
+<!--                                                                                <input type="radio" id="star-2.5" name="rating" value="2.5" required>-->
+<!--                                                                                <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
 
-                                                                                    <label class="radio-box__label" for="star-3.5"></label></div>
-                                                                            </div>
-                                                                            <!--====== End - Radio Box ======-->
-                                                                        </td>
-                                                                        <td>
+<!--                                                                                    <label class="radio-box__label" for="star-2.5"></label></div>-->
+<!--                                                                            </div>-->
+<!--                                                                            &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+<!--                                                                        </td>-->
+<!--                                                                        <td>-->
 
-                                                                            <!--====== Radio Box ======-->
-                                                                            <div class="radio-box">
+<!--                                                                            &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                                            <div class="radio-box">-->
 
-                                                                                <input type="radio" id="star-4" name="rating" value="4" required>
-                                                                                <div class="radio-box__state radio-box__state--primary">
+<!--                                                                                <input type="radio" id="star-3" name="rating" value="3" required>-->
+<!--                                                                                <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
 
-                                                                                    <label class="radio-box__label" for="star-4"></label></div>
-                                                                            </div>
-                                                                            <!--====== End - Radio Box ======-->
-                                                                        </td>
-                                                                        <td>
+<!--                                                                                    <label class="radio-box__label" for="star-3"></label></div>-->
+<!--                                                                            </div>-->
+<!--                                                                            &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+<!--                                                                        </td>-->
+<!--                                                                        <td>-->
 
-                                                                            <!--====== Radio Box ======-->
-                                                                            <div class="radio-box">
+<!--                                                                            &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                                            <div class="radio-box">-->
 
-                                                                                <input type="radio" id="star-4.5" name="rating" value="4.5" required>
-                                                                                <div class="radio-box__state radio-box__state--primary">
+<!--                                                                                <input type="radio" id="star-3.5" name="rating" value="3.5" required>-->
+<!--                                                                                <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
 
-                                                                                    <label class="radio-box__label" for="star-4.5"></label></div>
-                                                                            </div>
-                                                                            <!--====== End - Radio Box ======-->
-                                                                        </td>
-                                                                        <td>
+<!--                                                                                    <label class="radio-box__label" for="star-3.5"></label></div>-->
+<!--                                                                            </div>-->
+<!--                                                                            &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+<!--                                                                        </td>-->
+<!--                                                                        <td>-->
 
-                                                                            <!--====== Radio Box ======-->
-                                                                            <div class="radio-box">
+<!--                                                                            &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                                            <div class="radio-box">-->
 
-                                                                                <input type="radio" id="star-5" name="rating" value="5" required>
-                                                                                <div class="radio-box__state radio-box__state--primary">
+<!--                                                                                <input type="radio" id="star-4" name="rating" value="4" required>-->
+<!--                                                                                <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
 
-                                                                                    <label class="radio-box__label" for="star-5"></label></div>
-                                                                            </div>
-                                                                            <!--====== End - Radio Box ======-->
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
+<!--                                                                                    <label class="radio-box__label" for="star-4"></label></div>-->
+<!--                                                                            </div>-->
+<!--                                                                            &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+<!--                                                                        </td>-->
+<!--                                                                        <td>-->
+
+<!--                                                                            &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                                            <div class="radio-box">-->
+
+<!--                                                                                <input type="radio" id="star-4.5" name="rating" value="4.5" required>-->
+<!--                                                                                <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
+
+<!--                                                                                    <label class="radio-box__label" for="star-4.5"></label></div>-->
+<!--                                                                            </div>-->
+<!--                                                                            &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+<!--                                                                        </td>-->
+<!--                                                                        <td>-->
+
+<!--                                                                            &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                                            <div class="radio-box">-->
+
+<!--                                                                                <input type="radio" id="star-5" name="rating" value="5" required>-->
+<!--                                                                                <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
+
+<!--                                                                                    <label class="radio-box__label" for="star-5"></label></div>-->
+<!--                                                                            </div>-->
+<!--                                                                            &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+<!--                                                                        </td>-->
+<!--                                                                    </tr>-->
+<!--                                                                </tbody>-->
+<!--                                                            </table>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
                                                     <div class="rev-f2__group">
                                                         <div class="u-s-m-b-15">
 

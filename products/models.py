@@ -64,6 +64,9 @@ class House_Product(models.Model):
     def get_url(self):    #function for product detail page
         return reverse('product_detail', args=[self.category.slug, self.slug])
 
+    def get_urll(self):
+        return reverse('products_by_category', args=[self.category.slug])
+
     def __str__(self):
         return self.ad_title
 

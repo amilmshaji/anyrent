@@ -17,7 +17,21 @@ from .models import ReviewRating,Location
 
 def Home(request):
 
-    return render(request,"index.html")
+    h_products = House_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')
+    c_products = Car_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')
+    b_products = Bike_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')
+    f_products = Furn_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')
+    o_products = Other_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')
+
+    context = {
+        'h_products' : h_products,
+        'c_products': c_products,
+        'b_products': b_products,
+        'f_products': f_products,
+        'o_products': o_products,
+    }
+
+    return render(request,'index.html', context)
 
 def shop(request, category_slug=None):
     categories = None

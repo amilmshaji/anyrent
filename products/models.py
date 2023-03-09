@@ -57,6 +57,8 @@ class House_Product(models.Model):
     is_available = models.BooleanField(default=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE,default=1,editable=False)
     created_date = models.DateTimeField(auto_now_add=True)
+    is_featured = models.BooleanField(default=False)
+
     modified_date = models.DateTimeField(auto_now=True)
 
     def get_url(self):    #function for product detail page

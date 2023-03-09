@@ -89,7 +89,9 @@
                                                                     <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_house' h_product.id %}" >UNARCHIVE</a>
                                                                {% endif %}
                                                                 </div>
-<!--                                                                <div class="manage-o__text u-c-silver">Placed on 26 Oct 2016 09:08:37</div>-->
+                                                                <div class="manage-o__text u-c-silver">Added on {{h_product.created_date}} </div>
+                                                                    <div class="manage-o__text u-c-silver">Modified on {{h_product.modified_date}}</div>
+
                                                             </div>
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">

@@ -48,10 +48,11 @@ class ProductAdmin(admin.ModelAdmin):
         'user',
         'created_date',
         'is_available',
+        'is_featured',
     )
     # prepopulated_fields = {'slug': ('ad_title',)}
 
-    list_editable = ['is_available']
+    list_editable = ['is_available','is_featured']
 
     # This will help you to disbale add functionality
     def has_add_permission(self, request):
@@ -82,10 +83,12 @@ class CarAdmin(admin.ModelAdmin):
         'user',
         'created_date',
         'is_available',
+        'is_featured',
+
     )
     # prepopulated_fields = {'slug': ('ad_title',)}
 
-    list_editable = ['is_available']
+    list_editable = ['is_available','is_featured']
 
     # This will help you to disbale add functionality
     def has_add_permission(self, request):
@@ -114,10 +117,12 @@ class BikeAdmin(admin.ModelAdmin):
         'user',
         'created_date',
         'is_available',
+        'is_featured',
+
     )
     # prepopulated_fields = {'slug': ('ad_title',)}
 
-    list_editable = ['is_available']
+    list_editable = ['is_available','is_featured']
 
 
     def has_add_permission(self, request):
@@ -145,10 +150,12 @@ class FurnAdmin(admin.ModelAdmin):
         'user',
         'created_date',
         'is_available',
+        'is_featured',
+
     )
     # prepopulated_fields = {'slug': ('ad_title',)}
 
-    list_editable = ['is_available']
+    list_editable = ['is_available','is_featured']
 
     # This will help you to disbale add functionality
     def has_add_permission(self, request):
@@ -175,10 +182,12 @@ class OtherAdmin(admin.ModelAdmin):
         'user',
         'created_date',
         'is_available',
+        'is_featured',
+
     )
     # prepopulated_fields = {'slug': ('ad_title',)}
 
-    list_editable = ['is_available']
+    list_editable = ['is_available','is_featured']
 
     # This will help you to disbale add functionality
     def has_add_permission(self, request):

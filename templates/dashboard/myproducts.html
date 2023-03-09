@@ -111,7 +111,7 @@
                                                         <div class="description__info-wrap">
                                                             <div>
 
-                                                                <span class="manage-o__badge badge--processing">{{h_product.rent}}/month</span></div>
+                                                                <span class="manage-o__badge badge--processing">₹{{h_product.rent}}/month</span></div>
                                                             <div>
 
                                                                 <span class="manage-o__text-2 u-c-silver">Bedrooms:
@@ -166,7 +166,7 @@
                                                         <div class="description__info-wrap">
                                                             <div>
 
-                                                                <span class="manage-o__badge badge--processing">{{c_product.rent}}/month</span></div>
+                                                                <span class="manage-o__badge badge--processing">₹{{c_product.rent}}/month</span></div>
                                                             <div>
 
                                                                 <span class="manage-o__text-2 u-c-silver">Brand:
@@ -182,21 +182,27 @@
                                                 </div>
                                                 {% endfor %}
 
-                                                {% for b_product in b_products %}
+                                            {% for b_product in b_products %}
 
                                                 <div class="m-order__get">
 
                                                     <div class="manage-o__header u-s-m-b-30">
                                                         <div class="dash-l-r">
-                                                          <div class="manage-o__text-2 u-c-secondary">
-                                                                    <a href="{% url 'deletebike' b_product.id %}" >REMOVE</a>
-                                                              {% if b_product.is_available == True %}
+                                                            <div>
+                                                                <div class="manage-o__text-2 u-c-secondary">
+                                                                    <a href="{% url 'deletebike' b_product.id %}" >REMOVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                                  {% if b_product.is_available == True %}
 
                                                                     <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_bike' b_product.id %}" >ARCHIVE</a>
                                                                {% else %}
                                                                     <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_bike' b_product.id %}" >UNARCHIVE</a>
                                                                {% endif %}
                                                                 </div>
+                                                                <div class="manage-o__text u-c-silver">Added on {{c_product.created_date}} </div>
+                                                                    <div class="manage-o__text u-c-silver">Modified on {{c_product.modified_date}}</div>
+
+                                                            </div>
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
 
@@ -215,7 +221,7 @@
                                                         <div class="description__info-wrap">
                                                             <div>
 
-                                                                <span class="manage-o__badge badge--processing">{{b_product.rent}}/month</span></div>
+                                                                <span class="manage-o__badge badge--processing">₹{{b_product.rent}}/month</span></div>
                                                             <div>
 
                                                                 <span class="manage-o__text-2 u-c-silver">Brand:
@@ -232,27 +238,31 @@
                                                 {% endfor %}
 
 
-
-                                                 {% for f_product in f_products %}
+                                                {% for f_product in f_products %}
 
                                                 <div class="m-order__get">
 
                                                     <div class="manage-o__header u-s-m-b-30">
                                                         <div class="dash-l-r">
-                                                            <div class="manage-o__text-2 u-c-secondary">
-                                                                    <a href="{% url 'deletefurn' f_product.id %}" >REMOVE</a>
-                                                                {% if f_product.is_available == True %}
+                                                            <div>
+                                                                <div class="manage-o__text-2 u-c-secondary">
+                                                                    <a href="{% url 'deletefurn' f_product.id %}" >REMOVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                                  {% if f_product.is_available == True %}
 
                                                                     <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_furn' f_product.id %}" >ARCHIVE</a>
                                                                {% else %}
                                                                     <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_furn' f_product.id %}" >UNARCHIVE</a>
                                                                {% endif %}
                                                                 </div>
+                                                                <div class="manage-o__text u-c-silver">Added on {{f_product.created_date}} </div>
+                                                                    <div class="manage-o__text u-c-silver">Modified on {{f_product.modified_date}}</div>
+
+                                                            </div>
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
+
                                                                     <a href="{% url 'managefurniture' f_product.id %}">MANAGE</a>
-
-
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -267,47 +277,47 @@
                                                         <div class="description__info-wrap">
                                                             <div>
 
-                                                                <span class="manage-o__badge badge--processing">{{f_product.rent}}/month</span></div>
+                                                                <span class="manage-o__badge badge--processing">₹{{f_product.rent}}/month</span></div>
                                                             <div>
 
                                                                 <span class="manage-o__text-2 u-c-silver">Type:
 
-                                                                    <span class="manage-o__text-2 u-c-secondary">{{f_product.type}}</span></span>
-                                                            </div>
+                                                                    <span class="manage-o__text-2 u-c-secondary">{{f_product.type}}</span></span></div>
 <!--                                                            <div>-->
 
 <!--                                                                <span class="manage-o__text-2 u-c-silver">Fuel:-->
 
-<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{b_product.fuel}}</span></span>-->
-<!--                                                            </div>-->
+<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{f_product.fuel}}</span></span></div>-->
                                                         </div>
                                                     </div>
                                                 </div>
                                                 {% endfor %}
 
-
-                                                     {% for o_product in o_products %}
+                                               {% for o_product in o_products %}
 
                                                 <div class="m-order__get">
 
                                                     <div class="manage-o__header u-s-m-b-30">
                                                         <div class="dash-l-r">
-                                                           <div class="manage-o__text-2 u-c-secondary">
-                                                                    <a href="{% url 'deleteother' o_product.id %}" >REMOVE</a>
-                                                               {% if o_product.is_available == True %}
+                                                            <div>
+                                                                <div class="manage-o__text-2 u-c-secondary">
+                                                                    <a href="{% url 'deleteother' o_product.id %}" >REMOVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                                  {% if o_product.is_available == True %}
 
                                                                     <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_other' o_product.id %}" >ARCHIVE</a>
                                                                {% else %}
                                                                     <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_other' o_product.id %}" >UNARCHIVE</a>
                                                                {% endif %}
-
-
                                                                 </div>
+                                                                <div class="manage-o__text u-c-silver">Added on {{o_product.created_date}} </div>
+                                                                    <div class="manage-o__text u-c-silver">Modified on {{o_product.modified_date}}</div>
+
+                                                            </div>
                                                             <div>
                                                                 <div class="dash__link dash__link--brand">
+
                                                                     <a href="{% url 'manageother' o_product.id %}">MANAGE</a>
-
-
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -322,18 +332,18 @@
                                                         <div class="description__info-wrap">
                                                             <div>
 
-                                                                <span class="manage-o__badge badge--processing">{{o_product.rent}}/month</span></div>
+                                                                <span class="manage-o__badge badge--processing">₹{{o_product.rent}}/month</span></div>
 <!--                                                            <div>-->
 
-<!--                                                                <span class="manage-o__text-2 u-c-silver">Brand:-->
+<!--                                                                <span class="manage-o__text-2 u-c-silver">Type:-->
 
-<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{f_product.brand}}</span></span></div>-->
-<!--&lt;!&ndash;                                                            <div>&ndash;&gt;-->
+<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{o_product.type}}</span></span></div>-->
+<!--                                                            <div>-->
 
 <!--                                                                <span class="manage-o__text-2 u-c-silver">Fuel:-->
 
-<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{b_product.fuel}}</span></span></div>-->
-<!--                                                        </div>-->
+<!--                                                                    <span class="manage-o__text-2 u-c-secondary">{{f_product.fuel}}</span></span></div>-->
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 {% endfor %}

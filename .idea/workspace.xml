@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="my products add date">
-      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="saved" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,13 +93,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00022" summary="manage my products">
-      <created>1667109282830</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1667109282830</updated>
     </task>
     <task id="LOCAL-00023" summary="manage my products">
       <created>1667118253128</created>
@@ -440,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678342905230</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="saved">
+      <created>1678343706110</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1678343706110</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -480,8 +477,8 @@
     <MESSAGE value="done" />
     <MESSAGE value="chat app stage one" />
     <MESSAGE value="featured products" />
-    <MESSAGE value="saved" />
     <MESSAGE value="my products add date" />
-    <option name="LAST_COMMIT_MESSAGE" value="my products add date" />
+    <MESSAGE value="saved" />
+    <option name="LAST_COMMIT_MESSAGE" value="saved" />
   </component>
 </project>

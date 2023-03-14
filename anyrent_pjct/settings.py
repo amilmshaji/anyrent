@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'products',
     'dashboard',
     'chat',
+    'chatbot',
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',

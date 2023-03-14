@@ -16,6 +16,7 @@ urlpatterns = [
     path('', include('products.urls')),
     path('', include('dashboard.urls')),
     path('', include('chat.urls')),
+    path('', include('chatbot.urls')),
 
 ]
 

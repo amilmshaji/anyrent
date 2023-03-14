@@ -1,9 +1,11 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from accounts.models import Account
+from dashboard.form import ProductgalleryForm
+from dashboard.models import Productgallery
 from products.models import House_Product, Car_Product, Bike_Product, Furn_Product,Other_Product
 
 
@@ -394,3 +396,19 @@ def archive_other(request,other_id):
         o_product.save()
 
     return redirect('myproducts')
+
+
+
+def add_product_images(request, pk):
+    product = get_object_or_404(House_Product, pk=pk)
+
+    if request.method == 'POST':
+        form = ProductgalleryForm(request.POST, request.FILES)
+        if form.is_valid():
+            image = form.cleaned_data['image']
+            productgallery = Productgallery.objects.create(product=product, image=image)
+            productgallery.save()
+    else:
+        form = ProductgalleryForm()
+
+    return render(request, 'dashboard/add_product_images.html', {'form': form, 'product': product})

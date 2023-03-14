@@ -26,4 +26,7 @@ urlpatterns = [
     path('archivebike/<int:bike_id>/', views.archive_bike, name='archive_bike'),
     path('archivefurn/<int:furn_id>/', views.archive_furn, name='archive_furn'),
     path('archiveother/<int:other_id>/', views.archive_other, name='archive_other'),
+
+    path('add_product_images/<int:pk>/', views.add_product_images, name='add_product_images'),
+
 ]

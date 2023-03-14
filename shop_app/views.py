@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 from django.shortcuts import get_object_or_404, redirect, render
 import pandas as pd
 import geocoder
@@ -49,9 +50,11 @@ def shop(request, category_slug=None):
 
         h_products = House_Product.objects.all().filter(is_available=True).order_by('id')
         c_products = Car_Product.objects.all().filter(is_available=True).order_by('id')
+
         b_products = Bike_Product.objects.all().filter(is_available=True).order_by('id')
         f_products = Furn_Product.objects.all().filter(is_available=True).order_by('id')
         o_products = Other_Product.objects.all().filter(is_available=True).order_by('id')
+
 
     context = {
         'h_products' : h_products,
@@ -61,7 +64,8 @@ def shop(request, category_slug=None):
         'o_products': o_products,
 
         'categories':categories,
-        # 'h_products': paged_products,
+        # 'products': paged_products,
+        # 'product_count': product_count,
     }
     return render(request, 'shop.html', context)
 

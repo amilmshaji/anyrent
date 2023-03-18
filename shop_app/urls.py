@@ -14,8 +14,7 @@ urlpatterns = [
 
     path('location_search/', views.location_search, name='location_search'),
 
-    path('submit_review/<int:product_id>/',
-         views.submit_review, name='submit_review'),
+    path('submit_review/<int:product_id>/',views.submit_review, name='submit_review'),
 
     path('map/', views.map_view, name='map'),
     path('prod_map/<str:location>/', views.prod_map_view, name='prod_map'),

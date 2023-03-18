@@ -6,7 +6,6 @@ from django.contrib.auth.models import User
 
 from accounts.models import Account
 
-
 class Message(models.Model):
     sender = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='sent_messages',blank=True,null=True)
     recipient = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='received_messages',blank=True,null=True)

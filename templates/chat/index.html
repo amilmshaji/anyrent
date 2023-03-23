@@ -9,9 +9,9 @@
   <link id="theme" rel="stylesheet" href="{% static 'chat/css/style.css' %}">
   <link rel="stylesheet" href="{% static 'chat/main.css' %}">
 
-  <div class="container mt-8">
+  <div class="container mt-8 ">
     <div class="row">
-      <div class="col-12 text-center">l
+      <div class="col-12 text-center">
       </div>
       <div class="col-md-12">
         <div id="wrap-chat">
@@ -42,7 +42,7 @@
 
                     {% for conversation in conversations %}
                     <li class="media p-2">
-                      <img class="mr-3 avatar online" src="img/1.jpeg" alt="Generic placeholder image">
+                      <img class="mr-3 avatar online" src="{% static 'chat/img/1.jpeg' %}" alt="Generic placeholder image">
                       <div class="media-body">
                         <a href="{% url 'chat' conversation.sender.id %}"><h6 class="mt-0 mb-1 name-contact">{{ conversation.sender.fname }}<span>{{ conversation.timestamp }}</span></h6></a>
                         <p>{{ conversation.message }}
@@ -64,18 +64,8 @@
                           list
                         </i>
                         <div id="bar-f">
-                          By: <span class="badge badge-custom badge-active">Recent</span> <span class="badge badge-custom">Name</span>
-                          | <span class="badge badge-custom ">Off</span> <span class="badge badge-custom">On</span>
-                          <span class="badge badge-custom badge-active">All<    /span>
+                          By: <span class="badge badge-custom badge-active" style="font-size: 1.2em">{{fname_value}} {{lname_value}}</span>
                         </div>
-                      </div>
-                      <div class="col text-right">
-                        <i class="material-icons">
-                          add_a_photo
-                        </i>
-                        <i class="material-icons" id="dropmenu-custom">
-                            more_vert
-                        </i>
                       </div>
                     </div>
                   </div>

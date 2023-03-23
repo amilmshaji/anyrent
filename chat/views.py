@@ -8,6 +8,10 @@ from .models import Account, Message
 @login_required(login_url='login')
 def chat_view(request, recipient_id):
     recipient = get_object_or_404(Account, id=recipient_id)
+    chatter = Account.objects.get(id=recipient_id)
+    fname_value = chatter.fname
+    lname_value = chatter.lname
+
     messages = Message.objects.filter(Q(sender=request.user, recipient=recipient) | Q(sender=recipient, recipient=request.user)).order_by('timestamp')
     current_user = request.user
     received_messages = Message.objects.filter(recipient=current_user).values('sender').annotate(
@@ -23,11 +27,14 @@ def chat_view(request, recipient_id):
             'timestamp': latest_message.timestamp
         }
         conversations.append(conversation)
-
+    # chatter=Message.objects.get(id=recipient_id)
+    # print(chatter)
     context = {
         'recipient': recipient,
         'messages': messages,
         'conversations': conversations,
+        'fname_value' : fname_value,
+        'lname_value' : lname_value,
 
     }
     return render(request, 'chat/index.html', context)

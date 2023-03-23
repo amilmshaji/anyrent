@@ -11,3 +11,4 @@ class Message(models.Model):
     recipient = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='received_messages',blank=True,null=True)
     message = models.TextField(blank=True,null=True)
     timestamp = models.DateTimeField(auto_now_add=True,blank=True,null=True)
+

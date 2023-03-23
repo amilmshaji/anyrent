@@ -21,6 +21,9 @@
     <!--====== App ======-->
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
 
+
+
+
 </head>
 <body class="config" id="js-scrollspy-trigger">
     <div class="preloader is-active">
@@ -259,9 +262,7 @@
                                       <li>
 
                                         <a href="{% url 'logout' %}">LOG OUT</a></li>
-                                    <li>
 
-                                        <a href="{% url 'all_list' %}">MESSAGES</a></li>
                                     {% else %}
                                     <li>
 
@@ -290,11 +291,23 @@
 
                                 <span class="ah-close">✕ Close</span>
 
-                                <!--====== List ======-->
+                                 <!--====== List ======-->
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-white">
-                                    <li>
+<!--                                    <li>-->
+
+<!--                                        <a href="index-2.html"><i class="fas fa-home u-c-brand"></i></a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+
+<!--                                        <a href="wishlist.html"><i class="far fa-heart"></i></a></li>-->
+                                    <li class="has-dropdown">
+                                      <a href="{% url 'inbox' %}" class="mini-cart-shop-link"><i class="far fa-envelope"></i>
+                                        <span class="total-item-round">2</span>
+                                          </a>
+                                        </li>
 
 
+                                        <!--====== Dropdown ======-->
                                         <span class="js-menu-toggle"></span>
 
                                     </li>

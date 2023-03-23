@@ -5,6 +5,6 @@ from chat import views
 urlpatterns = [
     path('chat/<int:recipient_id>/', views.chat_view, name='chat'),
     path('send_message/<int:recipient_id>/', views.send_message_view, name='send_message'),
-    path('all_list/', views.all_list, name='all_list'),
+    path('inbox/', views.inbox, name='inbox'),
 
 ]

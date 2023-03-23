@@ -40,60 +40,18 @@
 
                   </div>
                   <ul class="list-unstyled">
-                  {% for i in list %}
+                   {% for conversation in conversations %}
                     <li class="media p-2">
                       <img class="mr-3 avatar online" src="img/1.jpeg" alt="Generic placeholder image">
                       <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">{{ i.recipient.fname }}<span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet, in gravida</p>
+                        <a href="{% url 'chat' conversation.sender.id %}"><h6 class="mt-0 mb-1 name-contact">{{ conversation.sender.fname }}<span>{{ conversation.timestamp }}</span></h6></a>
+                        <p>{{ conversation.message }}
+                        </p>
 
                       </div>
                     </li>
                     {% endfor %}
-                    <li class="media contact-active p-2">
-                      <img class="mr-3 avatar online" src="img/2.jpg" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">Linda <span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet nibh libero, in gravida</p>
-                      </div>
-                    </li>
-                    <li class="media p-2">
-                      <img class="mr-3 avatar offline" src="img/3.png" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact ">Jamal <span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet nibh libero, in gravida</p>
-                      </div>
-                    </li>
-                    <li class="media p-2">
-                      <img class="mr-3 avatar online" src="img/4.jpeg" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">Cristian <span>12/7/18 8:58 AM</span></h6>
-                        <p>Sit amet nibh libero, in gravida</p>
 
-                      </div>
-                    </li>
-                    <li class="media p-2 ">
-                      <img class="mr-3 avatar online" src="img/5.jpeg" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">Jack <span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet nibh libero, in gravida</p>
-                      </div>
-                    </li>
-                    <li class="media p-2">
-                      <img class="mr-3 avatar offline" src="img/6.jpeg" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">Angelica <span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet, in gravida</p>
-                      </div>
-                    </li>
-                    <li class="media p-2">
-                      <img class="mr-3 avatar offline" src="img/7.jpeg" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">Marcia <span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet nibh libero,</p>
-
-                      </div>
-                    </li>
                   </ul>
                 </div>
                 <!-- list user -->

@@ -9,10 +9,9 @@
   <link id="theme" rel="stylesheet" href="{% static 'chat/css/style.css' %}">
   <link rel="stylesheet" href="{% static 'chat/main.css' %}">
 
-
-  <div class="container mt-5">
+  <div class="container mt-8">
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-12 text-center">l
       </div>
       <div class="col-md-12">
         <div id="wrap-chat">
@@ -22,77 +21,36 @@
                 <!-- list user -->
                 <div class="list-contact">
                   <div id="search">
-                    <input type="text" class="form-control" placeholder="Search...">
-                    <div class="append-btn-search">
-                        <i class="material-icons">
-                            search
-                        </i>
-                    </div>
-                    <i id="hide-contact" class="material-icons">
-                      close
-                    </i>
+<!--                    <input type="text" class="form-control" placeholder="Search...">-->
+<!--                    <div class="append-btn-search">-->
+<!--                        <i class="material-icons">-->
+<!--                            search-->
+<!--                        </i>-->
+<!--                    </div>-->
+<!--                    <i id="hide-contact" class="material-icons">-->
+<!--                      close-->
+<!--                    </i>-->
                   </div>
                   <div id="bar-f-l">
-                    By: <span class="badge badge-custom badge-active">Recent</span> <span class="badge badge-custom">Name</span>
-                    |
-                    <span class="badge badge-custom ">Off</span> <span class="badge badge-custom">On</span> <span class="badge badge-custom badge-active">All</span>
+<!--                    By: <span class="badge badge-custom badge-active">Recent</span> <span class="badge badge-custom">Name</span>-->
+<!--                    |-->
+<!--                    <span class="badge badge-custom ">Off</span> <span class="badge badge-custom">On</span> <span class="badge badge-custom badge-active">All</span>-->
 
 
                   </div>
                   <ul class="list-unstyled">
 
+                    {% for conversation in conversations %}
                     <li class="media p-2">
                       <img class="mr-3 avatar online" src="img/1.jpeg" alt="Generic placeholder image">
                       <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">Yan <span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet, in gravida</p>
+                        <a href="{% url 'chat' conversation.sender.id %}"><h6 class="mt-0 mb-1 name-contact">{{ conversation.sender.fname }}<span>{{ conversation.timestamp }}</span></h6></a>
+                        <p>{{ conversation.message }}
+                        </p>
 
                       </div>
                     </li>
-                    <li class="media contact-active p-2">
-                      <img class="mr-3 avatar online" src="img/2.jpg" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">Linda <span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet nibh libero, in gravida</p>
-                      </div>
-                    </li>
-                    <li class="media p-2">
-                      <img class="mr-3 avatar offline" src="img/3.png" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact ">Jamal <span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet nibh libero, in gravida</p>
-                      </div>
-                    </li>
-                    <li class="media p-2">
-                      <img class="mr-3 avatar online" src="img/4.jpeg" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">Cristian <span>12/7/18 8:58 AM</span></h6>
-                        <p>Sit amet nibh libero, in gravida</p>
-
-                      </div>
-                    </li>
-                    <li class="media p-2 ">
-                      <img class="mr-3 avatar online" src="img/5.jpeg" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">Jack <span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet nibh libero, in gravida</p>
-                      </div>
-                    </li>
-                    <li class="media p-2">
-                      <img class="mr-3 avatar offline" src="img/6.jpeg" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">Angelica <span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet, in gravida</p>
-                      </div>
-                    </li>
-                    <li class="media p-2">
-                      <img class="mr-3 avatar offline" src="img/7.jpeg" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1 name-contact">Marcia <span>12/7/18 8:58 AM</span></h6>
-                        <p>Cras sit amet nibh libero,</p>
-
-                      </div>
-                    </li>
+                    {% endfor %}
                   </ul>
                 </div>
                 <!-- list user -->
@@ -108,7 +66,7 @@
                         <div id="bar-f">
                           By: <span class="badge badge-custom badge-active">Recent</span> <span class="badge badge-custom">Name</span>
                           | <span class="badge badge-custom ">Off</span> <span class="badge badge-custom">On</span>
-                          <span class="badge badge-custom badge-active">All</span>
+                          <span class="badge badge-custom badge-active">All<    /span>
                         </div>
                       </div>
                       <div class="col text-right">

@@ -37,7 +37,7 @@ def chat_view(request, recipient_id):
         'lname_value' : lname_value,
 
     }
-    return render(request, 'chat/index.html', context)
+    return render(request, 'chat/chat.html', context)
 
 from django.db.models import Max
 
@@ -56,7 +56,7 @@ def inbox(request):
         }
         conversations.append(conversation)
 
-    return render(request, 'chat/dummy.html', {'conversations': conversations})
+    return render(request, 'chat/inbox.html', {'conversations': conversations})
 
 
 @login_required(login_url='login')

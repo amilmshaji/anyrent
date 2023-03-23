@@ -37,7 +37,7 @@
             <span class="friends-message">{{ conversation.message }}</span>
           </div>
           <!-- notification badge -->
-<!--          <span class="badge notif-badge">7</span>-->
+          <span class="badge notif-badge">7</span>
         </div></a>
 
         {% endfor %}
@@ -114,7 +114,7 @@
       </div>
 
       <!-- typing area -->
-       <form method="POST" action="{% url 'send_message' recipient.id %}">
+       <form method="POST" action="#">
                     {% csrf_token %}
       <div id="typing-area" class="typing-area">
         <!-- input form -->
@@ -135,11 +135,6 @@
   <div id="creator" class="creator">
     <p>&copy; 2020 | Created by <span>Iqbal Taufiq</span></p>
   </div>
-
-
-
-
-
 
 
     <!-- jQuey, Popper, BootstrapJS -->

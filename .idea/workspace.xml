@@ -4,49 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="chatapp">
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/images/ava1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/images/ava2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/chats/images/ava4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/chat/inbox.html" afterDir="false" />
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="chatapp template chanaged">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/css/dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/css/hot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/img/1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/img/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/img/4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/img/5.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/img/6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/img/7.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/img/screen-dark.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/img/screen-hot.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/img/screen.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/js/chat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/chat/js/jQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/chats/bootstrap3.3/js/jquery-3.3.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/chat/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chat/dummy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chat/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/inbox.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,13 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00031" summary="product by category">
-      <created>1667405550043</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1667405550043</updated>
     </task>
     <task id="LOCAL-00032" summary="product by category">
       <created>1667405626955</created>
@@ -480,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679590671862</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="chatapp template chanaged">
+      <created>1679594635273</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1679594635273</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +460,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="manage my products" />
     <MESSAGE value="detail page" />
     <MESSAGE value="product by category" />
     <MESSAGE value="updated" />
@@ -522,6 +484,7 @@
     <MESSAGE value="chatbot" />
     <MESSAGE value="saved" />
     <MESSAGE value="chatapp" />
-    <option name="LAST_COMMIT_MESSAGE" value="chatapp" />
+    <MESSAGE value="chatapp template chanaged" />
+    <option name="LAST_COMMIT_MESSAGE" value="chatapp template chanaged" />
   </component>
 </project>

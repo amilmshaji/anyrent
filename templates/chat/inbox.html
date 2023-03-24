@@ -15,7 +15,7 @@
       <!-- header -->
       <div id="header-left" class="header-left">
         <span class="glyphicon glyphicon-menu-hamburger hamburger-btn"></span>
-        <span class="glyphicon glyphicon-search search-btn"></span>
+<!--        <span class="glyphicon glyphicon-search search-btn"></span>-->
         <span class="glyphicon glyphicon-option-vertical option-btn"></span>
       </div>
 
@@ -32,12 +32,12 @@
 
           <div class="friends-credent">
             <!-- name -->
-            <span class="friends-name">{{ conversation.sender.fname }}</span>
+            <span class="friends-name">{{ conversation.sender.fname }} {{ conversation.sender.lname }}</span>
             <!-- last message -->
             <span class="friends-message">{{ conversation.message }}</span>
           </div>
           <!-- notification badge -->
-          <span class="badge notif-badge">7</span>
+<!--          <span class="badge notif-badge">7</span>-->
         </div></a>
 
         {% endfor %}
@@ -74,9 +74,9 @@
 
         <!-- some btn -->
         <div class="some-btn">
-          <span class="glyphicon glyphicon-facetime-video"></span>
-          <span class="glyphicon glyphicon-earphone"></span>
-          <span class="glyphicon glyphicon-option-vertical option-btn"></span>
+<!--          <span class="glyphicon glyphicon-facetime-video"></span>-->
+<!--          <span class="glyphicon glyphicon-earphone"></span>-->
+<!--          <span class="glyphicon glyphicon-option-vertical option-btn"></span>-->
         </div>
       </div>
 
@@ -131,11 +131,6 @@
        </form>
     </section>
   </div>
-
-  <div id="creator" class="creator">
-    <p>&copy; 2020 | Created by <span>Iqbal Taufiq</span></p>
-  </div>
-
 
     <!-- jQuey, Popper, BootstrapJS -->
     <script src="{% static 'chats/bootstrap3.3/js/jquery-3.3.1.min.js' %}"></script>

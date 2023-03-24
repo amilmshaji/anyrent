@@ -4,6 +4,24 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .models import Account, Message
 
+from django.db.models import Max
+
+@login_required
+def inbox(request):
+    current_user = request.user
+    received_messages = Message.objects.filter(recipient=current_user).values('sender').annotate(latest_timestamp=Max('timestamp'))
+
+    conversations = []
+    for message in received_messages:
+        latest_message = Message.objects.filter(recipient=current_user, sender=message['sender'], timestamp=message['latest_timestamp']).first()
+        conversation = {
+            'sender': latest_message.sender,
+            'message': latest_message.message,
+            'timestamp': latest_message.timestamp
+        }
+        conversations.append(conversation)
+
+    return render(request, 'chat/inbox.html', {'conversations': conversations})
 
 @login_required(login_url='login')
 def chat_view(request, recipient_id):
@@ -27,8 +45,7 @@ def chat_view(request, recipient_id):
             'timestamp': latest_message.timestamp
         }
         conversations.append(conversation)
-    # chatter=Message.objects.get(id=recipient_id)
-    # print(chatter)
+
     context = {
         'recipient': recipient,
         'messages': messages,
@@ -38,25 +55,6 @@ def chat_view(request, recipient_id):
 
     }
     return render(request, 'chat/chat.html', context)
-
-from django.db.models import Max
-
-@login_required
-def inbox(request):
-    current_user = request.user
-    received_messages = Message.objects.filter(recipient=current_user).values('sender').annotate(latest_timestamp=Max('timestamp'))
-
-    conversations = []
-    for message in received_messages:
-        latest_message = Message.objects.filter(recipient=current_user, sender=message['sender'], timestamp=message['latest_timestamp']).first()
-        conversation = {
-            'sender': latest_message.sender,
-            'message': latest_message.message,
-            'timestamp': latest_message.timestamp
-        }
-        conversations.append(conversation)
-
-    return render(request, 'chat/inbox.html', {'conversations': conversations})
 
 
 @login_required(login_url='login')

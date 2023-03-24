@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="chatapp template chanaged">
+      <change afterPath="$PROJECT_DIR$/chat/migrations/0003_alter_message_timestamp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chat/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/chat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/chat/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/inbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,34 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00032" summary="product by category">
-      <created>1667405626955</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1667405626955</updated>
-    </task>
-    <task id="LOCAL-00033" summary="product by category">
-      <created>1667487006534</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1667487006534</updated>
-    </task>
-    <task id="LOCAL-00034" summary="product by category">
-      <created>1667494640943</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1667494640943</updated>
-    </task>
-    <task id="LOCAL-00035" summary="product by category">
-      <created>1667499121880</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1667499121880</updated>
     </task>
     <task id="LOCAL-00036" summary="updated">
       <created>1667573203258</created>
@@ -443,7 +415,35 @@
       <option name="project" value="LOCAL" />
       <updated>1679594635273</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="chatapp template chanaged">
+      <created>1679628801728</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1679628801728</updated>
+    </task>
+    <task id="LOCAL-00082" summary="chatapp template chanaged">
+      <created>1679628997276</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1679628997277</updated>
+    </task>
+    <task id="LOCAL-00083" summary="chatapp template chanaged">
+      <created>1679629106561</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1679629106562</updated>
+    </task>
+    <task id="LOCAL-00084" summary="chatapp template chanaged">
+      <created>1679630197681</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1679630197681</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -98,7 +98,7 @@
 
                                                     <div class="product-m__add-cart">
 
-                                                        <a class="btn--e-brand" href="#" data-modal="modal">REQUEST TO CHAT</a></div>
+                                                        <a class="btn--e-brand" href="{% url 'chat' h_product.user.id %}" data-modal="modal">CHAT WITH OWNER</a></div>
                                                     {% endif %}
 
                                                 </div>
@@ -119,7 +119,7 @@
                                                             <span>{{c_product.add_info}}</span></div>
                                                         <div class="product-m__wishlist">
 
-                                                            <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"></a></div>
+                                                            <a class="far fa-heart" href="{% url 'chat' c_product.user.id %}" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"></a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -141,7 +141,7 @@
 
                                                     <div class="product-m__add-cart">
 
-                                                        <a class="btn--e-brand" href="#" data-modal="modal">REQUEST TO CHAT</a></div>
+                                                        <a class="btn--e-brand" href="{% url 'chat' b_product.user.id %}" data-modal="modal">CHAT WITH OWNER</a></div>
                                                     {% endif %}
 
                                                 </div>
@@ -184,7 +184,7 @@
 
                                                     <div class="product-m__add-cart">
 
-                                                        <a class="btn--e-brand" href="#" data-modal="modal">REQUEST TO CHAT</a></div>
+                                                        <a class="btn--e-brand" href="{% url 'chat' f_product.user.id %}" data-modal="modal">CHAT WITH OWNER</a></div>
                                                     {% endif %}
 
                                                 </div>
@@ -228,7 +228,7 @@
 
                                                     <div class="product-m__add-cart">
 
-                                                        <a class="btn--e-brand" href="#" data-modal="modal">REQUEST TO CHAT</a></div>
+                                                        <a class="btn--e-brand" href="{% url 'chat' o_product.user.id %}" data-modal="modal">CHAT WITH OWNER</a></div>
                                                                                                         {% endif %}
 
                                                 </div>

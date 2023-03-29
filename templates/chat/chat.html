@@ -4,7 +4,8 @@
 {% block content %}
 {% load static %}
 
-  <link rel="stylesheet" href="{% static 'chats/bootstrap3.3/css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'chats/bootstrap3.3/css/bootstrap.min.css' %}"
+      xmlns="http://www.w3.org/1999/html">
   <link rel="stylesheet" href="{% static 'chats/chat.css' %}">
 
   <div id="app" class="app">
@@ -115,48 +116,59 @@
 
       <!-- typing area -->
 <form method="POST" action="{% url 'send_message' recipient.id %}">
-    {% csrf_token %}
-    <div id="typing-area" class="typing-area">
-        <!-- input form -->
-        <input id="type-area" class="type-area" name="message" placeholder="Type or speak something...">
-        <!-- attachment btn -->
-        <div class="attach-btn">
-            <button type="button" id="speech-btn"><span class="fas fa-microphone"></span></button>
-        </div>
-        <!-- send btn -->
-        <button type="submit"><span class="glyphicon glyphicon-send send-btn"></span></button>
+  {% csrf_token %}
+  <div id="typing-area" class="typing-area">
+    <!-- input form -->
+    <input id="type-area" class="type-area" name="message" placeholder="Speak or type something...">
+    <!-- attachment btn -->
+    <div class="attach-btn">
+      <span class="fas fa-microphone"></span>
     </div>
+    <!-- send btn -->
+    <button><span class="glyphicon glyphicon-send send-btn"></span></button>
+  </div>
 </form>
-        <script>
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    const recognition = new SpeechRecognition();
-    recognition.lang = 'en-US';
+        <script>const recognition = new window.webkitSpeechRecognition();
+recognition.continuous = true;
+recognition.interimResults = true;
+recognition.lang = 'ml-IN'; // set the language to Malayalam
 
-    const speechBtn = document.querySelector('#speech-btn');
-    const inputField = document.querySelector('#type-area');
+const inputField = document.querySelector('#type-area');
 
-    speechBtn.addEventListener('click', () => {
-        recognition.start();
-    });
+document.querySelector('.attach-btn').addEventListener('click', () => {
+  recognition.start();
+});
 
-    recognition.addEventListener('result', (e) => {
-        const transcript = Array.from(e.results)
-            .map(result => result[0])
-            .map(result => result.transcript)
-            .join('');
+recognition.onresult = (event) => {
+  const resultIndex = event.resultIndex;
+  const transcript = event.results[resultIndex][0].transcript;
+  inputField.value = transcript;
+  translateToEnglish(transcript);
+};
 
-        inputField.value += transcript;
-    });
-
-    recognition.addEventListener('end', () => {
-        recognition.stop();
-    });
-
-    inputField.addEventListener('input', () => {
-        recognition.abort();
-    });
+function translateToEnglish(text) {
+  fetch('/translate', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-CSRFToken': '{{ csrf_token }}'
+    },
+    body: JSON.stringify({
+      text: text
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      inputField.value = data.translation;
+      document.querySelector('form').submit(); // submit the form automatically
+    } else {
+      console.log('Translation failed');
+    }
+  })
+  .catch(error => console.error(error));
+}
 </script>
-
     </section>
   </div>
     <!-- jQuey, Popper, BootstrapJS -->

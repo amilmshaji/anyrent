@@ -12,8 +12,11 @@ def inbox(request):
     received_messages = Message.objects.filter(recipient=current_user).values('sender').annotate(latest_timestamp=Max('timestamp'))
 
     conversations = []
+    # sort the received_messages list in reverse order based on latest timestamp
+    received_messages = sorted(received_messages, key=lambda x: x['latest_timestamp'], reverse=True)
     for message in received_messages:
-        latest_message = Message.objects.filter(recipient=current_user, sender=message['sender'], timestamp=message['latest_timestamp']).first()
+        latest_message = Message.objects.filter(recipient=current_user, sender=message['sender'],
+                                                timestamp=message['latest_timestamp']).first()
         conversation = {
             'sender': latest_message.sender,
             'message': latest_message.message,
@@ -31,11 +34,14 @@ def chat_view(request, recipient_id):
     lname_value = chatter.lname
 
     messages = Message.objects.filter(Q(sender=request.user, recipient=recipient) | Q(sender=recipient, recipient=request.user)).order_by('timestamp')
+
     current_user = request.user
     received_messages = Message.objects.filter(recipient=current_user).values('sender').annotate(
         latest_timestamp=Max('timestamp'))
 
     conversations = []
+    # sort the received_messages list in reverse order based on latest timestamp
+    received_messages = sorted(received_messages, key=lambda x: x['latest_timestamp'], reverse=True)
     for message in received_messages:
         latest_message = Message.objects.filter(recipient=current_user, sender=message['sender'],
                                                 timestamp=message['latest_timestamp']).first()

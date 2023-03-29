@@ -1,4 +1,5 @@
 from django.db.models import Q
+from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, render, redirect
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
@@ -62,6 +63,8 @@ def chat_view(request, recipient_id):
     }
     return render(request, 'chat/chat.html', context)
 
+import requests
+
 @login_required(login_url='login')
 def send_message_view(request, recipient_id):
     recipient = get_object_or_404(Account, id=recipient_id)
@@ -72,6 +75,31 @@ def send_message_view(request, recipient_id):
             return redirect('chat', recipient_id=recipient_id)
     context = {'recipient': recipient}
     return render(request, 'chat/send_message.html', context)
+
+def translate_view(request):
+    if request.method == 'POST':
+        text = request.POST.get('text')
+        if text:
+            # set the API key for Google Translate API
+            api_key = 'YOUR_API_KEY'
+            url = f'https://translation.googleapis.com/language/translate/v2?key={api_key}'
+
+            # set the source and target language
+            source_lang = 'ml'
+            target_lang = 'en'
+
+            # make the API request
+            response = requests.post(url, data={
+                'q': text,
+                'source': source_lang,
+                'target': target_lang,
+                'format': 'text'
+            }).json()
+
+            if 'data' in response and 'translations' in response['data']:
+                translation = response['data']['translations'][0]['translatedText']
+                return JsonResponse({'success': True, 'translation': translation})
+    return JsonResponse({'success': False})
 
 
 

@@ -56,7 +56,6 @@ def chat_view(request, recipient_id):
     }
     return render(request, 'chat/chat.html', context)
 
-
 @login_required(login_url='login')
 def send_message_view(request, recipient_id):
     recipient = get_object_or_404(Account, id=recipient_id)
@@ -67,6 +66,7 @@ def send_message_view(request, recipient_id):
             return redirect('chat', recipient_id=recipient_id)
     context = {'recipient': recipient}
     return render(request, 'chat/send_message.html', context)
+
 
 
 

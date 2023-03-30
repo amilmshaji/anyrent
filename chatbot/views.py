@@ -11,7 +11,8 @@ def get_response(user_input):
     if user_input == "hi" or user_input == "hello":
         return "Hello! How can I assist you today?"
     elif user_input in pages:
-        return f"Sure, I can help you navigate to the {user_input} page. Here's the link: http://127.0.0.1:8000/{user_input}"
+        return f'Sure, I can help you navigate to the {user_input} page. Here is the link: <a href="http://127.0.0.1:8000/{ user_input }" target="_blank">http://127.0.0.1:8000/{ user_input }</a>'
+
     elif "help" in user_input:
         return "I can help you navigate to different pages on our website. Just tell me which page you'd like to visit, or type 'menu' to see a list of options."
     elif user_input == "menu":

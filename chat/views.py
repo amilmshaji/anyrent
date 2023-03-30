@@ -7,7 +7,7 @@ from .models import Account, Message
 
 from django.db.models import Max
 
-@login_required
+@login_required(login_url='login')
 def inbox(request):
     current_user = request.user
     received_messages = Message.objects.filter(recipient=current_user).values('sender').annotate(latest_timestamp=Max('timestamp'))
@@ -76,13 +76,14 @@ def send_message_view(request, recipient_id):
     context = {'recipient': recipient}
     return render(request, 'chat/send_message.html', context)
 
+@login_required(login_url='login')
 def translate_view(request):
     if request.method == 'POST':
         text = request.POST.get('text')
         if text:
             # set the API key for Google Translate API
             api_key = 'YOUR_API_KEY'
-            url = f'https://translation.googleapis.com/language/translate/v2?key={api_key}'
+            url = f'https://translation.googleapis.com/language/tra nslate/v2?key={api_key}'
 
             # set the source and target language
             source_lang = 'ml'

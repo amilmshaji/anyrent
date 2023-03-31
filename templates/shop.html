@@ -39,6 +39,8 @@
                                 <div class="shop-p__collection">
                                     <div class="row is-grid-active">
                                         {% for h_product in h_products %}
+                                                                                            {% if h_product.user != request.user %}
+
 
                                         <div class="col-lg-3 col-md-4 col-sm-6">
                                             <div class="product-m">
@@ -50,12 +52,10 @@
 <!--                                                    <div class="product-m__quick-look">-->
 
 <!--                                                        <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Quick Look"></a></div>-->
-                                                    {% if h_product.user != request.user %}
 
                                                     <div class="product-m__add-cart">
 
                                                         <a class="btn--e-brand" href="{% url 'chat' h_product.user.id %}" data-modal="modal">CHAT WITH OWNER</a></div>
-                                                                                    {% endif %}
 
                                                 </div>
                                                 <div class="product-m__content">
@@ -80,9 +80,13 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        {% endif %}
+
                                         {% endfor %}
 
                                          {% for c_product in c_products %}
+                                                                                            {% if c_product.user != request.user %}
+
 
                                         <div class="col-lg-3 col-md-4 col-sm-6">
                                             <div class="product-m">
@@ -94,12 +98,10 @@
 <!--                                                    <div class="product-m__quick-look">-->
 
 <!--                                                        <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Quick Look"></a></div>-->
-                                                    {% if c_product.user != request.user %}
 
                                                     <div class="product-m__add-cart">
 
                                                         <a class="btn--e-brand" href="{% url 'chat' c_product.user.id %}" data-modal="modal">CHAT WITH OWNER</a></div>
-                                                    {% endif %}
 
                                                 </div>
                                                 <div class="product-m__content">
@@ -124,8 +126,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                                                                            {% endif %}
+
                                         {% endfor %}
                                         {% for b_product in b_products %}
+                                                    {% if b_product.user != request.user %}
 
                                         <div class="col-lg-3 col-md-4 col-sm-6">
                                             <div class="product-m">
@@ -137,12 +142,10 @@
 <!--                                                    <div class="product-m__quick-look">-->
 
 <!--                                                        <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Quick Look"></a></div>-->
-                                                    {% if b_product.user != request.user %}
 
                                                     <div class="product-m__add-cart">
 
                                                         <a class="btn--e-brand" href="{% url 'chat' b_product.user.id %}" data-modal="modal">CHAT WITH OWNER</a></div>
-                                                    {% endif %}
 
                                                 </div>
                                                 <div class="product-m__content">
@@ -167,8 +170,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                                         {% endif %}
+
                                         {% endfor %}
                                         {% for f_product in f_products %}
+                                                    {% if f_product.user != request.user %}
 
                                         <div class="col-lg-3 col-md-4 col-sm-6">
                                             <div class="product-m">
@@ -180,12 +186,10 @@
 <!--                                                    <div class="product-m__quick-look">-->
 
 <!--                                                        <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Quick Look"></a></div>-->
-                                                    {% if f_product.user != request.user %}
 
                                                     <div class="product-m__add-cart">
 
                                                         <a class="btn--e-brand" href="{% url 'chat' f_product.user.id %}" data-modal="modal">CHAT WITH OWNER</a></div>
-                                                    {% endif %}
 
                                                 </div>
                                                 <div class="product-m__content">
@@ -210,9 +214,12 @@
                                                 </div>
                                             </div>
                                         </div>
+                                                           {% endif %}
+
                                         {% endfor %}
 
                                         {% for o_product in o_products %}
+                                                                                                        {% if o_product.user != request.user %}
 
                                         <div class="col-lg-3 col-md-4 col-sm-6">
                                             <div class="product-m">
@@ -224,12 +231,10 @@
 <!--                                                    <div class="product-m__quick-look">-->
 
 <!--                                                        <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Quick Look"></a></div>-->
-                                                                                                        {% if f_product.user != request.user %}
 
                                                     <div class="product-m__add-cart">
 
                                                         <a class="btn--e-brand" href="{% url 'chat' o_product.user.id %}" data-modal="modal">CHAT WITH OWNER</a></div>
-                                                                                                        {% endif %}
 
                                                 </div>
                                                 <div class="product-m__content">
@@ -254,6 +259,8 @@
                                                 </div>
                                             </div>
                                         </div>
+                                                                                                                                                {% endif %}
+
                                         {% endfor %}
 
 

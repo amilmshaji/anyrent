@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/media/photos/house/80523-b440.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/pexels-photo-129494_TBXy0h6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/61Mw00RuOdL._UL1334__zvTsnve.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/images_HGHpfsM.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product-detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,20 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00042" summary="editing my products">
-      <created>1668523989503</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1668523989503</updated>
-    </task>
-    <task id="LOCAL-00043" summary="search">
-      <created>1668677671316</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1668677671316</updated>
     </task>
     <task id="LOCAL-00044" summary="finished">
       <created>1668681254837</created>
@@ -441,7 +429,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680235621799</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="added product">
+      <created>1680236075585</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1680236075585</updated>
+    </task>
+    <task id="LOCAL-00092" summary="added product">
+      <created>1680236108733</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1680236108733</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

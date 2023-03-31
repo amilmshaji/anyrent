@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/media/photos/house/61Mw00RuOdL._UL1334__zvTsnve.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/images_HGHpfsM.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/photo-1618424181497-157f25b6ddd5_HnAP4ak.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-03-2023_09_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-03-2023_09_38__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-03-2023_09_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-03-2023_09_45__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-03-2023_09_45__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-03-2023_09_45__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anyrent_pjct/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/anyrent_pjct/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,13 +106,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00044" summary="finished">
-      <created>1668681254837</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1668681254837</updated>
     </task>
     <task id="LOCAL-00045" summary="finished">
       <created>1668752578333</created>
@@ -443,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680236108733</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="saved">
+      <created>1680242072503</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1680242072503</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -482,8 +489,8 @@
     <MESSAGE value="chatapp template chanaged" />
     <MESSAGE value="chat speech" />
     <MESSAGE value="chat speech in malayalam" />
-    <MESSAGE value="saved" />
     <MESSAGE value="added product" />
-    <option name="LAST_COMMIT_MESSAGE" value="added product" />
+    <MESSAGE value="saved" />
+    <option name="LAST_COMMIT_MESSAGE" value="saved" />
   </component>
 </project>

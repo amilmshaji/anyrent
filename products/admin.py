@@ -21,6 +21,7 @@ class CatAdmin(admin.ModelAdmin):
     thumbnail_preview5.short_description = 'Image Preview'
     thumbnail_preview5.allow_tags = True
 
+    # This will help you to disbale add functionality
     def has_add_permission(self, request):
         return False
 
@@ -29,6 +30,10 @@ class CatAdmin(admin.ModelAdmin):
     def has_delete_permission(self, request, obj=None):
         return False
 
+        # This will help you to disable change functionality
+
+    def has_change_permission(self, request, obj=None):
+        return False
 
 
 admin.site.register(Category,CatAdmin)

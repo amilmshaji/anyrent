@@ -609,9 +609,3 @@ def prod_map_view(request,location):
     # Render the map
     m = m._repr_html_()
     return render(request, 'map.html', {'map': m})
-
-
-
-
-
-

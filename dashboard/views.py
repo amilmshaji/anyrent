@@ -6,7 +6,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from accounts.models import Account
 from anyrent_pjct import settings
 from dashboard.form import ProductgalleryForm
-from dashboard.models import Productgallery, Payment
+from dashboard.models import Productgallery, Payment, OrderPlaced
 from products.models import House_Product, Car_Product, Bike_Product, Furn_Product,Other_Product
 
 
@@ -435,6 +435,10 @@ def Boost_house(request,house_id):
 
     order_id = payment_response['id']
     request.session['order_id'] = order_id
+    request.session['house_id'] = house_id
+    request.session['quantity'] = quantity
+
+
     order_status = payment_response['status']
     if order_status == 'created':
         payment = Payment(user=request.user,
@@ -452,35 +456,38 @@ def Boost_house(request,house_id):
     }
     return render(request, 'dashboard/boost.html', context)
 
+from django.core.mail import send_mail
+from django.conf import settings
+
 def payment_done(request):
     order_id=request.session['order_id']
+    house_id = request.session['house_id']
+    quantity = request.session['quantity']
+    print(quantity)
+    print(house_id)
     payment_id = request.GET.get('payment_id')
-    product = request.GET.get('h_products')
-    print(product)
+    h_products=House_Product.objects.get(id=house_id)
 
     payment=Payment.objects.get(razorpay_order_id = order_id)
+    email=payment.user.email
+
 
     payment.paid = True
     payment.razorpay_payment_id = payment_id
     payment.save()
-    #
-    # cart=CartItem.objects.filter(user=request.user)
-    #
-    # for c in cart:
-    #     OrderPlaced(user=request.user,customer=customer,product=c.product,quantity=c.quantity,payment=payment,is_ordered=True).save()
-    #     prod=Product.objects.get(product_name=c.product.product_name)
-    #     prod.stock=prod.stock-c.quantity
-    #     if prod.stock < 4:
-    #         message = f"The stock of {prod.product_name} is running low. Please update the stock."
-    #         send_mail(
-    #             'Product Stock Warning',
-    #             message,
-    #             'sankartstore@gmail.com',
-    #             ['sankartstore@gmail.com'],
-    #             fail_silently=False,
-    #         )
-    #     prod.save()
-    #     c.delete()
-    messages.success(request, 'Thank You for ordering...!')
-    return redirect('myproducts')
+    OrderPlaced(user=request.user,product=h_products,quantity=quantity,payment=payment,is_ordered=True).save()
+    h_products.is_featured=True
+    h_products.save()
+    message = f"The advertisment of {h_products.ad_title} is made as featured product" \
+              f"You have paid 500 rupees for advertisment boosting"
+    send_mail(
+        'Advertisement Boosting',
+        message,
+        'anyrentplatfrom@gmail.com',
+        [email],
+        fail_silently=False,
+    )
+
+    messages.success(request, 'Thank You for boosting...!')
+    return redirect('home')
 

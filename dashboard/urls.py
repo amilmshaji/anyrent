@@ -31,5 +31,6 @@ urlpatterns = [
 
     #url for product booosting
     path('boosthouse/<int:house_id>/', views.Boost_house, name='boosthouse'),
+    path('paymentdone/', views.payment_done, name='paymentdone'),
 
 ]

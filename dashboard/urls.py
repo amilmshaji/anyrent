@@ -29,4 +29,7 @@ urlpatterns = [
 
     path('add_product_images/<int:pk>/', views.add_product_images, name='add_product_images'),
 
+    #url for product booosting
+    path('boosthouse/<int:house_id>/', views.Boost_house, name='boosthouse'),
+
 ]

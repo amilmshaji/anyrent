@@ -4,8 +4,9 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, get_object_or_404
 
 from accounts.models import Account
+from anyrent_pjct import settings
 from dashboard.form import ProductgalleryForm
-from dashboard.models import Productgallery
+from dashboard.models import Productgallery, Payment
 from products.models import House_Product, Car_Product, Bike_Product, Furn_Product,Other_Product
 
 
@@ -412,3 +413,74 @@ def add_product_images(request, pk):
         form = ProductgalleryForm()
 
     return render(request, 'dashboard/add_product_images.html', {'form': form, 'product': product})
+
+import razorpay
+
+def Boost_house(request,house_id):
+    h_products=House_Product.objects.get(id=house_id)
+    total=500
+    razoramount = total * 100
+    quantity=1
+
+    client = razorpay.Client(auth=(settings.RAZORPAY_API_KEY, settings.RAZORPAY_API_SECRET_KEY))
+
+    data = {
+        "amount": total,
+        "currency": "INR",
+        "receipt": "order_rcptid_11"
+
+    }
+    print(data)
+    payment_response = client.order.create(data=data)
+
+    order_id = payment_response['id']
+    request.session['order_id'] = order_id
+    order_status = payment_response['status']
+    if order_status == 'created':
+        payment = Payment(user=request.user,
+                          amount=total,
+                          razorpay_order_id=order_id,
+                          razorpay_payment_status=order_status)
+        payment.save()
+
+    context = {
+        'razoramount': razoramount,
+        'h_products': h_products,
+        'total': total,
+        'quantity': quantity,
+
+    }
+    return render(request, 'dashboard/boost.html', context)
+
+def payment_done(request):
+    order_id=request.session['order_id']
+    payment_id = request.GET.get('payment_id')
+    product = request.GET.get('h_products')
+    print(product)
+
+    payment=Payment.objects.get(razorpay_order_id = order_id)
+
+    payment.paid = True
+    payment.razorpay_payment_id = payment_id
+    payment.save()
+    #
+    # cart=CartItem.objects.filter(user=request.user)
+    #
+    # for c in cart:
+    #     OrderPlaced(user=request.user,customer=customer,product=c.product,quantity=c.quantity,payment=payment,is_ordered=True).save()
+    #     prod=Product.objects.get(product_name=c.product.product_name)
+    #     prod.stock=prod.stock-c.quantity
+    #     if prod.stock < 4:
+    #         message = f"The stock of {prod.product_name} is running low. Please update the stock."
+    #         send_mail(
+    #             'Product Stock Warning',
+    #             message,
+    #             'sankartstore@gmail.com',
+    #             ['sankartstore@gmail.com'],
+    #             fail_silently=False,
+    #         )
+    #     prod.save()
+    #     c.delete()
+    messages.success(request, 'Thank You for ordering...!')
+    return redirect('my_orders')
+

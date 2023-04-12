@@ -152,6 +152,8 @@ EMAIL_HOST_PASSWORD = 'sybfjzscqcrazhxn' #find this password in google manage ac
 EMAIL_USE_TLS = True
 
 
+RAZORPAY_API_KEY = 'rzp_test_8wXiTT2Zx0pNy3'
+RAZORPAY_API_SECRET_KEY = 'TqgmRmkGXkbTCcJBXLPVYk1I'
 
 
 JAZZMIN_SETTINGS = {

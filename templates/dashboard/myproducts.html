@@ -84,11 +84,11 @@
 
                                                                   {% if h_product.is_available == True %}
 
-                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_house' h_product.id %}" >ARCHIVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_house' h_product.id %}" >ARCHIVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                {% else %}
-                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_house' h_product.id %}" >UNARCHIVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    <a class="manage-o__text-2 u-c-secondary" href="{% url 'archive_house' h_product.id %}" >UNARCHIVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                {% endif %}
-                                                                    <a href="#" >REMOVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    <a href="{% url 'boosthouse' h_product.id %}" >BOOST</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
                                                                 </div>

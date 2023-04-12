@@ -14,7 +14,8 @@ from django.contrib import messages
 from .forms import ReviewForm
 # Create your views here.
 # from .models import ReviewRating, Location
-from .models import ReviewRating,Location
+from .models import ReviewRating, Location, CarReview, BikeReview, FurnReview, OtherReview
+
 
 def Home(request):
 
@@ -74,22 +75,30 @@ def shop(request, category_slug=None):
 def product_detail(request,  category_slug, product_slug):
     if category_slug == "House-and-Appartments":
         single_product = House_Product.objects.get(category__slug=category_slug, slug=product_slug)
+        reviews = ReviewRating.objects.filter(product_id=single_product.id, status=True)
+
 
     elif category_slug == "Cars":
         single_product = Car_Product.objects.get(category__slug=category_slug, slug=product_slug)
+        reviews = CarReview.objects.filter(product_id=single_product.id, status=True)
+
 
     elif category_slug =="Bikes":
         single_product = Bike_Product.objects.get(category__slug=category_slug, slug=product_slug)
+        reviews = BikeReview.objects.filter(product_id=single_product.id, status=True)
+
 
     elif category_slug =="Furniture":
         single_product = Furn_Product.objects.get(category__slug=category_slug, slug=product_slug)
+        reviews = FurnReview.objects.filter(product_id=single_product.id, status=True)
+
 
     elif category_slug =="Others":
         single_product = Other_Product.objects.get(category__slug=category_slug, slug=product_slug)
+        reviews = OtherReview.objects.filter(product_id=single_product.id, status=True)
 
 
-    reviews = ReviewRating.objects.filter(
-        product_id=single_product.id, status=True)
+
 
 
     context = {
@@ -200,33 +209,129 @@ def search_suggestions(request):
     return JsonResponse([], safe=False)
 
 @login_required(login_url='login')
-def submit_review(request, product_id):
+def House_review(request, product_id):
     url = request.META.get('HTTP_REFERER')
     if request.method == 'POST':
+        review = request.POST.get('review')
+        rating = request.POST.get('rating')
+        image = request.FILES['images']
         try:
-
             reviews = ReviewRating.objects.get(
                 user__id=request.user.id, product__id=product_id)
-            form = ReviewForm(request.POST, instance=reviews)
-            form.save()
+            reviews.review = review
+            review.rating = rating
+            review.image = image
+            review.save()
             messages.success(request, 'Thank you ! Your Review is Updated')
             return redirect(url)
         except ReviewRating.DoesNotExist:
-            form = ReviewForm(request.POST)
-            if form.is_valid():
-                data = ReviewRating()
-                data.rating = form.cleaned_data['rating']
-                data.review = form.cleaned_data['review']
+            ip = request.META.get('REMOTE_ADDR')
+            reviews=ReviewRating(review=review,rating=rating,image=image,ip=ip,product_id=product_id,user_id=request.user.id)
+            reviews.save()
+            messages.success(
+                request, 'Thank You ! Your Review Has Been Submitted')
+            return redirect(url)
 
+@login_required(login_url='login')
+def Car_review(request, product_id):
+    url = request.META.get('HTTP_REFERER')
+    if request.method == 'POST':
+        review = request.POST.get('review')
+        rating = request.POST.get('rating')
+        image = request.FILES['images']
+        try:
+            reviews = CarReview.objects.get(
+                user__id=request.user.id, product__id=product_id)
+            reviews.review = review
+            review.rating = rating
+            review.image = image
+            review.save()
+            messages.success(request, 'Thank you ! Your Review is Updated')
+            return redirect(url)
+        except CarReview.DoesNotExist:
+            ip = request.META.get('REMOTE_ADDR')
+            reviews = CarReview(review=review, rating=rating, image=image, ip=ip, product_id=product_id,
+                                user_id=request.user.id)
+            reviews.save()
+            messages.success(
+                request, 'Thank You ! Your Review Has Been Submitted')
+            return redirect(url)
 
+@login_required(login_url='login')
+def Bike_review(request, product_id):
+    url = request.META.get('HTTP_REFERER')
+    if request.method == 'POST':
+        review = request.POST.get('review')
+        rating = request.POST.get('rating')
+        image = request.FILES['images']
+        try:
+            reviews = BikeReview.objects.get(
+                user__id=request.user.id, product__id=product_id)
+            reviews.review = review
+            review.rating = rating
+            review.image = image
+            review.save()
+            messages.success(request, 'Thank you ! Your Review is Updated')
+            return redirect(url)
+        except BikeReview.DoesNotExist:
+            ip = request.META.get('REMOTE_ADDR')
+            reviews = BikeReview(review=review, rating=rating, image=image, ip=ip, product_id=product_id,
+                                user_id=request.user.id)
+            reviews.save()
+            messages.success(
+                request, 'Thank You ! Your Review Has Been Submitted')
+            return redirect(url)
 
-                data.ip = request.META.get('REMOTE_ADDR')
-                data.product_id = product_id
-                data.user_id = request.user.id
-                data.save()
-                messages.success(
-                    request, 'Thank You ! Your Review Has Been Submitted')
-                return redirect(url)
+@login_required(login_url='login')
+def Furn_review(request, product_id):
+    url = request.META.get('HTTP_REFERER')
+    if request.method == 'POST':
+        review = request.POST.get('review')
+        rating = request.POST.get('rating')
+        image = request.FILES['images']
+        try:
+            reviews = FurnReview.objects.get(
+                user__id=request.user.id, product__id=product_id)
+            reviews.review = review
+            review.rating = rating
+            review.image = image
+            review.save()
+            messages.success(request, 'Thank you ! Your Review is Updated')
+            return redirect(url)
+        except FurnReview.DoesNotExist:
+            ip = request.META.get('REMOTE_ADDR')
+            reviews = FurnReview(review=review, rating=rating, image=image, ip=ip, product_id=product_id,
+                                user_id=request.user.id)
+            reviews.save()
+            messages.success(
+                request, 'Thank You ! Your Review Has Been Submitted')
+            return redirect(url)
+
+@login_required(login_url='login')
+def Other_review(request, product_id):
+    url = request.META.get('HTTP_REFERER')
+    if request.method == 'POST':
+        review = request.POST.get('review')
+        rating = request.POST.get('rating')
+        image = request.FILES['images']
+        try:
+            reviews = OtherReview.objects.get(
+                user__id=request.user.id, product__id=product_id)
+            reviews.review = review
+            review.rating = rating
+            review.image = image
+            review.save()
+            messages.success(request, 'Thank you ! Your Review is Updated')
+            return redirect(url)
+        except OtherReview.DoesNotExist:
+            ip = request.META.get('REMOTE_ADDR')
+            reviews = OtherReview(review=review, rating=rating, image=image, ip=ip, product_id=product_id,
+                                user_id=request.user.id)
+            reviews.save()
+            messages.success(
+                request, 'Thank You ! Your Review Has Been Submitted')
+            return redirect(url)
+
 
 
 def map_view(request):

@@ -482,5 +482,5 @@ def payment_done(request):
     #     prod.save()
     #     c.delete()
     messages.success(request, 'Thank You for ordering...!')
-    return redirect('my_orders')
+    return redirect('myproducts')
 

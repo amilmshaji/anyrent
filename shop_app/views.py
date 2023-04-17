@@ -18,7 +18,6 @@ from .models import ReviewRating, Location, CarReview, BikeReview, FurnReview, O
 
 
 def Home(request):
-
     h_products = House_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')
     c_products = Car_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')
     b_products = Bike_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')

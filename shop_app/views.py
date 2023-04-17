@@ -218,9 +218,9 @@ def House_review(request, product_id):
             reviews = ReviewRating.objects.get(
                 user__id=request.user.id, product__id=product_id)
             reviews.review = review
-            review.rating = rating
-            review.image = image
-            review.save()
+            reviews.rating = rating
+            reviews.image = image
+            reviews.save()
             messages.success(request, 'Thank you ! Your Review is Updated')
             return redirect(url)
         except ReviewRating.DoesNotExist:
@@ -242,9 +242,9 @@ def Car_review(request, product_id):
             reviews = CarReview.objects.get(
                 user__id=request.user.id, product__id=product_id)
             reviews.review = review
-            review.rating = rating
-            review.image = image
-            review.save()
+            reviews.rating = rating
+            reviews.image = image
+            reviews.save()
             messages.success(request, 'Thank you ! Your Review is Updated')
             return redirect(url)
         except CarReview.DoesNotExist:
@@ -267,9 +267,9 @@ def Bike_review(request, product_id):
             reviews = BikeReview.objects.get(
                 user__id=request.user.id, product__id=product_id)
             reviews.review = review
-            review.rating = rating
-            review.image = image
-            review.save()
+            reviews.rating = rating
+            reviews.image = image
+            reviews.save()
             messages.success(request, 'Thank you ! Your Review is Updated')
             return redirect(url)
         except BikeReview.DoesNotExist:
@@ -292,9 +292,9 @@ def Furn_review(request, product_id):
             reviews = FurnReview.objects.get(
                 user__id=request.user.id, product__id=product_id)
             reviews.review = review
-            review.rating = rating
-            review.image = image
-            review.save()
+            reviews.rating = rating
+            reviews.image = image
+            reviews.save()
             messages.success(request, 'Thank you ! Your Review is Updated')
             return redirect(url)
         except FurnReview.DoesNotExist:
@@ -317,9 +317,9 @@ def Other_review(request, product_id):
             reviews = OtherReview.objects.get(
                 user__id=request.user.id, product__id=product_id)
             reviews.review = review
-            review.rating = rating
-            review.image = image
-            review.save()
+            reviews.rating = rating
+            reviews.image = image
+            reviews.save()
             messages.success(request, 'Thank you ! Your Review is Updated')
             return redirect(url)
         except OtherReview.DoesNotExist:

@@ -281,7 +281,7 @@ def manageother(request,other_id):
         state = request.POST.get('state')
         city = request.POST.get('city')
         location = request.POST.get('location')
-    #
+
         o_product.type=type
         o_product.rent=rent
         o_product.ad_title=ad_title
@@ -418,7 +418,7 @@ import razorpay
 
 def Boost_house(request,house_id):
     h_products=House_Product.objects.get(id=house_id)
-    total=500
+    total=300
     razoramount = total * 100
     quantity=1
 

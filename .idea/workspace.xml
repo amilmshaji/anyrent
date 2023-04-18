@@ -4,34 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="payment for advertisment boosting">
-      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_0baGTrs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_3VlWSbl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_5W81bwY.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_Ea98B0w.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_msGpdhk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_rqY2Yl1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_sc7uKEY.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_smu7nAg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/h5_gGDzc4x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/image_SNWE2Gh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0015_rename_type_house_product_house_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0016_house_product_payment_status.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0017_rename_house_type_house_product_type_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/boost_car.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="payment for renting">
+      <change afterPath="$PROJECT_DIR$/dashboard/migrations/0003_orderplacedcar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/c2_g5q0cdz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0018_interested_product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0019_interested_product_interest_status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anyrent_pjct/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/anyrent_pjct/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_car.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_car.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_house.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_house.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product-detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,13 +105,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00054" summary="map updated">
-      <created>1677486337158</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1677486337158</updated>
     </task>
     <task id="LOCAL-00055" summary="Changes">
       <created>1677594049369</created>
@@ -465,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681321167218</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="payment for renting">
+      <created>1681835611146</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1681835611147</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -482,7 +466,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="verification in login" />
     <MESSAGE value="edit products completed" />
     <MESSAGE value="mini project completed" />
     <MESSAGE value="adding user images to the map" />
@@ -507,7 +490,8 @@
     <MESSAGE value="review" />
     <MESSAGE value="review completed" />
     <MESSAGE value="payment for advertisment boosting" />
-    <option name="LAST_COMMIT_MESSAGE" value="payment for advertisment boosting" />
+    <MESSAGE value="payment for renting" />
+    <option name="LAST_COMMIT_MESSAGE" value="payment for renting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

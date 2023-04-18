@@ -5,7 +5,8 @@ import geocoder
 from geopy.geocoders import Nominatim
 
 import folium
-from products.models import Car_Product, House_Product, Bike_Product, Furn_Product, Other_Product, Category
+from products.models import Car_Product, House_Product, Bike_Product, Furn_Product, Other_Product, Category, \
+    Interested_Product
 from django.db.models import Q
 
 from django.contrib.auth.decorators import login_required
@@ -48,7 +49,7 @@ def shop(request, category_slug=None):
         o_products = Other_Product.objects.filter(category=categories, is_available=True)
     else:
 
-        h_products = House_Product.objects.all().filter(is_available=True,payment_status=True).order_by('id')
+        h_products = House_Product.objects.all().filter(is_available=True).order_by('id')
         c_products = Car_Product.objects.all().filter(is_available=True).order_by('id')
 
         b_products = Bike_Product.objects.all().filter(is_available=True).order_by('id')
@@ -75,6 +76,10 @@ def product_detail(request,  category_slug, product_slug):
     if category_slug == "House-and-Appartments":
         single_product = House_Product.objects.get(category__slug=category_slug, slug=product_slug)
         reviews = ReviewRating.objects.filter(product_id=single_product.id, status=True)
+        if Interested_Product.objects.filter(h_product=single_product.id,user=request.user).exists():
+            interest = Interested_Product.objects.get(h_product=single_product.id,user=request.user)
+        else:
+            interest=None
 
 
     elif category_slug == "Cars":
@@ -103,6 +108,7 @@ def product_detail(request,  category_slug, product_slug):
     context = {
         'single_product': single_product,
         'reviews': reviews,
+        'interest': interest,
 
     }
     return render(request, 'product-detail.html', context)

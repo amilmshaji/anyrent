@@ -9,5 +9,6 @@ urlpatterns = [
     path('add_furn/', views.add_furn, name='add_furn'),
     path('add_other/', views.add_other, name='add_other'),
 
+    path('interested/<int:id>/', views.interested, name='interested'),
 
 ]

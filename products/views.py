@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 
-from .models import House_Product
+from .models import House_Product, Interested_Product
 from .models import Car_Product
 
 def Category(request):
@@ -142,4 +142,28 @@ def add_other(request):
 
         return redirect('/')
     return render(request, 'add_other.html')
+
+def interested(request, id):
+    url = request.META.get('HTTP_REFERER')
+
+    h_products = House_Product.objects.get(id=id)
+    try:
+        interest = Interested_Product.objects.get(user=request.user, h_product=h_products)
+        # Check current interest status and update accordingly
+        if interest.interest_status == True:
+            interest.interest_status = False
+            interest.save()
+        else:
+            interest.interest_status = True
+            interest.save()
+
+    except Interested_Product.DoesNotExist:
+        # If the user has not shown any interest before, create a new entry with interest_status set to True
+        interest = Interested_Product(user=request.user, h_product=h_products, interest_status=True)
+        interest.save()
+
+    return redirect(url)
+
+
+
 

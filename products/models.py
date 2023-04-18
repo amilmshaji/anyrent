@@ -250,6 +250,12 @@ pre_save.connect(slug_generator,sender=Other_Product)
 
 
 
+class Interested_Product(models.Model):
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
+    h_product=models.ForeignKey(House_Product, on_delete=models.CASCADE, null=True,editable=False)
+    interest_status=models.BooleanField(default=False)
+
+
 
 
 

@@ -54,10 +54,11 @@ class ProductAdmin(admin.ModelAdmin):
         'created_date',
         'is_available',
         'is_featured',
+        # 'payment_status',
     )
     # prepopulated_fields = {'slug': ('ad_title',)}
 
-    list_editable = ['is_available','is_featured']
+    list_editable = ['is_available','is_featured',]
 
     # This will help you to disbale add functionality
     def has_add_permission(self, request):
@@ -89,11 +90,12 @@ class CarAdmin(admin.ModelAdmin):
         'created_date',
         'is_available',
         'is_featured',
+        # 'payment_status',
 
     )
     # prepopulated_fields = {'slug': ('ad_title',)}
 
-    list_editable = ['is_available','is_featured']
+    list_editable = ['is_available','is_featured',]
 
     # This will help you to disbale add functionality
     def has_add_permission(self, request):

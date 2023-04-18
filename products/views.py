@@ -23,7 +23,7 @@ def add_house(request):
         rent = request.POST.get('rent')
         ad_title = request.POST.get('ad_title')
         add_info = request.POST.get('add_info')
-        images=request.FILES['images']
+        images = request.FILES['images']
         state = request.POST.get('state')
         city = request.POST.get('city')
         location = request.POST.get('location')
@@ -32,7 +32,8 @@ def add_house(request):
         house.save()
         messages.success(request, 'Your product is kept for rent!')
 
-        return redirect('shop')
+        return redirect('shop', id=house.id)
+
     return render(request, 'add_house.html')
 
 

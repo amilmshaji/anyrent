@@ -29,7 +29,10 @@ urlpatterns = [
     path('add_product_images/<int:pk>/', views.add_product_images, name='add_product_images'),
 
     #url for product booosting
-    path('boosthouse/<int:house_id>/', views.Boost_house, name='boosthouse'),
+    path('boosthouse/<slug:house_id>/', views.Boost_house, name='boosthouse'),
+    path('boostcar/<slug:car_id>/', views.Boost_car, name='boostcar'),
+
     path('paymentdone/', views.payment_done, name='paymentdone'),
+    path('paymentdonecar/', views.payment_done_car, name='paymentdonecar'),
 
 ]

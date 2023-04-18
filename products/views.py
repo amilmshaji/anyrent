@@ -12,11 +12,11 @@ def Category(request):
 @login_required(login_url='login')
 def add_house(request):
     current_user = request.user
-    if request.method=="POST":
-        type=request.POST.get('type')
-        furnish=request.POST.get('furnish')
-        bedroom=request.POST.get('bedroom')
-        bathroom=request.POST.get('bathroom')
+    if request.method == "POST":
+        house_type = request.POST.get('type')
+        furnish = request.POST.get('furnish')
+        bedroom = request.POST.get('bedroom')
+        bathroom = request.POST.get('bathroom')
 
         builtup = request.POST.get('builtup')
         capacity = request.POST.get('capacity')
@@ -27,14 +27,18 @@ def add_house(request):
         state = request.POST.get('state')
         city = request.POST.get('city')
         location = request.POST.get('location')
-        house=House_Product(user=current_user,type=type,furnish=furnish,bedroom=bedroom,bathroom=bathroom,builtup=builtup,capacity=capacity,
-                            rent=rent,state=state,city=city,location=location,ad_title=ad_title,add_info=add_info,images=images,)
+        house = House_Product(user=current_user,type=house_type, furnish=furnish, bedroom=bedroom, bathroom=bathroom,
+                               builtup=builtup, capacity=capacity, rent=rent, state=state, city=city, location=location,
+                               ad_title=ad_title, add_info=add_info, images=images,)
         house.save()
         messages.success(request, 'Your product is kept for rent!')
 
-        return redirect('shop', id=house.id)
+        # Pass House_Product ID through URL when redirecting
+        return redirect('boosthouse', house_id=house.id)
 
     return render(request, 'add_house.html')
+
+
 
 
 
@@ -59,7 +63,8 @@ def add_car(request):
         car.save()
         messages.success(request, 'Your product is kept for rent!')
 
-        return redirect('shop')
+        return redirect('boostcar', car_id=car.id)
+
     return render(request, 'add_car.html')
 
 

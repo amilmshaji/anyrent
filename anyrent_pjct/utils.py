@@ -1,5 +1,5 @@
 import string
-from random import random
+import random  # Update this line
 
 from django.utils.text import slugify
 

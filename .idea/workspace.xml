@@ -4,15 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="">
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="payment for advertisment boosting">
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_0baGTrs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_3VlWSbl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_5W81bwY.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_Ea98B0w.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_msGpdhk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_rqY2Yl1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_sc7uKEY.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h3_smu7nAg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h5_gGDzc4x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/image_SNWE2Gh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0015_rename_type_house_product_house_type.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0016_house_product_payment_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0017_rename_house_type_house_product_type_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/boost_car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anyrent_pjct/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/anyrent_pjct/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_app/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_car.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_car.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/add_house.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_house.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/boost.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/boost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/myproducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/myproducts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,16 +73,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MINI_PROJECT/Sanitaryware_Online_Shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/dashboard" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PROJECTS\anyrent_pjct\templates\dashboard" />
       <recent name="D:\PROJECTS\anyrent_pjct\static" />
       <recent name="D:\PROJECTS\anyrent_pjct\static\chats\images" />
       <recent name="D:\PROJECTS\anyrent_pjct\templates\chat" />
       <recent name="D:\PROJECTS\anyrent_pjct\static\chats" />
-      <recent name="D:\PROJECTS\anyrent_pjct\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -459,6 +478,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

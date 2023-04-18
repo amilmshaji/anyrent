@@ -54,6 +54,7 @@ class House_Product(models.Model):
     city = models.CharField(max_length=200,blank=True,null=True,editable=False)
     state = models.CharField(max_length=200,blank=True,null=True,editable=False)
     images = models.ImageField(upload_to='photos/house',editable=False,null=True)
+    payment_status=models.BooleanField(default=False)
     is_available = models.BooleanField(default=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE,default=1,editable=False)
     created_date = models.DateTimeField(auto_now_add=True)
@@ -101,6 +102,8 @@ class Car_Product(models.Model):
     images = models.ImageField(upload_to='photos/house',editable=False )
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
+    payment_status=models.BooleanField(default=False)
+
     category = models.ForeignKey(Category, on_delete=models.CASCADE,default=2,editable=False )
 
     created_date = models.DateTimeField(auto_now_add=True)
@@ -138,11 +141,10 @@ class Bike_Product(models.Model):
     location = models.CharField(max_length=200,blank=True,null=True,editable=False)
     city = models.CharField(max_length=200,blank=True,null=True,editable=False)
     state = models.CharField(max_length=200,blank=True,null=True,editable=False)
-
-
     category = models.ForeignKey(Category, on_delete=models.CASCADE,default=3,editable=False,null=True)
 
     is_available = models.BooleanField(default=True)
+    payment_status=models.BooleanField(default=False)
     is_featured = models.BooleanField(default=False)
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
@@ -175,6 +177,8 @@ class Furn_Product(models.Model):      #Furniture table product adding table
     images = models.ImageField(upload_to='photos/house',editable=False)
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
+    payment_status=models.BooleanField(default=False)
+
     type = models.CharField(max_length=200,blank=True,editable=False)
     location = models.CharField(max_length=200,blank=True,null=True,editable=False)
     city = models.CharField(max_length=200,blank=True,null=True,editable=False)
@@ -213,6 +217,8 @@ class Other_Product(models.Model):                #Other table product adding ta
     images = models.ImageField(upload_to='photos/house',editable=False)
     is_available = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
+    payment_status=models.BooleanField(default=False)
+
     type = models.CharField(max_length=200,blank=True,editable=False)
     location = models.CharField(max_length=200,blank=True,null=True,editable=False)
     city = models.CharField(max_length=200,blank=True,null=True,editable=False)

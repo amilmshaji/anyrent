@@ -18,7 +18,7 @@ from .models import ReviewRating, Location, CarReview, BikeReview, FurnReview, O
 
 
 def Home(request):
-    h_products = House_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')
+    h_products = House_Product.objects.all().filter(is_available=True,is_featured=True,payment_status=True).order_by('id')
     c_products = Car_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')
     b_products = Bike_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')
     f_products = Furn_Product.objects.all().filter(is_available=True,is_featured=True).order_by('id')
@@ -41,14 +41,14 @@ def shop(request, category_slug=None):
     if category_slug != None:
 
         categories = get_object_or_404(Category, slug=category_slug)
-        h_products = House_Product.objects.filter(category=categories, is_available=True)
-        c_products = Car_Product.objects.filter(category=categories, is_available=True)
+        h_products = House_Product.objects.filter(category=categories, is_available=True,payment_status=True)
+        c_products = Car_Product.objects.filter(category=categories, is_available=True, )
         b_products = Bike_Product.objects.filter(category=categories, is_available=True)
         f_products = Furn_Product.objects.filter(category=categories, is_available=True)
         o_products = Other_Product.objects.filter(category=categories, is_available=True)
     else:
 
-        h_products = House_Product.objects.all().filter(is_available=True).order_by('id')
+        h_products = House_Product.objects.all().filter(is_available=True,payment_status=True).order_by('id')
         c_products = Car_Product.objects.all().filter(is_available=True).order_by('id')
 
         b_products = Bike_Product.objects.all().filter(is_available=True).order_by('id')

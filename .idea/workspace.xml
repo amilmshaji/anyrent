@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="interested or not">
-      <change afterPath="$PROJECT_DIR$/products/migrations/0020_interested_other_interested_furn_interested_car_and_more.py" afterDir="false" />
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="interested marking completed">
+      <change afterPath="$PROJECT_DIR$/dashboard/migrations/0004_orderplacedother_orderplacedfurn_orderplacedbike.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/photos/house/s.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/boost_bike.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/boost_furn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/boost_other.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_bike.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_bike.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_furn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_furn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_other.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_other.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +60,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/dashboard" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -103,13 +108,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00057" summary="mapp full finished(corrected limit exceeded error)">
-      <created>1677774418701</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1677774418701</updated>
     </task>
     <task id="LOCAL-00058" summary="map product connected to detail page">
       <created>1677779523869</created>
@@ -447,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681916472001</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="interested marking completed">
+      <created>1681926058293</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1681926058293</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +469,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="mini project completed" />
     <MESSAGE value="adding user images to the map" />
     <MESSAGE value="map updated" />
     <MESSAGE value="Changes" />
@@ -489,14 +493,15 @@
     <MESSAGE value="payment for advertisment boosting" />
     <MESSAGE value="payment for renting" />
     <MESSAGE value="interested or not" />
-    <option name="LAST_COMMIT_MESSAGE" value="interested or not" />
+    <MESSAGE value="interested marking completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="interested marking completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dashboard/views.py</url>
-          <line>418</line>
+          <line>419</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

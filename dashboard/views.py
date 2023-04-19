@@ -6,7 +6,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from accounts.models import Account
 from anyrent_pjct import settings
 from dashboard.form import ProductgalleryForm
-from dashboard.models import Productgallery, Payment, OrderPlaced, OrderPlacedCar
+from dashboard.models import Productgallery, Payment, OrderPlaced, OrderPlacedCar, OrderPlacedBike, OrderPlacedFurn, \
+    OrderPlacedOther
 from products.models import House_Product, Car_Product, Bike_Product, Furn_Product,Other_Product
 
 
@@ -552,6 +553,229 @@ def payment_done_car(request):
     payment.razorpay_payment_id = payment_id
     payment.save()
     OrderPlacedCar(user=request.user,product=h_products,quantity=quantity,payment=payment,is_ordered=True).save()
+    h_products.payment_status=True
+    h_products.save()
+    message = f"The advertisment of {h_products.ad_title} is made as featured product" \
+              f"You have paid 500 rupees for advertisment boosting"
+    send_mail(
+        'Advertisement Boosting',
+        message,
+        'anyrentplatfrom@gmail.com',
+        [email],
+        fail_silently=False,
+    )
+
+    return redirect('home')
+
+
+def Boost_Bike(request,bike_id):
+    # house_id=request.GET.get('id')
+
+    h_products=Bike_Product.objects.get(id=bike_id)
+    total=300
+    razoramount = total * 100
+    quantity=1
+
+    client = razorpay.Client(auth=(settings.RAZORPAY_API_KEY, settings.RAZORPAY_API_SECRET_KEY))
+
+    data = {
+        "amount": total,
+        "currency": "INR",
+        "receipt": "order_rcptid_11"
+
+    }
+    print(data)
+    payment_response = client.order.create(data=data)
+
+    order_id = payment_response['id']
+    request.session['order_id'] = order_id
+    request.session['bike_id'] = bike_id
+    request.session['quantity'] = quantity
+
+
+    order_status = payment_response['status']
+    if order_status == 'created':
+        payment = Payment(user=request.user,
+                          amount=total,
+                          razorpay_order_id=order_id,
+                          razorpay_payment_status=order_status)
+        payment.save()
+
+    context = {
+        'razoramount': razoramount,
+        'h_products': h_products,
+        'total': total,
+        'quantity': quantity,
+
+    }
+    return render(request, 'dashboard/boost_bike.html', context)
+
+def payment_done_bike(request):
+    order_id=request.session['order_id']
+    bike_id = request.session['bike_id']
+    quantity = request.session['quantity']
+    print(quantity)
+
+    payment_id = request.GET.get('payment_id')
+    h_products=Bike_Product.objects.get(id=bike_id)
+
+    payment=Payment.objects.get(razorpay_order_id = order_id)
+    email=payment.user.email
+
+
+    payment.paid = True
+    payment.razorpay_payment_id = payment_id
+    payment.save()
+    OrderPlacedBike(user=request.user,product=h_products,quantity=quantity,payment=payment,is_ordered=True).save()
+    h_products.payment_status=True
+    h_products.save()
+    message = f"The advertisment of {h_products.ad_title} is made as featured product" \
+              f"You have paid 500 rupees for advertisment boosting"
+    send_mail(
+        'Advertisement Boosting',
+        message,
+        'anyrentplatfrom@gmail.com',
+        [email],
+        fail_silently=False,
+    )
+
+    return redirect('home')
+
+
+
+def Boost_Furn(request,furn_id):
+    # house_id=request.GET.get('id')
+
+    h_products=Furn_Product.objects.get(id=furn_id)
+    total=300
+    razoramount = total * 100
+    quantity=1
+
+    client = razorpay.Client(auth=(settings.RAZORPAY_API_KEY, settings.RAZORPAY_API_SECRET_KEY))
+
+    data = {
+        "amount": total,
+        "currency": "INR",
+        "receipt": "order_rcptid_11"
+
+    }
+    print(data)
+    payment_response = client.order.create(data=data)
+
+    order_id = payment_response['id']
+    request.session['order_id'] = order_id
+    request.session['furn_id'] = furn_id
+    request.session['quantity'] = quantity
+
+
+    order_status = payment_response['status']
+    if order_status == 'created':
+        payment = Payment(user=request.user,
+                          amount=total,
+                          razorpay_order_id=order_id,
+                          razorpay_payment_status=order_status)
+        payment.save()
+
+    context = {
+        'razoramount': razoramount,
+        'h_products': h_products,
+        'total': total,
+        'quantity': quantity,
+
+    }
+    return render(request, 'dashboard/boost_furn.html', context)
+
+def payment_done_furn(request):
+    order_id=request.session['order_id']
+    furn_id = request.session['furn_id']
+    quantity = request.session['quantity']
+    print(quantity)
+
+    payment_id = request.GET.get('payment_id')
+    h_products=Furn_Product.objects.get(id=furn_id)
+
+    payment=Payment.objects.get(razorpay_order_id = order_id)
+    email=payment.user.email
+
+
+    payment.paid = True
+    payment.razorpay_payment_id = payment_id
+    payment.save()
+    OrderPlacedFurn(user=request.user,product=h_products,quantity=quantity,payment=payment,is_ordered=True).save()
+    h_products.payment_status=True
+    h_products.save()
+    message = f"The advertisment of {h_products.ad_title} is made as featured product" \
+              f"You have paid 500 rupees for advertisment boosting"
+    send_mail(
+        'Advertisement Boosting',
+        message,
+        'anyrentplatfrom@gmail.com',
+        [email],
+        fail_silently=False,
+    )
+
+    return redirect('home')
+
+
+def Boost_Other(request,other_id):
+    # house_id=request.GET.get('id')
+
+    h_products=Other_Product.objects.get(id=other_id)
+    total=300
+    razoramount = total * 100
+    quantity=1
+
+    client = razorpay.Client(auth=(settings.RAZORPAY_API_KEY, settings.RAZORPAY_API_SECRET_KEY))
+
+    data = {
+        "amount": total,
+        "currency": "INR",
+        "receipt": "order_rcptid_11"
+
+    }
+    print(data)
+    payment_response = client.order.create(data=data)
+
+    order_id = payment_response['id']
+    request.session['order_id'] = order_id
+    request.session['other_id'] = other_id
+    request.session['quantity'] = quantity
+
+
+    order_status = payment_response['status']
+    if order_status == 'created':
+        payment = Payment(user=request.user,
+                          amount=total,
+                          razorpay_order_id=order_id,
+                          razorpay_payment_status=order_status)
+        payment.save()
+
+    context = {
+        'razoramount': razoramount,
+        'h_products': h_products,
+        'total': total,
+        'quantity': quantity,
+
+    }
+    return render(request, 'dashboard/boost_other.html', context)
+
+def payment_done_other(request):
+    order_id=request.session['order_id']
+    other_id = request.session['other_id']
+    quantity = request.session['quantity']
+    print(quantity)
+
+    payment_id = request.GET.get('payment_id')
+    h_products=Other_Product.objects.get(id=other_id)
+
+    payment=Payment.objects.get(razorpay_order_id = order_id)
+    email=payment.user.email
+
+
+    payment.paid = True
+    payment.razorpay_payment_id = payment_id
+    payment.save()
+    OrderPlacedOther(user=request.user,product=h_products,quantity=quantity,payment=payment,is_ordered=True).save()
     h_products.payment_status=True
     h_products.save()
     message = f"The advertisment of {h_products.ad_title} is made as featured product" \

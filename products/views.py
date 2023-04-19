@@ -93,7 +93,7 @@ def add_bike(request):
         bike.save()
         messages.success(request, 'Your product is kept for rent!')
 
-        return redirect('shop')
+        return redirect('boostbike', bike_id=bike.id)
     return render(request, 'add_bike.html')
 
 from .models import Furn_Product
@@ -117,7 +117,7 @@ def add_furn(request):
         furniture.save()
         messages.success(request, 'Your product is kept for rent!')
 
-        return redirect('shop')
+        return redirect('boostfurn', furn_id=furniture.id)
     return render(request, 'add_furn.html')
 
 
@@ -141,29 +141,9 @@ def add_other(request):
         other.save()
         messages.success(request, 'Your product is kept for rent!')
 
-        return redirect('/')
+        return redirect('boostother', other_id=other.id)
     return render(request, 'add_other.html')
-#
-# def interested(request, id):
-#     url = request.META.get('HTTP_REFERER')
-#
-#     h_products = House_Product.objects.get(id=id)
-#     try:
-#         interest = Interested_Product.objects.get(user=request.user, h_product=h_products)
-#         # Check current interest status and update accordingly
-#         if interest.interest_status == True:
-#             interest.interest_status = False
-#             interest.save()
-#         else:
-#             interest.interest_status = True
-#             interest.save()
-#
-#     except Interested_Product.DoesNotExist:
-#         # If the user has not shown any interest before, create a new entry with interest_status set to True
-#         interest = Interested_Product(user=request.user, h_product=h_products, interest_status=True)
-#         interest.save()
-#
-#     return redirect(url)
+
 
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages

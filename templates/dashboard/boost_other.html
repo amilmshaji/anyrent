@@ -1,0 +1,270 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+  <div class="app-content">
+
+            <!--====== Section 1 ======-->
+            <div class="u-s-p-y-60">
+
+                <!--====== Section Content ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="breadcrumb">
+                            <div class="breadcrumb__wrap">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====== End - Section 1 ======-->
+
+
+
+            <!--====== Section 2 ======-->
+            <div class="u-s-p-b-60">
+
+                <!--====== Section Content ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div id="checkout-msg-group">
+                                    <div class="msg">
+
+                                        <span class="msg__text">Your advertisment will be kept as featured advertisement for ₹300 for a month duration.
+
+                                            <a class="gl-link" href="#have-coupon" data-toggle="collapse">Boosting your advertisment makes your advertisment more visible to other AnyRent platform users</a></span>
+<!--                                        <div class="collapse" id="have-coupon" data-parent="#checkout-msg-group">-->
+<!--                                            <div class="c-f u-s-m-b-16">-->
+
+<!--                                                <span class="gl-text u-s-m-b-16">Enter your coupon code if you have one.</span>-->
+<!--                                                <form class="c-f__form">-->
+<!--                                                    <div class="u-s-m-b-16">-->
+<!--                                                        <div class="u-s-m-b-15">-->
+
+<!--                                                            <label for="coupon"></label>-->
+
+<!--                                                            <input class="input-text input-text&#45;&#45;primary-style" type="text" id="coupon" placeholder="Coupon Code"></div>-->
+<!--                                                        <div class="u-s-m-b-15">-->
+
+<!--                                                            <button class="btn btn&#45;&#45;e-transparent-brand-b-2" type="submit">APPLY</button></div>-->
+<!--                                                    </div>-->
+<!--                                                </form>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== End - Section Content ======-->
+            </div>
+            <!--====== End - Section 2 ======-->
+
+
+            <!--====== Section 3 ======-->
+            <div class="u-s-p-b-60">
+
+                <!--====== Section Content ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="checkout-f">
+                            <div class="row">
+
+                                <div class="col-lg-12">
+                                    <h1 class="checkout-f__h1">ADVERTISMENT SUMMARY</h1>
+
+                                    <!--====== Order Summary ======-->
+                                    <div class="o-summary">
+                                        <div class="o-summary__section u-s-m-b-30">
+                                            <div class="o-summary__item-wrap gl-scroll">
+
+                                                <div class="o-card">
+                                                    <div class="o-card__flex">
+                                                        <div class="o-card__img-wrap">
+
+                                                            <img class="u-img-fluid" src="{{h_products.images.url}}" alt=""></div>
+                                                        <div class="o-card__info-wrap">
+
+                                                            <span class="o-card__name">
+
+                                                                <a href="product-detail.html">{{h_products.ad_title}}</a></span>
+
+                                                            <span class="o-card__quantity">{{h_products.category.category_name}}</span>
+
+<!--                                                            <span class="o-card__price">$150.00</span>-->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="o-summary__section u-s-m-b-30">
+                                            <div class="o-summary__box">
+                                                <table class="o-summary__table">
+                                                    <tbody>
+<!--                                                        <tr>-->
+<!--                                                            <td>SHIPPING</td>-->
+<!--                                                            <td>$4.00</td>-->
+<!--                                                        </tr>-->
+<!--                                                        <tr>-->
+<!--                                                            <td>TAX</td>-->
+<!--                                                            <td>$0.00</td>-->
+<!--                                                        </tr>-->
+<!--                                                        <tr>-->
+<!--                                                            <td>SUBTOTAL</td>-->
+<!--                                                            <td>$379.00</td>-->
+<!--                                                        </tr>-->
+                                                        <tr>
+                                                            <td>TOTAL</td>
+                                                            <td>₹300.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="o-summary__section u-s-m-b-30">
+                                            <div class="o-summary__box">
+                                                <h1 class="checkout-f__h1">PAYMENT INFORMATION</h1>
+                                                <form class="checkout-f__payment " id="myform" onsubmit="return checkCheckBoxes(this);">
+<!--                                                    <div class="u-s-m-b-10">-->
+
+<!--                                                        &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                        <div class="radio-box">-->
+
+<!--                                                            <input type="radio" id="cash-on-delivery" name="payment">-->
+<!--                                                            <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
+
+<!--                                                                <label class="radio-box__label" for="cash-on-delivery">Cash on Delivery</label></div>-->
+<!--                                                        </div>-->
+<!--                                                        &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+
+<!--                                                        <span class="gl-text u-s-m-t-6">Pay Upon Cash on delivery. (This service is only available for some countries)</span>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="u-s-m-b-10">-->
+
+<!--                                                        &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                        <div class="radio-box">-->
+
+<!--                                                            <input type="radio" id="direct-bank-transfer" name="payment">-->
+<!--                                                            <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
+
+<!--                                                                <label class="radio-box__label" for="direct-bank-transfer">Direct Bank Transfer</label></div>-->
+<!--                                                        </div>-->
+<!--                                                        &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+
+<!--                                                        <span class="gl-text u-s-m-t-6">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</span>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="u-s-m-b-10">-->
+
+<!--                                                        &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                        <div class="radio-box">-->
+
+<!--                                                            <input type="radio" id="pay-with-check" name="payment">-->
+<!--                                                            <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
+
+<!--                                                                <label class="radio-box__label" for="pay-with-check">Pay With Check</label></div>-->
+<!--                                                        </div>-->
+<!--                                                        &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+
+<!--                                                        <span class="gl-text u-s-m-t-6">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</span>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="u-s-m-b-10">-->
+
+<!--                                                        &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                        <div class="radio-box">-->
+
+<!--                                                            <input type="radio" id="pay-with-card" name="payment">-->
+<!--                                                            <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
+
+<!--                                                                <label class="radio-box__label" for="pay-with-card">Pay With Credit / Debit Card</label></div>-->
+<!--                                                        </div>-->
+<!--                                                        &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+
+<!--                                                        <span class="gl-text u-s-m-t-6">International Credit Cards must be eligible for use within the United States.</span>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="u-s-m-b-10">-->
+
+<!--                                                        &lt;!&ndash;====== Radio Box ======&ndash;&gt;-->
+<!--                                                        <div class="radio-box">-->
+
+<!--                                                            <input type="radio" id="pay-pal" name="payment">-->
+<!--                                                            <div class="radio-box__state radio-box__state&#45;&#45;primary">-->
+
+<!--                                                                <label class="radio-box__label" for="pay-pal">Pay Pal</label></div>-->
+<!--                                                        </div>-->
+<!--                                                        &lt;!&ndash;====== End - Radio Box ======&ndash;&gt;-->
+
+<!--                                                        <span class="gl-text u-s-m-t-6">When you click "Place Order" below we'll take you to Paypal's site to set up your billing information.</span>-->
+<!--                                                    </div>-->
+                                                    <div class="u-s-m-b-15">
+
+                                                        <!--====== Check Box ======-->
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="term-and-condition">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="term-and-condition">I consent to the</label></div>
+                                                        </div>
+                                                        <!--====== End - Check Box ======-->
+
+                                                        <a class="gl-link">Terms of Service.</a>
+                                                    </div>
+                                                    <div>
+
+                                                        <button id="rzp-button1" class="btn btn--e-brand-b-2" type="submit">BOOST AD</button></div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>
+                        var options = {
+                            "key": 'rzp_test_8wXiTT2Zx0pNy3', // Enter the Key ID generated from the Dashboard
+                            "amount": "{{razoramount}}", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                            "currency": "INR",
+                            "name": "AnyRent",
+                            "description": "Test Transaction",
+                            "image": "https://example.com/your_logo",
+                            "order_id": "{{order_id}}", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+                            "handler": function (response){
+                                console.log("success")
+                                var form = document.getElementById["myform"];
+
+
+                                var a = response.razorpay_payment_id;
+
+
+                                window.location.href = 'http://127.0.0.1:8000/paymentdoneother?order_id=${response.razorpay_order_id}&h_products=${response.h_products}&payment_id='+a
+
+                            },
+                            "theme": {
+                                "color": "#3399cc"
+                            }
+                        };
+                        var rzp1 = new Razorpay(options);
+                        rzp1.on('payment.failed', function (response){
+                                alert(response.error.description);
+                        });
+                        document.getElementById('rzp-button1').onclick = function(e){
+                            console.log("button click");
+                            rzp1.open();
+                            e.preventDefault();
+                        }
+                        </script>
+
+                                    <!--====== End - Order Summary ======-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== End - Section Content ======-->
+            </div>
+            <!--====== End - Section 3 ======-->
+        </div>
+    {% endblock %}

@@ -31,8 +31,14 @@ urlpatterns = [
     #url for product booosting
     path('boosthouse/<slug:house_id>/', views.Boost_house, name='boosthouse'),
     path('boostcar/<slug:car_id>/', views.Boost_car, name='boostcar'),
+    path('boostbike/<slug:bike_id>/', views.Boost_Bike, name='boostbike'),
+    path('boostfurn/<slug:furn_id>/', views.Boost_Furn, name='boostfurn'),
+    path('boostother/<slug:other_id>/', views.Boost_Other, name='boostother'),
 
     path('paymentdone/', views.payment_done, name='paymentdone'),
     path('paymentdonecar/', views.payment_done_car, name='paymentdonecar'),
+    path('paymentdonebike/', views.payment_done_bike, name='paymentdonecar'),
+    path('paymentdonefurn/', views.payment_done_furn, name='paymentdonefurn'),
+    path('paymentdoneother/', views.payment_done_other, name='paymentdoneother'),
 
 ]

@@ -4,7 +4,8 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import House_Product, Car_Product, Bike_Product, Other_Product,Furn_Product,Category
+from .models import House_Product, Car_Product, Bike_Product, Other_Product, Furn_Product, Category, Interested_Product, \
+    Interested_Car
 
 
 class CatAdmin(admin.ModelAdmin):
@@ -212,3 +213,6 @@ class OtherAdmin(admin.ModelAdmin):
     thumbnail_preview4.allow_tags = True
 
 admin.site.register(Other_Product,OtherAdmin)
+
+admin.site.register(Interested_Product)
+admin.site.register(Interested_Car)

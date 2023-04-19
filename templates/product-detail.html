@@ -133,21 +133,97 @@
                                                 <a href="{% url 'chat' single_product.user.id %}">
 
                                                 <button class="btn btn--e-brand-b-2" type="submit">CHAT WITH {{single_product.user.fname}}&nbsp{{single_product.user.lname}}</button></a>
-                                                {% if interest is defined %}
-                                                {% if interest.interest_status == False %}
-                                                <a href="{% url 'interested' single_product.id %}">
+                                                {% if user.is_authenticated %}
+                                                {% if single_product.category.slug == "House-and-Appartments" %}
+
+                                                {% if int == False %}
+
+                                                        <a href="{% url 'product_interested' pk=single_product.id %}">
 
                                                 <span class="btn btn--e-brand-b-2"><i class="fas fa-heart"></i> Interested</span></a>
-                                                {% else %}
-                                                <a href="{% url 'interested' single_product.id %}">
 
-                                                    <span class="btn btn--e-brand-b-2"><i class="fas fa-heart"></i> Uninterested</span></a>
+                                                {% else %}
+                                                <style>.btn--e-brand-b-3 {
+                                                  background-color: #c8e6c9;
+                                                }
+                                                </style>
+
+                                                      <span class="btn btn--e-brand-b-3"><i class="fas fa-heart"></i> Marked as interested</span>
+
+                                                {% endif %}
+                                                {% elif single_product.category.slug == "Cars" %}
+                                                {% if int == False %}
+
+                                                        <a href="{% url 'car_interested' pk=single_product.id %}">
+
+                                                <span class="btn btn--e-brand-b-2"><i class="fas fa-heart"></i> Interested</span></a>
+
+                                                {% else %}
+                                                <style>.btn--e-brand-b-3 {
+                                                  background-color: #c8e6c9;
+                                                }
+                                                </style>
+
+                                                      <span class="btn btn--e-brand-b-3"><i class="fas fa-heart"></i> Marked as interested</span>
+
+
                                                 {% endif %}
 
-                                                {% else %}
-                                                <a href="{% url 'interested' single_product.id %}">
+                                                {% elif single_product.category.slug == "Bikes" %}
+                                                {% if int == False %}
 
-                                                    <span class="btn btn--e-brand-b-2"><i class="fas fa-heart"></i> Interested</span></a>
+                                                        <a href="{% url 'bike_interested' pk=single_product.id %}">
+
+                                                <span class="btn btn--e-brand-b-2"><i class="fas fa-heart"></i> Interested</span></a>
+
+                                                {% else %}
+                                                <style>.btn--e-brand-b-3 {
+                                                  background-color: #c8e6c9;
+                                                }
+                                                </style>
+
+                                                      <span class="btn btn--e-brand-b-3"><i class="fas fa-heart"></i> Marked as interested</span>
+
+
+                                                {% endif %}
+
+                                                {% elif single_product.category.slug == "Furniture" %}
+                                                {% if int == False %}
+
+                                                        <a href="{% url 'furn_interested' pk=single_product.id %}">
+
+                                                <span class="btn btn--e-brand-b-2"><i class="fas fa-heart"></i> Interested</span></a>
+
+                                                {% else %}
+                                                <style>.btn--e-brand-b-3 {
+                                                  background-color: #c8e6c9;
+                                                }
+                                                </style>
+
+                                                      <span class="btn btn--e-brand-b-3"><i class="fas fa-heart"></i> Marked as interested</span>
+
+
+                                                {% endif %}
+
+                                                {% elif single_product.category.slug == "Others" %}
+                                                {% if int == False %}
+
+                                                        <a href="{% url 'other_interested' pk=single_product.id %}">
+
+                                                <span class="btn btn--e-brand-b-2"><i class="fas fa-heart"></i> Interested</span></a>
+
+                                                {% else %}
+                                                <style>.btn--e-brand-b-3 {
+                                                  background-color: #c8e6c9;
+                                                }
+                                                </style>
+
+                                                      <span class="btn btn--e-brand-b-3"><i class="fas fa-heart"></i> Marked as interested</span>
+
+                                                {% endif %}
+
+                                                {% endif %}
+
                                                 {% endif %}
 
 

@@ -6,7 +6,7 @@ from geopy.geocoders import Nominatim
 
 import folium
 from products.models import Car_Product, House_Product, Bike_Product, Furn_Product, Other_Product, Category, \
-    Interested_Product
+    Interested_Product, Interested_Car, Interested_Bike, Interested_Furn, Interested_Other
 from django.db.models import Q
 
 from django.contrib.auth.decorators import login_required
@@ -78,28 +78,67 @@ def product_detail(request,  category_slug, product_slug):
         reviews = ReviewRating.objects.filter(product_id=single_product.id, status=True)
         if Interested_Product.objects.filter(h_product=single_product.id,user=request.user).exists():
             interest = Interested_Product.objects.get(h_product=single_product.id,user=request.user)
+            if interest.interest_status==True:
+                int=True
+            else:
+                int=False
         else:
-            interest=None
+            int = False
 
 
     elif category_slug == "Cars":
         single_product = Car_Product.objects.get(category__slug=category_slug, slug=product_slug)
         reviews = CarReview.objects.filter(product_id=single_product.id, status=True)
+        if Interested_Car.objects.filter(c_product=single_product.id,user=request.user).exists():
+            interest = Interested_Car.objects.get(c_product=single_product.id,user=request.user)
+            if interest.interest_status==True:
+                int=True
+            else:
+                int=False
+        else:
+            int = False
 
 
     elif category_slug =="Bikes":
         single_product = Bike_Product.objects.get(category__slug=category_slug, slug=product_slug)
         reviews = BikeReview.objects.filter(product_id=single_product.id, status=True)
+        if Interested_Bike.objects.filter(b_product=single_product.id,user=request.user).exists():
+            interest = Interested_Bike.objects.get(b_product=single_product.id,user=request.user)
+            if interest.interest_status==True:
+                int=True
+            else:
+                int=False
+        else:
+            int = False
 
 
     elif category_slug =="Furniture":
         single_product = Furn_Product.objects.get(category__slug=category_slug, slug=product_slug)
         reviews = FurnReview.objects.filter(product_id=single_product.id, status=True)
+        if Interested_Furn.objects.filter(f_product=single_product.id,user=request.user).exists():
+            interest = Interested_Furn.objects.get(f_product=single_product.id,user=request.user)
+            if interest.interest_status==True:
+                int=True
+            else:
+                int=False
+        else:
+            int = False
 
 
     elif category_slug =="Others":
         single_product = Other_Product.objects.get(category__slug=category_slug, slug=product_slug)
         reviews = OtherReview.objects.filter(product_id=single_product.id, status=True)
+        if Interested_Other.objects.filter(o_product=single_product.id,user=request.user).exists():
+            interest = Interested_Other.objects.get(o_product=single_product.id,user=request.user)
+            if interest.interest_status==True:
+                int=True
+            else:
+                int=False
+        else:
+            int = False
+
+
+
 
 
 
@@ -108,7 +147,7 @@ def product_detail(request,  category_slug, product_slug):
     context = {
         'single_product': single_product,
         'reviews': reviews,
-        'interest': interest,
+        'int': int,
 
     }
     return render(request, 'product-detail.html', context)

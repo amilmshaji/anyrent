@@ -255,9 +255,23 @@ class Interested_Product(models.Model):
     h_product=models.ForeignKey(House_Product, on_delete=models.CASCADE, null=True,editable=False)
     interest_status=models.BooleanField(default=False)
 
+class Interested_Car(models.Model):
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
+    c_product=models.ForeignKey(Car_Product, on_delete=models.CASCADE, null=True,editable=False)
+    interest_status=models.BooleanField(default=False)
 
+class Interested_Bike(models.Model):
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
+    b_product=models.ForeignKey(Bike_Product, on_delete=models.CASCADE, null=True,editable=False)
+    interest_status=models.BooleanField(default=False)
 
+class Interested_Furn(models.Model):
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
+    f_product=models.ForeignKey(Furn_Product, on_delete=models.CASCADE, null=True,editable=False)
+    interest_status=models.BooleanField(default=False)
 
-
-
+class Interested_Other(models.Model):
+    user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
+    o_product=models.ForeignKey(Other_Product, on_delete=models.CASCADE, null=True,editable=False)
+    interest_status=models.BooleanField(default=False)
 

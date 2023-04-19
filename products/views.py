@@ -2,7 +2,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 
-from .models import House_Product, Interested_Product
+from .models import House_Product, Interested_Product, Interested_Car, Interested_Bike, Interested_Furn, \
+    Interested_Other
 from .models import Car_Product
 
 def Category(request):
@@ -142,28 +143,110 @@ def add_other(request):
 
         return redirect('/')
     return render(request, 'add_other.html')
+#
+# def interested(request, id):
+#     url = request.META.get('HTTP_REFERER')
+#
+#     h_products = House_Product.objects.get(id=id)
+#     try:
+#         interest = Interested_Product.objects.get(user=request.user, h_product=h_products)
+#         # Check current interest status and update accordingly
+#         if interest.interest_status == True:
+#             interest.interest_status = False
+#             interest.save()
+#         else:
+#             interest.interest_status = True
+#             interest.save()
+#
+#     except Interested_Product.DoesNotExist:
+#         # If the user has not shown any interest before, create a new entry with interest_status set to True
+#         interest = Interested_Product(user=request.user, h_product=h_products, interest_status=True)
+#         interest.save()
+#
+#     return redirect(url)
 
-def interested(request, id):
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib import messages
+from django.core.mail import send_mail
+from .models import Interested_Product
+
+def product_interested(request, pk):
     url = request.META.get('HTTP_REFERER')
 
-    h_products = House_Product.objects.get(id=id)
-    try:
-        interest = Interested_Product.objects.get(user=request.user, h_product=h_products)
-        # Check current interest status and update accordingly
-        if interest.interest_status == True:
-            interest.interest_status = False
-            interest.save()
-        else:
-            interest.interest_status = True
-            interest.save()
+    product = get_object_or_404(House_Product, pk=pk)
+    Interested_Product.objects.create(user=request.user, h_product=product,interest_status=True)
+    send_mail(
+            'Your product has been marked as interested',
+            'Your product {} has been marked as interested by {}.'.format(product.ad_title, request.user.fname),
+            'anyrentplatform@gmail.com',
+            [product.user.email],
+            fail_silently=False,
+        )
 
-    except Interested_Product.DoesNotExist:
-        # If the user has not shown any interest before, create a new entry with interest_status set to True
-        interest = Interested_Product(user=request.user, h_product=h_products, interest_status=True)
-        interest.save()
-
+    messages.success(request, 'Product marked as interested')
     return redirect(url)
 
 
+def car_interested(request, pk):
+    url = request.META.get('HTTP_REFERER')
 
+    product = get_object_or_404(Car_Product, pk=pk)
+    Interested_Car.objects.create(user=request.user, c_product=product,interest_status=True)
+    send_mail(
+            'Your product has been marked as interested',
+            'Your product {} has been marked as interested by {}.'.format(product.ad_title, request.user.fname),
+            'anyrentplatform@gmail.com',
+            [product.user.email],
+            fail_silently=False,
+        )
 
+    messages.success(request, 'Product marked as interested')
+    return redirect(url)
+
+def bike_interested(request, pk):
+    url = request.META.get('HTTP_REFERER')
+
+    product = get_object_or_404(Bike_Product, pk=pk)
+    Interested_Bike.objects.create(user=request.user, b_product=product,interest_status=True)
+    send_mail(
+            'Your product has been marked as interested',
+            'Your product {} has been marked as interested by {}.'.format(product.ad_title, request.user.fname),
+            'anyrentplatform@gmail.com',
+            [product.user.email],
+            fail_silently=False,
+        )
+
+    messages.success(request, 'Product marked as interested')
+    return redirect(url)
+
+def furn_interested(request, pk):
+    url = request.META.get('HTTP_REFERER')
+
+    product = get_object_or_404(Furn_Product, pk=pk)
+    Interested_Furn.objects.create(user=request.user, f_product=product,interest_status=True)
+    send_mail(
+            'Your product has been marked as interested',
+            'Your product {} has been marked as interested by {}.'.format(product.ad_title, request.user.fname),
+            'anyrentplatform@gmail.com',
+            [product.user.email],
+            fail_silently=False,
+        )
+
+    messages.success(request, 'Product marked as interested')
+    return redirect(url)
+
+def other_interested(request, pk):
+    url = request.META.get('HTTP_REFERER')
+
+    product = get_object_or_404(Other_Product, pk=pk)
+    Interested_Other.objects.create(user=request.user, o_product=product,interest_status=True)
+    send_mail(
+            'Your product has been marked as interested',
+            'Your product {} has been marked as interested by {}.'.format(product.ad_title, request.user.fname),
+            'anyrentplatform@gmail.com',
+            [product.user.email],
+            fail_silently=False,
+        )
+
+    messages.success(request, 'Product marked as interested')
+    return redirect(url)

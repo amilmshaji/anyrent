@@ -1,0 +1,37 @@
+
+
+<div id="chatbot">
+    <h1>Chatbot</h1>
+    <form method="post" action="{% url 'chatbot' %}">
+        {% csrf_token %}
+        <input type="text" name="user_input">
+        <input type="submit" value="Send">
+        <button type="button" onclick="startListening()">Speak</button>
+    </form>
+    <script>
+        function startListening() {
+            const recognition = new webkitSpeechRecognition();
+            recognition.continuous = false;
+            recognition.interimResults = false;
+            recognition.lang = "en-US";
+            recognition.start();
+
+            recognition.onresult = function (event) {
+                const result = event.results[0][0].transcript;
+                document.querySelector('input[name="user_input"]').value = result;
+                recognition.stop();
+                document.querySelector('form').submit();
+            }
+
+            recognition.onerror = function (event) {
+                console.error(event.error);
+                recognition.stop();
+            }
+        }
+    </script>
+    {% if response %}
+        <p>{{ response  }}</p>
+    {% endif %}
+</div>
+
+

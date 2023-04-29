@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="interested marking completed">
-      <change afterPath="$PROJECT_DIR$/dashboard/migrations/0004_orderplacedother_orderplacedfurn_orderplacedbike.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/photos/house/s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/boost_bike.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/boost_furn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/boost_other.html" afterDir="false" />
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="payment completed">
+      <change afterPath="$PROJECT_DIR$/templates/guidance.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_bike.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_bike.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_furn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_furn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_other.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_other.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/chatbot/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/chatbot/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chatbot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatbot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/dash-my-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dash-my-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/myproducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/myproducts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,19 +56,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/dashboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PROJECTS\anyrent_pjct\templates" />
       <recent name="D:\PROJECTS\anyrent_pjct\templates\dashboard" />
       <recent name="D:\PROJECTS\anyrent_pjct\static" />
       <recent name="D:\PROJECTS\anyrent_pjct\static\chats\images" />
       <recent name="D:\PROJECTS\anyrent_pjct\templates\chat" />
-      <recent name="D:\PROJECTS\anyrent_pjct\static\chats" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.views">
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="anyrent_pjct" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,8 +90,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="anyrent_pjct" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chatbot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chatbot/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.views" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
@@ -108,20 +126,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00058" summary="map product connected to detail page">
-      <created>1677779523869</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1677779523869</updated>
-    </task>
-    <task id="LOCAL-00059" summary="chat">
-      <created>1677780602246</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1677780602246</updated>
     </task>
     <task id="LOCAL-00060" summary="validation updated">
       <created>1677818783123</created>
@@ -452,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681926058293</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="interested marking completed">
+      <created>1681928264845</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1681928264845</updated>
+    </task>
+    <task id="LOCAL-00108" summary="payment completed">
+      <created>1681928285382</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1681928285382</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -469,7 +487,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding user images to the map" />
     <MESSAGE value="map updated" />
     <MESSAGE value="Changes" />
     <MESSAGE value="mapp full finished(corrected limit exceeded error)" />
@@ -494,7 +511,8 @@
     <MESSAGE value="payment for renting" />
     <MESSAGE value="interested or not" />
     <MESSAGE value="interested marking completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="interested marking completed" />
+    <MESSAGE value="payment completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="payment completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

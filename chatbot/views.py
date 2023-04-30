@@ -59,6 +59,8 @@ import torch
 #         return render(request, 'guidance.html')
 # from django.shortcuts import render
 
+tokenizer = AutoTokenizer.from_pretrained('squirro/albert-base-v2-squad_v2')
+model = AutoModelForQuestionAnswering.from_pretrained('squirro/albert-base-v2-squad_v2')
 
 def answer_question(question, context):
     pages = ["category", "shop", "login", "register", "myprofile"]
@@ -76,8 +78,7 @@ def answer_question(question, context):
     elif user_input == "menu":
         answer= "Here are some options:\ncategory\nshop\nlogin\nregister\nmyprofile"
     else:
-        tokenizer = AutoTokenizer.from_pretrained('squirro/albert-base-v2-squad_v2')
-        model = AutoModelForQuestionAnswering.from_pretrained('squirro/albert-base-v2-squad_v2')
+
         inputs = tokenizer.encode_plus(question, context, add_special_tokens=True, return_tensors="pt")
         input_ids = inputs["input_ids"].tolist()[0]
         outputs = model(**inputs)
@@ -86,7 +87,9 @@ def answer_question(question, context):
         answer_start = torch.argmax(answer_start_scores)
         answer_end = torch.argmax(answer_end_scores) + 1
         answer = tokenizer.convert_tokens_to_string(tokenizer.convert_ids_to_tokens(input_ids[answer_start:answer_end]))
-    if answer == "[CLS]":
+        print("helloooooooooooo")
+    print(answer)
+    if answer == "[CLS]" or answer =='':
         answer = "sorry i cannot find the result. Can you specify with the context"
 
     return answer

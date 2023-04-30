@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="chat bot question answering--speaker implemented">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="chat bot question answering--malayalam implemented">
       <change beforePath="$PROJECT_DIR$/chatbot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chatbot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatbot.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,13 +117,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00063" summary="chat app stage one">
-      <created>1677946487122</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1677946487123</updated>
     </task>
     <task id="LOCAL-00064" summary="chat app stage one">
       <created>1677946585109</created>
@@ -463,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682864671754</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="chat bot question answering--malayalam implemented">
+      <created>1682866726254</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1682866726254</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -480,7 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="mapp full finished(corrected limit exceeded error)" />
     <MESSAGE value="map product connected to detail page" />
     <MESSAGE value="chat" />
     <MESSAGE value="validation updated" />
@@ -505,7 +502,8 @@
     <MESSAGE value="payment completed" />
     <MESSAGE value="chat bot question answering" />
     <MESSAGE value="chat bot question answering--speaker implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="chat bot question answering--speaker implemented" />
+    <MESSAGE value="chat bot question answering--malayalam implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="chat bot question answering--malayalam implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

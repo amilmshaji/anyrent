@@ -101,6 +101,7 @@ translator = Translator()
 def chatbot(request):
     if request.method == 'POST':
         question = request.POST['question']
+        question_malayalam=question
         print(question)
         context = "Django is a powerful and widely used web framework written in Python that allows developers to build robust web applications quickly and efficiently. It follows the Model-View-Template (MVT) architecture, which promotes clean separation of concerns and encourages reusable code. Django provides a plethora a of built-in features and tools that simplify common web development tasks such as URL routing, authentication, database management, and form handling."
 
@@ -122,7 +123,7 @@ def chatbot(request):
             print("malayalam",answer)
 
         # Return JSON response
-        response_data = {'question': question, 'context': context, 'answer': answer}
+        response_data = {'question': question_malayalam, 'context': context, 'answer': answer}
         return JsonResponse(response_data)
     else:
         return render(request, 'chatbot.html')

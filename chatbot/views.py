@@ -95,14 +95,33 @@ def answer_question(question, context):
     return answer
 
 
+from googletrans import Translator
+translator = Translator()
+
 def chatbot(request):
-    print("working")
     if request.method == 'POST':
         question = request.POST['question']
-        context = "Django is a powerful and widely used web framework written in Python that allows developers to build robust web applications quickly and efficiently. It follows the Model-View-Template (MVT) architecture, which promotes clean separation of concerns and encourages reusable code. Django provides a plethora a of built-in features and tools that simplify common web development tasks such as URL routing, authentication, database management, and form handling."
-        answer = answer_question(question, context)
         print(question)
+        context = "Django is a powerful and widely used web framework written in Python that allows developers to build robust web applications quickly and efficiently. It follows the Model-View-Template (MVT) architecture, which promotes clean separation of concerns and encourages reusable code. Django provides a plethora a of built-in features and tools that simplify common web development tasks such as URL routing, authentication, database management, and form handling."
+
+        # Detect language of the question
+        lang = translator.detect(question).lang
+
+        # Translate Malayalam to English
+        if lang == 'ml':
+            question = translator.translate(question, src='ml', dest='en').text
+            print("malayalam;;",question)
+
+        # Get answer to question
+        answer = answer_question(question, context)
         print(answer)
+
+        # Translate answer to Malayalam if necessary
+        if lang == 'ml':
+            answer = translator.translate(answer, src='en', dest='ml').text
+            print("malayalam",answer)
+
+        # Return JSON response
         response_data = {'question': question, 'context': context, 'answer': answer}
         return JsonResponse(response_data)
     else:

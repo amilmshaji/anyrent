@@ -39,6 +39,34 @@
   margin-bottom: 10px;
 }
 
+.fas.fa-microphone {
+  /* Style your microphone button here */
+  font-size: 24px;
+  color: #555;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.fas.fa-microphone.active {
+  /* Style your active microphone button here */
+  color: #fff;
+  background-color: #4285f4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.chatbox__footer {
+  /* Style your chatbox footer here */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #d3d3d3;
+}
 
 
 }
@@ -68,15 +96,14 @@
             <div class="chatbox__messages" id="chatbox-messagess"></div>
 
 
-            <form id="chat-form">
-                {% csrf_token %}
 
-    <div class="chatbox__footer">
-        <input type="text" name="question"  placeholder="Write a message...">
-        <button class="fas fa-microphone" type="button" onclick="startListening()"></button>
-
-        <button class="chatbox__send--footer send__button">Send</button>
-    </div>
+<form id="chat-form">
+  {% csrf_token %}
+  <div class="chatbox__footer">
+    <input type="text" name="question"  placeholder="Write a message...">
+    <button class="fas fa-microphone" type="button" onclick="startListening()"></button>
+    <button class="chatbox__send--footer send__button">Send</button>
+  </div>
 
 
 <script>
@@ -104,6 +131,62 @@ $(document).ready(function () {
         });
     });
 });
+
+// Declare the SpeechRecognition object
+var recognition = new webkitSpeechRecognition();
+
+// Set recognition options
+recognition.continuous = false;
+recognition.interimResults = false;
+recognition.lang = 'en-US';
+
+// Start listening function
+function startListening() {
+  recognition.start();
+  // Add active class to microphone button
+  document.querySelector('.fa-microphone').classList.add('active');
+}
+
+// Stop listening function
+function stopListening() {
+  recognition.stop();
+}
+
+// When recognition is complete, send question to server
+recognition.onresult = function(event) {
+  var question = event.results[0][0].transcript;
+  console.log(question);
+  sendQuestion(question);
+};
+
+// Remove active class when recognition ends
+recognition.onend = function() {
+  document.querySelector('.fa-microphone').classList.remove('active');
+}
+
+// Send question to server
+function sendQuestion(question) {
+  // Make AJAX request to server
+  $.ajax({
+    url: '/chatbot/',
+    type: 'POST',
+    data: {
+      'question': question,
+      'csrfmiddlewaretoken': '{{ csrf_token }}'
+    },
+    success: function(response) {
+      // Display response
+      console.log(response.answer);
+          if ($("#chatbox-messagess").length) {
+        var chatbox = $("#chatbox-messagess");
+        var question = $("<div class='messages__item messages__item--visitor'></div>").text(response.question);
+        var answer = $("<div class='messages__item messages__item--operator'></div>").text(response.answer);
+        chatbox.prepend(question).prepend(answer);
+    }
+    }
+  });
+}
+
 
 </script></form>
 

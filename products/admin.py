@@ -126,6 +126,7 @@ class BikeAdmin(admin.ModelAdmin):
         'created_date',
         'is_available',
         'is_featured',
+        # 'payment_status',
 
     )
     # prepopulated_fields = {'slug': ('ad_title',)}
@@ -160,6 +161,7 @@ class FurnAdmin(admin.ModelAdmin):
         'is_available',
         'is_featured',
 
+
     )
     # prepopulated_fields = {'slug': ('ad_title',)}
 
@@ -191,6 +193,7 @@ class OtherAdmin(admin.ModelAdmin):
         'created_date',
         'is_available',
         'is_featured',
+        
 
     )
     # prepopulated_fields = {'slug': ('ad_title',)}

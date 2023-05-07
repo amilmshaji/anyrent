@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="chat bot question answering--malayalam implemented">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/myproducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/myproducts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_bike.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_bike.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_car.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_furn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_furn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_house.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_house.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_other.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_other.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/boost.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/boost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/boost_bike.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/boost_bike.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/boost_car.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/boost_car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/boost_furn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/boost_furn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/boost_other.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/boost_other.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +62,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="C:/MINI_PROJECT/Sanitaryware_Online_Shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -120,6 +132,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
+    </task>
+    <task id="LOCAL-00065" summary="chat app stage one">
+      <created>1677948089628</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1677948089628</updated>
     </task>
     <task id="LOCAL-00066" summary="chat app stage one">
       <created>1678076013935</created>
@@ -457,14 +476,7 @@
       <option name="project" value="LOCAL" />
       <updated>1682867186762</updated>
     </task>
-    <task id="LOCAL-00114" summary="chat bot question answering--malayalam implemented">
-      <created>1682868176186</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1682868176187</updated>
-    </task>
-    <option name="localTasksCounter" value="115" />
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -477,7 +489,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

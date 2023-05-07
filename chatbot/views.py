@@ -69,11 +69,11 @@ def answer_question(question, context):
         answer= "Hello! How can I assist you today?"
     elif user_input in pages:
         response="http://127.0.0.1:8000/{ user_input }"
-        # answer= f'Sure, I can help you navigate to the {user_input} page. Here is the link: <a href="http://127.0.0.1:8000/{ user_input }" target="_blank">http://127.0.0.1:8000/{ user_input }</a>'
+        print(user_input)
         answer= f'Sure, I can help you navigate to the {user_input} page. Here is the link: http://127.0.0.1:8000/{ user_input }'
 
 
-    elif "help" in user_input:
+    elif user_input == "help" or user_input == "hellp":
         answer= "I can help you navigate to different pages on our website. Just tell me which page you'd like to visit, or type 'menu' to see a list of options."
     elif user_input == "menu":
         answer= "Here are some options:\ncategory\nshop\nlogin\nregister\nmyprofile"
@@ -103,8 +103,15 @@ def chatbot(request):
         question = request.POST['question']
         question_malayalam=question
         print(question)
-        context = "Django is a powerful and widely used web framework written in Python that allows developers to build robust web applications quickly and efficiently. It follows the Model-View-Template (MVT) architecture, which promotes clean separation of concerns and encourages reusable code. Django provides a plethora a of built-in features and tools that simplify common web development tasks such as URL routing, authentication, database management, and form handling."
+        context='''AnyRent is a comprehensive rental platform that offers users a range of products across four primary categories: houses and apartments, furniture, cars, and bikes. In addition to these categories, there is also an Others category for any products that do not fit into these main categories. This platform provides users with  one-stop-shop for finding and renting any products users need, without any time loss or hassle. 
 
+Although this is not a free platform, it cost 100RS per products to add products. it offers great value for users as each product is available for rent at a reasonable price through this site.Users can add or rent their products through rent your products page. With the built-in map and location feature, users can easily identify the products that are available for rent in their local area, making it easier for them to plan their rental activities. 
+
+The platform also includes a chat app that allows interested users to communicate with the product owner in their preferred language, primarily Malayalam. With this feature, users can quickly and easily clarify any doubts they may have about the product and make a more informed decision about renting it. 
+
+Finally, your platform offers a speaker functionality that allows users to speak with the product owner and respond within the same. This is particularly useful for those who may have difficulty typing or for whom it may be more convenient to communicate verbally. 
+
+Overall, AnyRent offers a range of features that make it easier for users to find and rent the products they need, while also providing a convenient and secure platform for product owners to offer their products for rent. With its user-friendly interface and intuitive functionality, your platform is sure to be a hit with anyone looking for an efficient and reliable rental service.'''
         # Detect language of the question
         lang = translator.detect(question).lang
 
@@ -127,3 +134,5 @@ def chatbot(request):
         return JsonResponse(response_data)
     else:
         return render(request, 'chatbot.html')
+
+

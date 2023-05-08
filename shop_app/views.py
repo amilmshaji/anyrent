@@ -412,16 +412,17 @@ def map_view(request):
 
         else:
             geoloc = geolocator.geocode(h_product.location)
-            l = Location(name=h_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
-            l.save()
-            if h_product.images:
-                popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.ad_title}<br>{h_product.location}</a>'
-            else:
-                popup_html = f'<a href="{h_product.get_url()}" target="_blank">{h_product.location}</a>'
-            folium.Marker(
-                [geoloc.latitude, geoloc.longitude],
-                popup=folium.Popup(popup_html, max_width=300)
-            ).add_to(m)
+            if geoloc is not None:
+                l = Location(name=h_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+                l.save()
+                if h_product.images:
+                    popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.ad_title}<br>{h_product.location}</a>'
+                else:
+                    popup_html = f'<a href="{h_product.get_url()}" target="_blank">{h_product.location}</a>'
+                folium.Marker(
+                    [geoloc.latitude, geoloc.longitude],
+                    popup=folium.Popup(popup_html, max_width=300)
+                ).add_to(m)
 
     for c_product in c_products:
         results = Location.objects.filter(name=c_product.location)
@@ -446,16 +447,18 @@ def map_view(request):
 
         else:
             geoloc = geolocator.geocode(c_product.location)
-            l = Location(name=c_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
-            l.save()
-            if c_product.images:
-                popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.ad_title}<br>{c_product.location}</a>'
-            else:
-                popup_html = f'<a href="{c_product.get_url()}" target="_blank">{c_product.location}</a>'
-            folium.Marker(
-                [geoloc.latitude, geoloc.longitude],
-                popup=folium.Popup(popup_html, max_width=300)
-            ).add_to(m)
+            if geoloc is not None:
+
+                l = Location(name=c_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+                l.save()
+                if c_product.images:
+                    popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.ad_title}<br>{c_product.location}</a>'
+                else:
+                    popup_html = f'<a href="{c_product.get_url()}" target="_blank">{c_product.location}</a>'
+                folium.Marker(
+                    [geoloc.latitude, geoloc.longitude],
+                    popup=folium.Popup(popup_html, max_width=300)
+                ).add_to(m)
 
     for b_product in b_products:
         results = Location.objects.filter(name=b_product.location)
@@ -480,16 +483,18 @@ def map_view(request):
 
         else:
             geoloc = geolocator.geocode(b_product.location)
-            l = Location(name=b_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
-            l.save()
-            if b_product.images:
-                popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.ad_title}<br>{b_product.location}</a>'
-            else:
-                popup_html = f'<a href="{b_product.get_url()}" target="_blank">{b_product.location}</a>'
-            folium.Marker(
-                [geoloc.latitude, geoloc.longitude],
-                popup=folium.Popup(popup_html, max_width=300)
-            ).add_to(m)
+            if geoloc is not None:
+
+                l = Location(name=b_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+                l.save()
+                if b_product.images:
+                    popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.ad_title}<br>{b_product.location}</a>'
+                else:
+                    popup_html = f'<a href="{b_product.get_url()}" target="_blank">{b_product.location}</a>'
+                folium.Marker(
+                    [geoloc.latitude, geoloc.longitude],
+                    popup=folium.Popup(popup_html, max_width=300)
+                ).add_to(m)
 
     for f_product in f_products:
         results = Location.objects.filter(name=f_product.location)
@@ -514,16 +519,18 @@ def map_view(request):
 
         else:
             geoloc = geolocator.geocode(f_product.location)
-            l = Location(name=f_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
-            l.save()
-            if f_product.images:
-                popup_html = f'<a href="{f_product.get_url()}" target="_blank"><img src="{f_product.images.url}" width="200"><br>{f_product.ad_title}<br>{f_product.location}</a>'
-            else:
-                popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}<br>{f_product.ad_title}</a>'
-            folium.Marker(
-                [geoloc.latitude, geoloc.longitude],
-                popup=folium.Popup(popup_html, max_width=300)
-            ).add_to(m)
+            if geoloc is not None:
+
+                l = Location(name=f_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+                l.save()
+                if f_product.images:
+                    popup_html = f'<a href="{f_product.get_url()}" target="_blank"><img src="{f_product.images.url}" width="200"><br>{f_product.ad_title}<br>{f_product.location}</a>'
+                else:
+                    popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}<br>{f_product.ad_title}</a>'
+                folium.Marker(
+                    [geoloc.latitude, geoloc.longitude],
+                    popup=folium.Popup(popup_html, max_width=300)
+                ).add_to(m)
 
     for o_product in o_products:
         results = Location.objects.filter(name=o_product.location)
@@ -548,16 +555,18 @@ def map_view(request):
 
         else:
             geoloc = geolocator.geocode(o_product.location)
-            l = Location(name=o_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
-            l.save()
-            if o_product.images:
-                popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.ad_title}<br>{o_product.location}</a>'
-            else:
-                popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}<br>{o_product.ad_title}</a>'
-            folium.Marker(
-                [geoloc.latitude, geoloc.longitude],
-                popup=folium.Popup(popup_html, max_width=300)
-            ).add_to(m)
+            if geoloc is not None:
+
+                l = Location(name=o_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+                l.save()
+                if o_product.images:
+                    popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.ad_title}<br>{o_product.location}</a>'
+                else:
+                    popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}<br>{o_product.ad_title}</a>'
+                folium.Marker(
+                    [geoloc.latitude, geoloc.longitude],
+                    popup=folium.Popup(popup_html, max_width=300)
+                ).add_to(m)
 
 
     # Render the map
@@ -607,16 +616,18 @@ def prod_map_view(request,location):
 
         else:
             geoloc = geolocator.geocode(h_product.location)
-            l = Location(name=h_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
-            l.save()
-            if h_product.images:
-                popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.location}</a>'
-            else:
-                popup_html = f'<a href="{h_product.get_url()}" target="_blank">{h_product.location}</a>'
-            folium.Marker(
-                [geoloc.latitude, geoloc.longitude],
-                popup=folium.Popup(popup_html, max_width=300)
-            ).add_to(m)
+            if geoloc is not None:
+
+                l = Location(name=h_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+                l.save()
+                if h_product.images:
+                    popup_html = f'<a href="{h_product.get_url()}" target="_blank"><img src="{h_product.images.url}" width="200"><br>{h_product.location}</a>'
+                else:
+                    popup_html = f'<a href="{h_product.get_url()}" target="_blank">{h_product.location}</a>'
+                folium.Marker(
+                    [geoloc.latitude, geoloc.longitude],
+                    popup=folium.Popup(popup_html, max_width=300)
+                ).add_to(m)
 
     for c_product in c_products:
         results = Location.objects.filter(name=c_product.location)
@@ -641,16 +652,18 @@ def prod_map_view(request,location):
 
         else:
             geoloc = geolocator.geocode(c_product.location)
-            l = Location(name=c_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
-            l.save()
-            if c_product.images:
-                popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.location}</a>'
-            else:
-                popup_html = f'<a href="{c_product.get_url()}" target="_blank">{c_product.location}</a>'
-            folium.Marker(
-                [geoloc.latitude, geoloc.longitude],
-                popup=folium.Popup(popup_html, max_width=300)
-            ).add_to(m)
+            if geoloc is not None:
+
+                l = Location(name=c_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+                l.save()
+                if c_product.images:
+                    popup_html = f'<a href="{c_product.get_url()}" target="_blank"><img src="{c_product.images.url}" width="200"><br>{c_product.location}</a>'
+                else:
+                    popup_html = f'<a href="{c_product.get_url()}" target="_blank">{c_product.location}</a>'
+                folium.Marker(
+                    [geoloc.latitude, geoloc.longitude],
+                    popup=folium.Popup(popup_html, max_width=300)
+                ).add_to(m)
 
     for b_product in b_products:
         results = Location.objects.filter(name=b_product.location)
@@ -675,16 +688,18 @@ def prod_map_view(request,location):
 
         else:
             geoloc = geolocator.geocode(b_product.location)
-            l = Location(name=b_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
-            l.save()
-            if b_product.images:
-                popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.location}</a>'
-            else:
-                popup_html = f'<a href="{b_product.get_url()}" target="_blank">{b_product.location}</a>'
-            folium.Marker(
-                [geoloc.latitude, geoloc.longitude],
-                popup=folium.Popup(popup_html, max_width=300)
-            ).add_to(m)
+            if geoloc is not None:
+
+                l = Location(name=b_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+                l.save()
+                if b_product.images:
+                    popup_html = f'<a href="{b_product.get_url()}" target="_blank"><img src="{b_product.images.url}" width="200"><br>{b_product.location}</a>'
+                else:
+                    popup_html = f'<a href="{b_product.get_url()}" target="_blank">{b_product.location}</a>'
+                folium.Marker(
+                    [geoloc.latitude, geoloc.longitude],
+                    popup=folium.Popup(popup_html, max_width=300)
+                ).add_to(m)
 
     for f_product in f_products:
         results = Location.objects.filter(name=f_product.location)
@@ -709,16 +724,18 @@ def prod_map_view(request,location):
 
         else:
             geoloc = geolocator.geocode(f_product.location)
-            l = Location(name=f_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
-            l.save()
-            if f_product.images:
-                popup_html = f'<img src="{f_product.images.url}" width="200"><br>{f_product.location}<br>{f_product.ad_title} '
-            else:
-                popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}</a>'
-            folium.Marker(
-                [geoloc.latitude, geoloc.longitude],
-                popup=folium.Popup(popup_html, max_width=300)
-            ).add_to(m)
+            if geoloc is not None:
+
+                l = Location(name=f_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+                l.save()
+                if f_product.images:
+                    popup_html = f'<img src="{f_product.images.url}" width="200"><br>{f_product.location}<br>{f_product.ad_title} '
+                else:
+                    popup_html = f'<a href="{f_product.get_url()}" target="_blank">{f_product.location}</a>'
+                folium.Marker(
+                    [geoloc.latitude, geoloc.longitude],
+                    popup=folium.Popup(popup_html, max_width=300)
+                ).add_to(m)
 
     for o_product in o_products:
         results = Location.objects.filter(name=o_product.location)
@@ -743,16 +760,18 @@ def prod_map_view(request,location):
 
         else:
             geoloc = geolocator.geocode(o_product.location)
-            l = Location(name=o_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
-            l.save()
-            if o_product.images:
-                popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.location}</a>'
-            else:
-                popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}</a>'
-            folium.Marker(
-                [geoloc.latitude, geoloc.longitude],
-                popup=folium.Popup(popup_html, max_width=300)
-            ).add_to(m)
+            if geoloc is not None:
+
+                l = Location(name=o_product.location, latitude=geoloc.latitude, longitude=geoloc.longitude)
+                l.save()
+                if o_product.images:
+                    popup_html = f'<a href="{o_product.get_url()}" target="_blank"><img src="{o_product.images.url}" width="200"><br>{o_product.location}</a>'
+                else:
+                    popup_html = f'<a href="{o_product.get_url()}" target="_blank">{o_product.location}</a>'
+                folium.Marker(
+                    [geoloc.latitude, geoloc.longitude],
+                    popup=folium.Popup(popup_html, max_width=300)
+                ).add_to(m)
 
 
     # Render the map

@@ -157,7 +157,7 @@ def product_interested(request, pk):
     Interested_Product.objects.create(user=request.user, h_product=product,interest_status=True)
     send_mail(
             'Your product has been marked as interested',
-            'Your product {} has been marked as interested by {}.'.format(product.ad_title, request.user.fname),
+            f'Your product {product.ad_title} has been marked as interested by {request.user.fname}{request.user.lname}.Redirect to that product  http://127.0.0.1:8000/category/{product.category.slug}/{product.slug}',
             'anyrentplatform@gmail.com',
             [product.user.email],
             fail_silently=False,
@@ -174,7 +174,7 @@ def car_interested(request, pk):
     Interested_Car.objects.create(user=request.user, c_product=product,interest_status=True)
     send_mail(
             'Your product has been marked as interested',
-            'Your product {} has been marked as interested by {}.'.format(product.ad_title, request.user.fname),
+            f'Your product {product.ad_title} has been marked as interested by {request.user.fname}{request.user.lname}.Redirect to that product  http://127.0.0.1:8000/category/{product.category.slug}/{product.slug}',
             'anyrentplatform@gmail.com',
             [product.user.email],
             fail_silently=False,
@@ -190,7 +190,7 @@ def bike_interested(request, pk):
     Interested_Bike.objects.create(user=request.user, b_product=product,interest_status=True)
     send_mail(
             'Your product has been marked as interested',
-            'Your product {} has been marked as interested by {}.'.format(product.ad_title, request.user.fname),
+            f'Your product {product.ad_title} has been marked as interested by {request.user.fname}{request.user.lname}.Redirect to that product  http://127.0.0.1:8000/category/{product.category.slug}/{product.slug}',
             'anyrentplatform@gmail.com',
             [product.user.email],
             fail_silently=False,
@@ -206,7 +206,7 @@ def furn_interested(request, pk):
     Interested_Furn.objects.create(user=request.user, f_product=product,interest_status=True)
     send_mail(
             'Your product has been marked as interested',
-            'Your product {} has been marked as interested by {}.'.format(product.ad_title, request.user.fname),
+            f'Your product {product.ad_title} has been marked as interested by {request.user.fname}{request.user.lname}.Redirect to that product  http://127.0.0.1:8000/category/{product.category.slug}/{product.slug}',
             'anyrentplatform@gmail.com',
             [product.user.email],
             fail_silently=False,
@@ -222,7 +222,7 @@ def other_interested(request, pk):
     Interested_Other.objects.create(user=request.user, o_product=product,interest_status=True)
     send_mail(
             'Your product has been marked as interested',
-            'Your product {} has been marked as interested by {}.'.format(product.ad_title, request.user.fname),
+            f'Your product {product.ad_title} has been marked as interested by {request.user.fname}{request.user.lname}.Redirect to that product  http://127.0.0.1:8000/category/{product.category.slug}/{product.slug}',
             'anyrentplatform@gmail.com',
             [product.user.email],
             fail_silently=False,

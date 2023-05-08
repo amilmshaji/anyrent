@@ -113,10 +113,12 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             url: "{% url 'chatbot' %}",
-<!--            headers: { "X-CSRFToken": csrftoken }, // add this line to set the CSRF token in the header-->
 
             data: $(this).serialize(),
             success: function (response) {
+    // clear the input field
+    $('input[name="question"]').val('');
+    // append the question and answer to the chatbox
     if ($("#chatbox-messagess").length) {
         var chatbox = $("#chatbox-messagess");
         var question = $("<div class='messages__item messages__item--visitor'></div>").text(response.question);
@@ -124,6 +126,7 @@ $(document).ready(function () {
         chatbox.prepend(question).prepend(answer);
     }
 },
+
 
             error: function (xhr, status, error) {
                 console.log(error);

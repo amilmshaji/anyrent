@@ -39,7 +39,6 @@ class Category(models.Model):
 class House_Product(models.Model):
     id = models.AutoField(primary_key=True)
     user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True,editable=False)
-
     ad_title = models.CharField(max_length=200, unique=True,editable=False)
     slug = models.SlugField(max_length=200, unique=True,editable=False)
     add_info = models.TextField(max_length=500, blank=True,editable=False)

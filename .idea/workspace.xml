@@ -9,18 +9,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_bike.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_bike.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_car.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_car.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_furn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_furn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_house.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_house.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_other.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_other.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/boost.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/boost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/boost_bike.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/boost_bike.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/boost_car.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/boost_car.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/boost_furn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/boost_furn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/boost_other.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/boost_other.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -489,6 +478,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

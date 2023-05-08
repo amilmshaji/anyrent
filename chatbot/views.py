@@ -58,6 +58,7 @@ import torch
 #     else:
 #         return render(request, 'guidance.html')
 # from django.shortcuts import render
+from products.models import House_Product
 
 tokenizer = AutoTokenizer.from_pretrained('squirro/albert-base-v2-squad_v2')
 model = AutoModelForQuestionAnswering.from_pretrained('squirro/albert-base-v2-squad_v2')
@@ -99,19 +100,42 @@ from googletrans import Translator
 translator = Translator()
 
 def chatbot(request):
+    h_product_list = []
+    details = "details of the products added"
+
+    for h_product in House_Product.objects.all():
+        product_details = {
+            "id": h_product.id,
+            "user_id": h_product.user_id,
+            "ad_title": h_product.ad_title,
+            "slug": h_product.slug,
+            "add_info": h_product.add_info,
+            "rent": h_product.rent,
+            "bedroom": h_product.bedroom,
+            "bathroom": h_product.bathroom,
+            "builtup": h_product.builtup,
+            "capacity": h_product.capacity,
+            "type": h_product.type,
+            "furnish": h_product.furnish,
+            "location": h_product.location,
+            "city": h_product.city,
+            "state": h_product.state
+        }
+        details += " user name is "+str(h_product.user.fname)
+        details += " the advertisment title " + str(h_product.rent) +" gave is " + h_product.ad_title
+        details += " Rupees " + str(h_product.rent) +" for a month "
+        details += f" The location for house {h_product.user.fname} gave  available is " + h_product.location+"," + h_product.city+" "
+        h_product_list.append(product_details)
+        print(details)
     if request.method == 'POST':
         question = request.POST['question']
         question_malayalam=question
-        print(question)
-        context='''AnyRent is a comprehensive rental platform that offers users a range of products across four primary categories: houses and apartments, furniture, cars, and bikes. In addition to these categories, there is also an Others category for any products that do not fit into these main categories. This platform provides users with  one-stop-shop for finding and renting any products users need, without any time loss or hassle. 
+        context=f'''AnyRent is a comprehensive rental platform that offers users a range of products across four primary categories: houses and apartments, furniture, cars, and bikes.
+        
+ 
 
-Although this is not a free platform, it cost 100RS per products to add products. it offers great value for users as each product is available for rent at a reasonable price through this site.Users can add or rent their products through rent your products page. With the built-in map and location feature, users can easily identify the products that are available for rent in their local area, making it easier for them to plan their rental activities. 
-
-The platform also includes a chat app that allows interested users to communicate with the product owner in their preferred language, primarily Malayalam. With this feature, users can quickly and easily clarify any doubts they may have about the product and make a more informed decision about renting it. 
-
-Finally, your platform offers a speaker functionality that allows users to speak with the product owner and respond within the same. This is particularly useful for those who may have difficulty typing or for whom it may be more convenient to communicate verbally. 
-
-Overall, AnyRent offers a range of features that make it easier for users to find and rent the products they need, while also providing a convenient and secure platform for product owners to offer their products for rent. With its user-friendly interface and intuitive functionality, your platform is sure to be a hit with anyone looking for an efficient and reliable rental service.'''
+{details}
+'''
         # Detect language of the question
         lang = translator.detect(question).lang
 

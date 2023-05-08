@@ -121,20 +121,20 @@ def chatbot(request):
             "city": h_product.city,
             "state": h_product.state
         }
-        details += " user name is "+str(h_product.user.fname)
-        details += " the advertisment title " + str(h_product.rent) +" gave is " + h_product.ad_title
+        # details += " user name is "+str(h_product.user.fname)
+        details += " the advertisment title given by " + str(h_product.user.fname) +" is " + h_product.ad_title
         details += " Rupees " + str(h_product.rent) +" for a month "
-        details += f" The location for house {h_product.user.fname} gave  available is " + h_product.location+"," + h_product.city+" "
+        details += f" The location available  for advertisement given by {h_product.user.fname} is " + h_product.location+"," + h_product.city+" "
         h_product_list.append(product_details)
-        print(details)
     if request.method == 'POST':
         question = request.POST['question']
         question_malayalam=question
-        context=f'''AnyRent is a comprehensive rental platform that offers users a range of products across four primary categories: houses and apartments, furniture, cars, and bikes.
+        context=f'''
+        {details}
+        AnyRent is a comprehensive rental platform that offers users a range of products across four primary categories: houses and apartments, furniture, cars, and bikes.
         
  
 
-{details}
 '''
         # Detect language of the question
         lang = translator.detect(question).lang

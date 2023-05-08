@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="context experimenting">
+      <change afterPath="$PROJECT_DIR$/media/photos/house/h5_5OUq3be.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/chatbot/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/chatbot/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chatbot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatbot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/myproducts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/myproducts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,13 +126,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00066" summary="chat app stage one">
-      <created>1678076013935</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1678076013935</updated>
     </task>
     <task id="LOCAL-00067" summary="saved">
       <created>1678284592061</created>
@@ -464,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683516628816</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="context experimenting">
+      <created>1683562236887</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1683562236888</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

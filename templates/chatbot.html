@@ -122,7 +122,7 @@ $(document).ready(function () {
     if ($("#chatbox-messagess").length) {
         var chatbox = $("#chatbox-messagess");
         var question = $("<div class='messages__item messages__item--visitor'></div>").text(response.question);
-        var answer = $("<div class='messages__item messages__item--operator'></div>").text(response.answer);
+        var answer = $("<div class='messages__item messages__item--operator'></div>").html(response.answer);
         chatbox.prepend(question).prepend(answer);
     }
 },
@@ -174,7 +174,7 @@ function sendQuestion(question) {
       if ($("#chatbox-messagess").length) {
         var chatbox = $("#chatbox-messagess");
         var question = $("<div class='messages__item messages__item--visitor'></div>").text(response.question);
-        var answer = $("<div class='messages__item messages__item--operator'></div>").text(response.answer);
+        var answer = $("<div class='messages__item messages__item--operator'></div>").html(response.answer);
         chatbox.prepend(question).prepend(answer);
       }
     }

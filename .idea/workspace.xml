@@ -4,8 +4,311 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="navigation completed">
-      <change beforePath="$PROJECT_DIR$/static/images/about/member-4.jpg" beforeDir="false" />
+    <list default="true" id="2c3bb398-1589-4fa2-a913-5b0607f94f48" name="Changes" comment="inference api">
+      <change beforePath="$PROJECT_DIR$/.idea/anyrent_pjct.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/anyrent_pjct.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fstudy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Requirements_gathering_.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anyrent abstract.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figma_anyrent.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/1549440918_7e79a16a-2838-4112-8c2d-f89a814e5b97.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/RENT-banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/RENT-banner_drEHNUa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/b2_Xr8wgyV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/b2_abHTGWE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/banner_img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_bike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_bike1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_bike1_Pt6KhEv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_bike1_UnBwGoZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_bike_6fEqWSp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_bike_vcDWfhn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_car.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_car1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_car1_fpu2z6O.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_car1_vwVhZkc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_car1_yM9ccjb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_house.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/cat_house2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/f2_199q4WA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/f2_9iqsDDT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/f2_A2ramhw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/goa-camera-rental-10158468-47d5ed68.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/h1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/h1_FmHQEDS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/h3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/house.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/house_8HQZy1h.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/house_DtnRkQ0.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/house_lV3JnPq.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/image_Pt5tHFs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/other.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/rent_banner3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/s_6GHCPa2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/s_POPdtaM.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/s_Q8M0Rbm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/s_oxstm8X.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/sw4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/sw4_VB9NUwz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/sw4_Yetfgqq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/th.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/th_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/th_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/th_5_g02MBm9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/th_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/categories/toilets1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/2023-Maruti-Swift-Rendering.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/2023-Maruti-Swift-Rendering_J7bgVVT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/2023-Maruti-Swift-Rendering_tjG31Qh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/61Mw00RuOdL._UL1334_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/61Mw00RuOdL._UL1334__AW7ICTj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/61Mw00RuOdL._UL1334__QjV5CoV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/61Mw00RuOdL._UL1334__hPDFK3U.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/61Mw00RuOdL._UL1334__zvTsnve.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/80523-b440.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/80523-b440_2TDGmzn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/Dingbat_LaTraviata_iKhgCDo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/Outstanding-home-with-mind-blowing-interior.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/Outstanding-home-with-mind-blowing-interior_Y7kAvkz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/Outstanding-home-with-mind-blowing-interior_zrWFDfS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/Sofa-set_-__-_3-1-1_-_VB201705171774173-ak_LWBP1570481307-1658243128_lg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/Vastu-for-flats-in-apartments.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/Vastu-for-flats-in-apartments_UXsdIsL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/Vastu-for-flats-in-apartments_hvrDDxN.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/Vastu-for-flats-in-apartments_uNQlMky.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b1_CoB3MrB.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b1_amTOoEg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2_0lbW8SY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2_12XJDnS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2_DOWAiaE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2_IdJ5aht.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2_Jb9IygB.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2_cK1b1Xc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2_hkGGbC7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2_il3UdsY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2_lSZgXQE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2_o59Q6UK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/b2_sZAse6S.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/banner2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/banner4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/bik44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/c2_1W5PyMw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/c2_4q8d8La.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/c2_g5q0cdz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/cat_bike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/cat_bike1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/cat_car1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/cot.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/cot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/cot_FfHe2S1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/cot_UngOi5W.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/cot_tNjh6kf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/data_china-furniture_carolina-lounge-chair-brown_brown_Cream_1-810x702.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_1_LWLjlQC.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_1_R9modBi.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_1_RfEJco8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_1_TSMGmlJ.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_1_qGGcdBx.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_1_wkhAaa0.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_G7OSOKi.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_GGUUMse.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_Jsf5wMS.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_WEBiACg.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_uOIYf7P.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/download_z4wzFr7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/f1_B1ASWiB.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/f44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/goa-camera-rental-10158468-47d5ed68.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h1_A1EnOve.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h1_EIO7Lnb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h1_GX1VXXg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h1_Z7YFqfa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h1_hS7bqvG.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h1_mSoyVlq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h1_nFE1JAH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h1_qlvrJi0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h2_AjaNcu0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h2_HtBqYqW.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h2_UN2ntPg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h2_X845pou.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h2_ZHbgF4z.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h2_ZK1GqG1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h2_ZM6VJgx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h2_pGBu5BO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3_0baGTrs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3_3VlWSbl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3_4RNGmQh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3_5W81bwY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3_Ea98B0w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3_I40agjz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3_IkXwYQr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3_msGpdhk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3_rqY2Yl1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3_sc7uKEY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h3_smu7nAg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h5_5OUq3be.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h5_8FhprFl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h5_HUmxFLT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h5_gGDzc4x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h5_ndPCyXe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h5_wPhIXfI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/h5_xUaVwj9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/house-7124141__340.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/house.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/house_banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/hundai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/hundai_MB6eM3G.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/hundai_S9pmkVd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/hundai_YqYkG3G.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/hundai_c5orts5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/hundai_wB1qG2M.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/image_6nrC5HP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/image_HDXUgar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/image_Kp4K8xo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/image_PgEcBxF.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/image_SNWE2Gh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/image_xrKf4bf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_1_3CFCOBY.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_1_NJTmUB0.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_1_RZZhzMM.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_2_4e2sJDL.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_2_G9hulfn.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_HGHpfsM.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_HIlUvwL.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_Hc6896E.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_Q7cp6IR.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_THgH8lk.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_YWUOdAm.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_aDnKEKb.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_pJO2ymf.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/images_pe44YvC.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/other.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/p1_UiNTbv3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/pexels-photo-129494.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/pexels-photo-129494_GjkpuqN.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/pexels-photo-129494_TBXy0h6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/photo-1618424181497-157f25b6ddd5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/photo-1618424181497-157f25b6ddd5_HnAP4ak.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/photo-1618424181497-157f25b6ddd5_RAx4Dwe.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/riders-hut-manarcaudu-kottayam-bike-on-rent-rn3pmv1a07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/shutterstock_1715891752-1200x700-compressed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/shutterstock_1715891752-1200x700-compressed_XHIvUf5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/house/th_1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/loc/c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/loc/h3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/photos/loc/image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/products/h1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/store/products/h1_v21xT5G.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reportmini.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/audio/1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/about/member-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/about/member-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/about/member-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/about/test-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/about/test-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/about/test-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/about/test-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/banner-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/banner-mega-0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/banner-mega-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/banner-mega-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/banner-mega-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/banner-mega-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/banner-mega-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/banner-mega-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/banner-mega-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/banner-mega-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/banner-mega-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/i3-banner-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banners/i3-banner-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/avatar-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/avatar-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/avatar-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/avatar-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog/post-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/brand/b1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/brand/b2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/brand/b3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/brand/b4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/brand/b5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/brand/b6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/collection/coll-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/collection/coll-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/collection/coll-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/collection/coll-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/newsletter/newsletter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/product/product-d-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/product/product-d-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/product/product-d-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/product/product-d-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/product/product-d-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/promo/promo-img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/promo/promo-img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/promo/promo-img-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/promo/promo-img-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/promo/promo-img-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/promo/promo-img-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/slider/slide-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/slider/slide-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/slider/slide-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/slider/slide-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/slider/slide-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/slider/slide-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/01_preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/components/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/components/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/components/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/components/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/components/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/components/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/components/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/components/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/components/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/components/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/components/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/img-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ludus/doc-img/img-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/video/video-pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/video/video-play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/video/video-sample.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/video/video-thumbnail.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,13 +420,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662612806469</updated>
-    </task>
-    <task id="LOCAL-00069" summary="saved">
-      <created>1678341944015</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1678341944015</updated>
     </task>
     <task id="LOCAL-00070" summary="my products add date">
       <created>1678342905230</created>
@@ -461,7 +757,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683710239887</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="inference api">
+      <created>1683711223301</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1683711223303</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -478,7 +781,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="validation updated" />
     <MESSAGE value="header in map" />
     <MESSAGE value="done" />
     <MESSAGE value="chat app stage one" />
@@ -503,7 +805,8 @@
     <MESSAGE value="chat bot question answering--malayalam implemented" />
     <MESSAGE value="context experimenting" />
     <MESSAGE value="navigation completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="navigation completed" />
+    <MESSAGE value="inference api" />
+    <option name="LAST_COMMIT_MESSAGE" value="inference api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
